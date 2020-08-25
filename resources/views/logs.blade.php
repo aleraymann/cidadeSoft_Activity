@@ -31,6 +31,7 @@
                         <option>Filtro de Busca</option>
                         <option value="C">Nome do Item</option>
                         <option value="P">Cod do Autor</option>
+                        <option value="E">Empresa</option>
                     </select>
                 </div>
                 <div id="cod" hidden>
@@ -38,6 +39,27 @@
                         <div class="container">
                             <div class="input-group col-lg-8 mt-2">
                                 <input type="text" class="form-control" name="criterio" placeholder="Nome do Item">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" type="submit">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                        {{ csrf_field() }}
+                    </form>
+                </div>
+                <div id="emp" hidden>
+                    <form action="{{ url('/Logs/busca3') }}" method="post">
+                        <div class="container">
+                            <div class="input-group col-lg-12 mt-2">
+
+                            <select  class="form-control input-border-bottom" name="criterio">
+                            <option>Selecione</option>
+                        @foreach($empresa as $e)
+                        @can("view_empresa",$e)
+                        <option value="{{$e->Nome_Fantasia}}">{{$e->Nome_Fantasia}}</option>
+                        @endcan
+                        @endforeach
+                    </select>
                                 <div class="input-group-append">
                                     <button class="btn btn-success" type="submit">OK</button>
                                 </div>
@@ -77,22 +99,24 @@
                                 <th class="">Ação</th>
                                 <th class="">Cod do item envolvido</th>
                                 <th class="">Cod do Autor</th>
+                                <th class="">Empresa</th>
+                                <th class="">Usuario</th>
                                 <th class="">Alterado</th>
                                 
                             </tr>
                         </thead>
-                       
                         @foreach($activity as $i)
-                        
                                 <tr>
                                     <td class="">{{ $i->created_at }}  </td>
                                     <td class="">{{ $i->log_name }}  </td>
                                     <td class="">{{ $i->description}}  </td>
                                     <td class="">{{ $i->subject_id }}  </td>
                                     <td class="">{{ $i->causer_id }}  </td>
+                                    <td class="">{{ $i->NOMEFANTASIA }}  </td>
+                                    <td class="">{{ $i->USUARIO }}  </td>
                                     <td class="">{{ $i->properties }}  </td>
+                                    
                                 </tr>
-                         
                            @endforeach
                          
                         <tbody>
@@ -103,9 +127,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        {{ $activity->links() }}
-    </div>
+   
 </div>
    
 @endsection
@@ -186,16 +208,21 @@
 <script>
         function verificar(value) {
             var cod = document.getElementById("cod");
-            var name = document.getElementById("name");
+            var emp = document.getElementById("emp");
             var pag = document.getElementById("pag_rec");
             if (value == "C") {
                 cod.hidden = false;
-              
+                emp.hidden = true;
                 pag.hidden = true;
             }else if (value == "P") {
                 cod.hidden = true;
-               
+                emp.hidden = true;
                 pag.hidden = false;
+            }
+            else if (value == "E") {
+                cod.hidden = true;
+                emp.hidden = false;
+                pag.hidden = true;
             }
         };
     </script>

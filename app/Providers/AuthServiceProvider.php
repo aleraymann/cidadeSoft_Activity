@@ -52,6 +52,7 @@ use App\model\Comissao;
 use App\model\AjusteItem;
 use App\model\PlanoContas;
 use App\model\CatPlanoContas;
+use Spatie\Activitylog\Models\Activity;
 
 
 class AuthServiceProvider extends ServiceProvider
@@ -440,6 +441,7 @@ class AuthServiceProvider extends ServiceProvider
         }else
             return $user->adm == $cat_planocontas->user_id;     
     });
+
 
 
         

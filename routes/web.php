@@ -87,6 +87,7 @@ Route::group(["prefix" => "Logs",'middleware' => 'auth'], function () {
     Route::get("/", 'ActivityLogController@index');
     Route::post("/busca", "ActivityLogController@busca");
     Route::post("/busca2", "ActivityLogController@busca2");
+    Route::post("/busca3", "ActivityLogController@busca3");
 });
 
     

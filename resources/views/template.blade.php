@@ -250,13 +250,14 @@
 											<span class="link-collapse">Usuários</span>
 										</a>
 									</li>
-									<li>
-										<a href="{{url("/Logs")}}">
+									
+									@endcan
+								<div class="dropdown-divider"></div>
+								<li>
+										<a  class="dropdown-item" href="{{url("/Logs")}}">
 											<span class="link-collapse">Logs</span>
 										</a>
 									</li>
-									@endcan
-								<div class="dropdown-divider"></div>
 									<li>
 									<a class="dropdown-item" href="{{ route('logout') }}"
 									onclick="event.preventDefault();
