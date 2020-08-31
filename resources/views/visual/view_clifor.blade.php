@@ -165,13 +165,13 @@
     @can('insere_cliente')
     <ul class="nav nav-tabs ml-3" role="tablist">
         <li class="nav-item">
-            <a class="nav-link " href="#contato" role="tab" data-toggle="tab"><button class="btn btn-info btn-rounded"> + Contato</button></a>
+            <a class="nav-link " href="#contato" role="tab" data-toggle="tab"><i class='fas fa-plus'></i><b> Contato</b></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#endereco" role="tab" data-toggle="tab"><button class="btn btn-info btn-rounded"> + Endereço</button></a>
+            <a class="nav-link" href="#endereco" role="tab" data-toggle="tab"><i class='fas fa-plus'></i><b> Endereço</b></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#referencia" role="tab" data-toggle="tab"><button class="btn btn-info btn-rounded"> + Referência</button></a>
+            <a class="nav-link" href="#referencia" role="tab" data-toggle="tab"><i class='fas fa-plus'></i><b> Referência</b></a>
         </li>
     </ul>
 

@@ -156,6 +156,9 @@
 
 </script>
 
+
+
+
 @if(session('success_message'))
     <div class="alert alert-danger">
         {{ session('success_message') }}
@@ -230,7 +233,7 @@
              </div>
             <div class="card-body">
                 <div class="table-responsive">
-                    <table id="multi-filter-select" class="display table table-sm table-striped table-hover text-center">
+                    <table id="empresas" class="display table table-sm table-striped table-hover text-center">
                         <thead>
                             <tr>
                                 <th class="">Cod</th>

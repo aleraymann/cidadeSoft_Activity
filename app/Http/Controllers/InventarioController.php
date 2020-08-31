@@ -15,6 +15,7 @@ class InventarioController extends Controller
     
     {  
         $inventario = $inventario->all();
+        $inventario = inventario::paginate(20);
         $criterio = "";
         return view('inventario',compact('inventario',"criterio"));
        
