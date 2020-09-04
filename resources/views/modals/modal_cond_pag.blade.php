@@ -1,12 +1,12 @@
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal">
-    <div class="modal-dialog  modal-lg">
+    <div class="modal-dialog  modal-md">
         <div class="modal-content">
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Cadastro de Condições de Pagamento</h4>
+                <h4 class="modal-title text-center">Cadastro de Condições de Pagamento</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <!-- Modal body -->
@@ -32,7 +32,7 @@
 
                         <div class="form-group col-lg-4">
                             <b class="ls-label-text" for="Condicao	">Condição</b>
-                            <input type="text" class="form-control input-border-bottom" name="Condicao" id="Condicao"
+                            <input type="text" class="form-control text-center" name="Condicao" id="Condicao"
                             placeholder="1x, 30/60, 15 D.D." required  minlength="2" maxlength="45">
                             <div class="invalid-feedback">
                                 Por favor, Mínimo 2 caracteres!
@@ -41,22 +41,17 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Tab_Preco">Tabela de Preço:</b>
-                            <select class="form-control input-border-bottom" id="Tab_Preco" name="Tab_Preco">
+                        <div class="form-group col-lg-4">
+                            <b class="ls-label-text" for="Tab_Preco">Tabela de Preço</b>
+                            <select class="form-control text-center" id="Tab_Preco" name="Tab_Preco">
                                 <option value="À Prazo">À Prazo</option>
                                 <option value="À Vista">À Vista</option> 
                             </select>
-                            <div class="invalid-feedback">
-                                Por favor, Campo Obrigatório!
-                            </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
-                            </div>
+                            
                         </div>
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="ParcDias">Dias entre parcelas:</b>
-                            <input type="text" class="form-control input-border-bottom" name="ParcDias" id="ParcDias" required>
+                        <div class="form-group col-lg-4">
+                            <b class="ls-label-text" for="ParcDias">Dias entre parcelas</b>
+                            <input type="text" class="form-control text-center" name="ParcDias" id="ParcDias" required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
                             </div>
@@ -66,13 +61,13 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-lg-5">
+                        <div class="form-group col-lg-7">
                             <b class="ls-label-text" for="ParcForma">Forma de Pagamento no Recebimento</b>
-                            <input type="text" class="form-control input-border-bottom" name="ParcForma" id="ParcForma" required>
+                            <input type="text" class="form-control text-center" name="ParcForma" id="ParcForma" required>
                         </div>
-                        <div class="form-group col-lg-3">
+                        <div class="form-group col-lg-5">
                             <b class="ls-label-text" for="ParcJuros">Juro a ser aplicado:</b>
-                            <input type="text" class="form-control input-border-bottom" name="ParcJuros" id="ParcJuros" 
+                            <input type="text" class="form-control text-center" name="ParcJuros" id="ParcJuros" 
                             onblur="parcJuros()" minlength="3" value="0.00">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!

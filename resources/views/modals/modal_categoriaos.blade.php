@@ -6,7 +6,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Cadastro de  Categoria para Totalização no Pedido, OS</h4>
+                <h4 class="modal-title text-center">Cadastro de  Categoria para Totalização no Pedido, OS</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <!-- Modal body -->
@@ -28,8 +28,8 @@
           </div>
                     <div class="form-row">
                         <div class="form-group col-lg-12">
-                            <b class="ls-label-text" for="Descricao">Descrição:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao"
+                            <b class="ls-label-text" for="Descricao">Descrição</b>
+                            <input type="text" class="form-control text-center" name="Descricao" id="Descricao"
                             placeholder="" required  minlength="2" maxlength="30">
                             <div class="invalid-feedback">
                                 Por favor, Mínimo 2 caracteres!

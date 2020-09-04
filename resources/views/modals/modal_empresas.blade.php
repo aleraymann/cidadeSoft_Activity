@@ -31,7 +31,7 @@
           <div class="form-row">
           <div class="form-group col-lg-12">
               <b class="ls-label-text" for="Logo">Logomarca:</b>
-              <input type="file" class="form-control" name="Logo" id="Logo">
+              <input type="file" class="form-control text-center" name="Logo" id="Logo">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -41,9 +41,9 @@
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-lg-12">
-              <b class="ls-label-text" for="RG">Nome Fantasia:</b>
-              <input type="text" class="form-control input-border-bottom" name="Nome_Fantasia" id="Nome_Fantasia"
+            <div class="form-group col-lg-6">
+              <b class="ls-label-text" for="RG">Nome Fantasia</b>
+              <input type="text" class="form-control text-center" name="Nome_Fantasia" id="Nome_Fantasia"
               placeholder="Nome Fantasia ou Apelido" required minlength="4" maxlength="60">
               <div class="invalid-feedback">
                 Campo Obrigatório, Mínimo 4 caracteres!
@@ -52,12 +52,9 @@
                 Tudo certo!
               </div>
             </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group col-lg-12">
-              <b class="ls-label-text" for="Razao_Social">Razão Social:</b>
-              <input type="text" class="form-control input-border-bottom" name="Razao_Social" id="Razao_Social"
+            <div class="form-group col-lg-6">
+              <b class="ls-label-text" for="Razao_Social">Razão Social</b>
+              <input type="text" class="form-control text-center" name="Razao_Social" id="Razao_Social"
               placeholder="Razão Social" required  minlength="4" maxlength="60">
               <div class="invalid-feedback">
                 Campo Obrigatório, Mínimo 4 caracteres!!
@@ -67,10 +64,14 @@
               </div>
             </div>
           </div>
+
           <div class="form-row">
-            <div class="form-group col-lg-3">
-              <b class="ls-label-text" for="CEP">CEP:</b>
-              <input type="text" class="form-control input-border-bottom" name="CEP" id="CEP" placeholder="000000000">
+           
+          </div>
+          <div class="form-row">
+            <div class="form-group col-lg-2">
+              <b class="ls-label-text" for="CEP">CEP</b>
+              <input type="text" class="form-control text-center" name="CEP" id="CEP" placeholder="000000000">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -78,9 +79,9 @@
                 Tudo certo!
               </div>
             </div>
-            <div class="form-group col-lg-7">
-              <b class="ls-label-text" for="Endereco">Endereço:</b>
-              <input type="text" class="form-control input-border-bottom" name="Endereco" id="Endereco"
+            <div class="form-group col-lg-4">
+              <b class="ls-label-text" for="Endereco">Endereço</b>
+              <input type="text" class="form-control text-center" name="Endereco" id="Endereco"
               placeholder="Rua, Travessa, Avenida">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
@@ -90,8 +91,8 @@
               </div>
             </div>
             <div class="form-group col-lg-2">
-              <b class="ls-label-text" for="Cod_IBGE">Código IBGE:</b>
-              <input type="number" class="form-control input-border-bottom" name="Cod_IBGE" id="Cod_IBGE"
+              <b class="ls-label-text" for="Cod_IBGE">Código IBGE</b>
+              <input type="number" class="form-control text-center" name="Cod_IBGE" id="Cod_IBGE"
               placeholder="">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
@@ -100,12 +101,9 @@
                 Tudo certo!
               </div>
             </div>
-          </div>
-
-          <div class="form-row">
             <div class="form-group col-lg-2">
-              <b class="ls-label-text" for="Numero">Número:</b>
-              <input type="number" class="form-control input-border-bottom" name="Numero" id="Numero">
+              <b class="ls-label-text" for="Numero">Num</b>
+              <input type="number" class="form-control text-center" name="Numero" id="Numero">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -114,9 +112,9 @@
               </div>
             </div>
 
-            <div class="form-group col-lg-3">
-              <b class="ls-label-text" for="Bairro">Bairro:</b>
-              <input type="text" class="form-control input-border-bottom" name="Bairro" id="Bairro">
+            <div class="form-group col-lg-2">
+              <b class="ls-label-text" for="Bairro">Bairro</b>
+              <input type="text" class="form-control text-center" name="Bairro" id="Bairro">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -124,33 +122,33 @@
                 Tudo certo!
               </div>
             </div>
-
-            <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="Cidade">Cidade:</b>
-              <input type="text" class="form-control input-border-bottom" name="Cidade" id="Cidade">
-              <div class="invalid-feedback">
-                Por favor, Campo Obrigatório!
-              </div>
-              <div class="valid-feedback">
-                Tudo certo!
-              </div>
-            </div>
-            <div class="form-group col-lg-3">
-              <b class="ls-label-text" for="Estado">Estado:</b>
-              <input type="text" class="form-control input-border-bottom" name="Estado" id="Estado" minlength="2" maxlength="2" placeholder="Sigla">
-              <div class="invalid-feedback">
-                Por favor, Campo Obrigatório!
-              </div>
-              <div class="valid-feedback">
-                Tudo certo!
-              </div>
-            </div>
-
           </div>
+
           <div class="form-row">
-            <div class="form-group col-lg-4">
+           
+            <div class="form-group col-lg-2">
+              <b class="ls-label-text" for="Cidade">Cidade</b>
+              <input type="text" class="form-control text-center" readonly name="Cidade" id="Cidade">
+              <div class="invalid-feedback">
+                Por favor, Campo Obrigatório!
+              </div>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+            <div class="form-group col-lg-1">
+              <b class="ls-label-text" for="Estado">Estado</b>
+              <input type="text" class="form-control text-center" readonly name="Estado" id="Estado" minlength="2" maxlength="2">
+              <div class="invalid-feedback">
+                Por favor, Campo Obrigatório!
+              </div>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+            <div class="form-group col-lg-3">
               <b class="ls-label-text" for="Telefone">Telefone Principal:</b>
-              <input type="text" class="form-control input-border-bottom" name="Telefone" id="Telefone">
+              <input type="text" class="form-control text-center" name="Telefone" id="Telefone">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -159,9 +157,9 @@
               </div>
             </div>
             
-            <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="Celular">Celular de Plantão:</b>
-              <input type="text" class="form-control input-border-bottom" name="Celular" id="Celular">
+            <div class="form-group col-lg-3">
+              <b class="ls-label-text" for="Celular">Celular de Plantão</b>
+              <input type="text" class="form-control  text-center" name="Celular" id="Celular">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -170,9 +168,9 @@
               </div>
             </div>
             
-            <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="FAX">FAX:</b>
-              <input type="text" class="form-control input-border-bottom" name="FAX" id="FAX">
+            <div class="form-group col-lg-3">
+              <b class="ls-label-text" for="FAX">FAX</b>
+              <input type="text" class="form-control  text-center" name="FAX" id="FAX">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -182,9 +180,12 @@
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Email">Email:</b>
-              <input type="email" class="form-control input-border-bottom" name="Email" id="Email"
+            
+          </div>
+          <div class="form-row">
+            <div class="form-group col-lg-4">
+              <b class="ls-label-text" for="Email">Email</b>
+              <input type="email" class="form-control text-center" name="Email" id="Email"
               placeholder="algo@algo.com">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
@@ -193,9 +194,9 @@
                 Tudo certo!
               </div>
             </div>
-            <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Site">Web Site:</b>
-              <input type="text" class="form-control input-border-bottom" name="Site" id="Site"
+            <div class="form-group col-lg-4">
+              <b class="ls-label-text" for="Site">Web Site</b>
+              <input type="text" class="form-control text-center" name="Site" id="Site"
               placeholder="www.algo.com">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
@@ -204,44 +205,9 @@
                 Tudo certo!
               </div>
             </div>
-          </div>
-          <div class="form-row">
             <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="IM">Insrição Municipal:</b>
-              <input type="text" class="form-control input-border-bottom" name="IM" id="IM"  minlength="7" maxlength="14" >
-              <div class="invalid-feedback">
-                Mínimo 7 caracteres!
-              </div>
-              <div class="valid-feedback">
-                Tudo certo!
-              </div>
-            </div>
-            <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="IE">Inscrição Estadual:</b>
-              <input type="text" class="form-control input-border-bottom" name="IE" id="IE"  minlength="9" maxlength="13" >
-              <div class="invalid-feedback">
-                Mínimo 9 caracteres!
-              </div>
-              <div class="valid-feedback">
-                Tudo certo!
-              </div>
-            </div>
-            <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="CNPJ">CNPJ:</b>
-              <input type="text" class="form-control input-border-bottom" name="CNPJ" id="CNPJ" onblur="validarCNPJ(this)">
-              <div class="invalid-feedback">
-                Por favor, Campo Obrigatório!
-              </div>
-              <div class="valid-feedback">
-                Tudo certo!
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            
-            <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Atividade">Ramo da Atividade:</b>
-              <select class="form-control input-border-bottom" id="Atividade" name="Atividade">
+              <b class="ls-label-text" for="Atividade">Ramo da Atividade</b>
+              <select class="form-control text-center" id="Atividade" name="Atividade">
                 <option value="0">Selecione</option>
                 <option value="Açougue">Açougue</option>
                 <option value="Agropecuária">Agropecuária</option>
@@ -300,8 +266,45 @@
           </div>
           <div class="form-row">
             <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="CNAE">Cod. Nac. de Ativ. da Empresa:</b>
-              <input type="text" class="form-control input-border-bottom" name="CNAE" id="CNAE"  maxlength="10">
+              <b class="ls-label-text" for="IM">Insrição Municipal</b>
+              <input type="text" class="form-control text-center" name="IM" id="IM"  minlength="7" maxlength="14" >
+              <div class="invalid-feedback">
+                Mínimo 7 caracteres!
+              </div>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+            <div class="form-group col-lg-4">
+              <b class="ls-label-text" for="IE">Inscrição Estadual</b>
+              <input type="text" class="form-control text-center" name="IE" id="IE"  minlength="9" maxlength="13" >
+              <div class="invalid-feedback">
+                Mínimo 9 caracteres!
+              </div>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+            <div class="form-group col-lg-4">
+              <b class="ls-label-text" for="CNPJ">CNPJ</b>
+              <input type="text" class="form-control text-center" name="CNPJ" id="CNPJ" onblur="validarCNPJ(this)">
+              <div class="invalid-feedback">
+                Por favor, Campo Obrigatório!
+              </div>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+            
+          </div>
+          <div class="form-row">
+            
+            
+          </div>
+          <div class="form-row">
+            <div class="form-group col-lg-4">
+              <b class="ls-label-text" for="CNAE">Cod. Nac. de Ativ. da Empresa</b>
+              <input type="text" class="form-control text-center" name="CNAE" id="CNAE"  maxlength="10">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -310,8 +313,8 @@
               </div>
             </div>
             <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="CliFor_Saida">Cliente/Fornecedor Saída:</b>
-              <input type="text" class="form-control input-border-bottom" name="CliFor_Saida" id="CliFor_Saida">
+              <b class="ls-label-text" for="CliFor_Saida">Cliente/Fornecedor Saída</b>
+              <input type="text" class="form-control text-center" name="CliFor_Saida" id="CliFor_Saida">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -320,8 +323,8 @@
               </div>
             </div>
             <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="CliFor_Entrada">Cliente/Fornecedor Entrada:</b>
-              <input type="text" class="form-control input-border-bottom" name="CliFor_Entrada" id="CliFor_Entrada" >
+              <b class="ls-label-text" for="CliFor_Entrada">Cliente/Fornecedor Entrada</b>
+              <input type="text" class="form-control text-center" name="CliFor_Entrada" id="CliFor_Entrada" >
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -331,9 +334,9 @@
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-lg-4">
+            <div class="form-group col-lg-6">
               <b class="ls-label-text" for="Cfg_DataUltExec">Última Execução do Sistema:</b>
-              <input type="text" class="form-control input-border-bottom" name="Cfg_DataUltExec" id="Cfg_DataUltExec"  value="{{ date('d/m/Y') }}"  required readonly>
+              <input type="text" class="form-control text-center" name="Cfg_DataUltExec" id="Cfg_DataUltExec"  value="{{ date('d/m/Y') }}"  required readonly>
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -342,9 +345,9 @@
               </div>
             </div>
 
-            <div class="form-group col-lg-4">
+            <div class="form-group col-lg-6">
               <b class="ls-label-text" for="Cfg_Ultbackup">Último Backup:</b>
-              <input type="text" class="form-control input-border-bottom" name="Cfg_Ultbackup" id="Cfg_Ultbackup"  value="{{ date('d/m/Y') }}"  required readonly>
+              <input type="text" class="form-control text-center" name="Cfg_Ultbackup" id="Cfg_Ultbackup"  value="{{ date('d/m/Y') }}"  required readonly>
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -356,8 +359,8 @@
           <hr>
           <div class="form-row">
             <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Cfg_DirRel">Diretório dos registros:</b>
-              <input type="text" class="form-control input-border-bottom" name="Cfg_DirRel" id="Cfg_DirRel" minlength="5" maxlength="150">
+              <b class="ls-label-text" for="Cfg_DirRel">Diretório dos registros</b>
+              <input type="text" class="form-control text-center" name="Cfg_DirRel" id="Cfg_DirRel" minlength="5" maxlength="150">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -366,30 +369,8 @@
               </div>
             </div>
             <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Cfg_DirFotoProd">Diretório das Fotos dos Produtos:</b>
-              <input type="text" class="form-control input-border-bottom" name="Cfg_DirFotoProd" id="Cfg_DirFotoProd" minlength="5" maxlength="150">
-              <div class="invalid-feedback">
-                Por favor, Campo Obrigatório!
-              </div>
-              <div class="valid-feedback">
-                Tudo certo!
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Cfg_ImpOrcamento">Nome da Impressora(Orçamentos):</b>
-              <input type="text" class="form-control input-border-bottom" name="Cfg_ImpOrcamento" id="Cfg_ImpOrcamento" minlength="3" maxlength="20">
-              <div class="invalid-feedback">
-                Por favor, Campo Obrigatório!
-              </div>
-              <div class="valid-feedback">
-                Tudo certo!
-              </div>
-            </div>
-            <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Cfg_ImpPedido">Nome da Impressora(Pedidos):</b>
-              <input type="text" class="form-control input-border-bottom" name="Cfg_ImpPedido" id="Cfg_ImpPedido" minlength="3" maxlength="20">
+              <b class="ls-label-text" for="Cfg_DirFotoProd">Diretório das Fotos dos Produtos</b>
+              <input type="text" class="form-control text-center" name="Cfg_DirFotoProd" id="Cfg_DirFotoProd" minlength="5" maxlength="150">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -400,8 +381,8 @@
           </div>
           <div class="form-row">
             <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Cfg_ImpOs">Nome da Impressora(OS):</b>
-              <input type="text" class="form-control input-border-bottom" name="Cfg_ImpOs" id="Cfg_ImpOs" minlength="3" maxlength="20">
+              <b class="ls-label-text" for="Cfg_ImpOrcamento">Nome da Impressora(Orçamentos)</b>
+              <input type="text" class="form-control text-center" name="Cfg_ImpOrcamento" id="Cfg_ImpOrcamento" minlength="3" maxlength="20">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -410,30 +391,8 @@
               </div>
             </div>
             <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Cfg_ImpNfe">Nome da Impressora(NFEs):</b>
-              <input type="text" class="form-control input-border-bottom" name="Cfg_ImpNfe" id="Cfg_ImpNfe" minlength="3" maxlength="20">
-              <div class="invalid-feedback">
-                Por favor, Campo Obrigatório!
-              </div>
-              <div class="valid-feedback">
-                Tudo certo!
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Cfg_ImpEtiq">Nome da Impressora(Etiquetas):</b>
-              <input type="text" class="form-control input-border-bottom" name="Cfg_ImpEtiq" id="Cfg_ImpEtiq" minlength="3" maxlength="20">
-              <div class="invalid-feedback">
-                Por favor, Campo Obrigatório!
-              </div>
-              <div class="valid-feedback">
-                Tudo certo!
-              </div>
-            </div>
-            <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Cfg_ImpEtiqMod">Nome da Impressora(Etiquetas Modelo1):</b>
-              <input type="text" class="form-control input-border-bottom" name="Cfg_ImpEtiqMod" id="Cfg_ImpEtiqMod" minlength="3" maxlength="20">
+              <b class="ls-label-text" for="Cfg_ImpPedido">Nome da Impressora(Pedidos)</b>
+              <input type="text" class="form-control text-center" name="Cfg_ImpPedido" id="Cfg_ImpPedido" minlength="3" maxlength="20">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -444,8 +403,52 @@
           </div>
           <div class="form-row">
             <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Cfg_TranSeq">Num Sequen. das Transacoes Fiscais Financeiras:</b>
-              <input type="number" class="form-control input-border-bottom" name="Cfg_TranSeq" id="Cfg_TranSeq"  maxlength="10">
+              <b class="ls-label-text" for="Cfg_ImpOs">Nome da Impressora(OS)</b>
+              <input type="text" class="form-control text-center" name="Cfg_ImpOs" id="Cfg_ImpOs" minlength="3" maxlength="20">
+              <div class="invalid-feedback">
+                Por favor, Campo Obrigatório!
+              </div>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+            <div class="form-group col-lg-6">
+              <b class="ls-label-text" for="Cfg_ImpNfe">Nome da Impressora(NFEs)</b>
+              <input type="text" class="form-control text-center" name="Cfg_ImpNfe" id="Cfg_ImpNfe" minlength="3" maxlength="20">
+              <div class="invalid-feedback">
+                Por favor, Campo Obrigatório!
+              </div>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-lg-6">
+              <b class="ls-label-text" for="Cfg_ImpEtiq">Nome da Impressora(Etiquetas)</b>
+              <input type="text" class="form-control text-center" name="Cfg_ImpEtiq" id="Cfg_ImpEtiq" minlength="3" maxlength="20">
+              <div class="invalid-feedback">
+                Por favor, Campo Obrigatório!
+              </div>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+            <div class="form-group col-lg-6">
+              <b class="ls-label-text" for="Cfg_ImpEtiqMod">Nome da Impressora(Etiquetas Modelo1)</b>
+              <input type="text" class="form-control text-center" name="Cfg_ImpEtiqMod" id="Cfg_ImpEtiqMod" minlength="3" maxlength="20">
+              <div class="invalid-feedback">
+                Por favor, Campo Obrigatório!
+              </div>
+              <div class="valid-feedback">
+                Tudo certo!
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-lg-6">
+              <b class="ls-label-text" for="Cfg_TranSeq">Num Sequen. das Transacoes Fiscais Financeiras</b>
+              <input type="number" class="form-control text-center" name="Cfg_TranSeq" id="Cfg_TranSeq"  maxlength="10">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -458,8 +461,8 @@
           <hr>
         <div class="form-row">
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="SMTP_CorpoEmail">Corpo da Mensagem a ser enviada por email:</b>
-            <input type="text" class="form-control input-border-bottom" name="SMTP_CorpoEmail" id="SMTP_CorpoEmail" >
+            <b class="ls-label-text" for="SMTP_CorpoEmail">Corpo da Mensagem a ser enviada por email</b>
+            <input type="text" class="form-control text-center" name="SMTP_CorpoEmail" id="SMTP_CorpoEmail" >
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -468,8 +471,8 @@
             </div>
           </div>
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="SMTP_Serv">Endereço do servidor SMTP:</b>
-            <input type="text" class="form-control input-border-bottom" name="SMTP_Serv" id="SMTP_Serv"  maxlength="50">
+            <b class="ls-label-text" for="SMTP_Serv">Endereço do servidor SMTP</b>
+            <input type="text" class="form-control text-center" name="SMTP_Serv" id="SMTP_Serv"  maxlength="50">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -480,8 +483,8 @@
         </div>
         <div class="form-row">
           <div class="form-group col-lg-2">
-            <b class="ls-label-text" for="SMTP_Porta">Porta SMTP:</b>
-            <input type="text" class="form-control input-border-bottom" name="SMTP_Porta" id="SMTP_Porta" minlength="1" maxlength="5">
+            <b class="ls-label-text" for="SMTP_Porta">Porta SMTP</b>
+            <input type="text" class="form-control text-center" name="SMTP_Porta" id="SMTP_Porta" minlength="1" maxlength="5">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -490,8 +493,8 @@
             </div>
           </div>
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="SMTP_Usuario">Nome do Usuário no Servidor SMTP:</b>
-            <input type="text" class="form-control input-border-bottom" name="SMTP_Usuario" id="SMTP_Usuario"  minlength="5" maxlength="45">
+            <b class="ls-label-text" for="SMTP_Usuario">Nome do Usuário no Servidor SMTP</b>
+            <input type="text" class="form-control text-center" name="SMTP_Usuario" id="SMTP_Usuario"  minlength="5" maxlength="45">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -500,8 +503,8 @@
             </div>
           </div>
           <div class="form-group col-lg-4">
-            <b class="ls-label-text" for="SMTP_Senha">Senha do Usuário SMTP:</b>
-            <input type="password" class="form-control input-border-bottom" name="SMTP_Senha" id="SMTP_Senha"  minlength="5" maxlength="45">
+            <b class="ls-label-text" for="SMTP_Senha">Senha do Usuário SMTP</b>
+            <input type="password" class="form-control text-center" name="SMTP_Senha" id="SMTP_Senha"  minlength="5" maxlength="45">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -529,8 +532,8 @@
         </div>
         <div class="form-row">
         <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="SMTP_SSL">Tipo de Segurança SSL ou TLS:</b>
-              <select class="form-control input-border-bottom" id="SMTP_SSL" name="SMTP_SSL">
+              <b class="ls-label-text" for="SMTP_SSL">Tipo de Segurança SSL ou TLS</b>
+              <select class="form-control text-center" id="SMTP_SSL" name="SMTP_SSL">
                 <option value="TLS">TLS</option>
                 <option value="SSL">SSL</option>
               </select>
@@ -538,8 +541,8 @@
         </div>
         <div class="form-row">
           <div class="form-group col-lg-4">
-            <b class="ls-label-text" for="WS_Plataforma">Plataforma WebService:</b>
-            <input type="text" class="form-control input-border-bottom" name="WS_Plataforma" id="WS_Plataforma"  maxlength="15">
+            <b class="ls-label-text" for="WS_Plataforma">Plataforma WebService</b>
+            <input type="text" class="form-control text-center" name="WS_Plataforma" id="WS_Plataforma"  maxlength="15">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -548,8 +551,8 @@
             </div>
           </div>
           <div class="form-group col-lg-4">
-            <b class="ls-label-text" for="WB_Endereco">End. do Web Service Ecommerce:</b>
-            <input type="text" class="form-control input-border-bottom" name="WB_Endereco" id="WB_Endereco" maxlength="150">
+            <b class="ls-label-text" for="WB_Endereco">End. do Web Service Ecommerce</b>
+            <input type="text" class="form-control text-center" name="WB_Endereco" id="WB_Endereco" maxlength="150">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -559,8 +562,8 @@
           </div>
           
           <div class="form-group col-lg-4">
-            <b class="ls-label-text" for="WS_WSDL">WSDL do WebService Ecommerce:</b>
-            <input type="text" class="form-control input-border-bottom" name="WS_WSDL" id="WS_WSDL"  maxlength="150">
+            <b class="ls-label-text" for="WS_WSDL">WSDL do WebService Ecommerce</b>
+            <input type="text" class="form-control text-center" name="WS_WSDL" id="WS_WSDL"  maxlength="150">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -571,8 +574,8 @@
         </div>
         <div class="form-row">
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="WS_Usuario">Usuário no WebService Ecommerce:</b>
-            <input type="text" class="form-control input-border-bottom" name="WS_Usuario" id="WS_Usuario"  minlength="4" maxlength="45">
+            <b class="ls-label-text" for="WS_Usuario">Usuário no WebService Ecommerce</b>
+            <input type="text" class="form-control text-center" name="WS_Usuario" id="WS_Usuario"  minlength="4" maxlength="45">
             <div class="invalid-feedback">
               Mínimo 4 caracteres!
             </div>
@@ -581,8 +584,8 @@
             </div>
           </div>
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="WS_Senha">Senha no WebService Ecommerce:</b>
-            <input type="password" class="form-control input-border-bottom" name="WS_Senha" id="WS_Senha"  minlength="4" maxlength="45">
+            <b class="ls-label-text" for="WS_Senha">Senha no WebService Ecommerce</b>
+            <input type="password" class="form-control text-center" name="WS_Senha" id="WS_Senha"  minlength="4" maxlength="45">
             <div class="invalid-feedback">
               Mínimo 4 caracteres!
             </div>
@@ -594,8 +597,8 @@
         <hr>
         <div class="form-row">
           <div class="form-group col-lg-8">
-            <b class="ls-label-text" for="FTP_Endereco">Endereço FTP para subir arquivos:</b>
-            <input type="text" class="form-control input-border-bottom" name="FTP_Endereco" id="FTP_Endereco"  maxlength="150">
+            <b class="ls-label-text" for="FTP_Endereco">Endereço FTP para subir arquivos</b>
+            <input type="text" class="form-control text-center" name="FTP_Endereco" id="FTP_Endereco"  maxlength="150">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -604,8 +607,8 @@
             </div>
           </div>
           <div class="form-group col-lg-4">
-            <b class="ls-label-text" for="FTP_Porta">Porta FTP para subir arquivos:</b>
-            <input type="text" class="form-control input-border-bottom" name="FTP_Porta" id="FTP_Porta">
+            <b class="ls-label-text" for="FTP_Porta">Porta FTP para subir arquivos</b>
+            <input type="text" class="form-control text-center" name="FTP_Porta" id="FTP_Porta">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -616,8 +619,8 @@
         </div>
         <div class="form-row">
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="FTP_Usuario">Usuário FTP para subir arquivos:</b>
-            <input type="text" class="form-control input-border-bottom" name="FTP_Usuario" id="FTP_Usuario" maxlength="50">
+            <b class="ls-label-text" for="FTP_Usuario">Usuário FTP para subir arquivos</b>
+            <input type="text" class="form-control text-center" name="FTP_Usuario" id="FTP_Usuario" maxlength="50">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -626,8 +629,8 @@
             </div>
           </div>
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="FTP_Senha">Senha FTP para subir arquivos:</b>
-            <input type="password" class="form-control input-border-bottom"  name="FTP_Senha" id="FTP_Senha"  maxlength="88">
+            <b class="ls-label-text" for="FTP_Senha">Senha FTP para subir arquivos</b>
+            <input type="password" class="form-control text-center"  name="FTP_Senha" id="FTP_Senha"  maxlength="88">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -639,8 +642,8 @@
         <hr>
         <div class="form-row">
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="Fin_CFixos">Percentual de Custos Fixos para Cálculo Markup:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fin_CFixos" 
+            <b class="ls-label-text" for="Fin_CFixos">Percentual de Custos Fixos para Cálculo Markup</b>
+            <input type="text" class="form-control text-center" name="Fin_CFixos" 
             onblur="fin_CFixos()" id="Fin_CFixos" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -650,8 +653,8 @@
             </div>
           </div>
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="Fin_Desloc">Preço Deslocamento para Cálculo Markup:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fin_Desloc"
+            <b class="ls-label-text" for="Fin_Desloc">Preço Deslocamento para Cálculo Markup</b>
+            <input type="text" class="form-control text-center" name="Fin_Desloc"
             onblur="fin_Desloc()" id="Fin_Desloc"  maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -663,8 +666,8 @@
         </div>
         <div class="form-row">
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="Fin_Comissao">Percentual de Comissão para Cálculo Markup:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fin_Comissao"
+            <b class="ls-label-text" for="Fin_Comissao">Percentual de Comissão para Cálculo Markup</b>
+            <input type="text" class="form-control text-center" name="Fin_Comissao"
             onblur="fin_Comissao()" id="Fin_Comissao" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -674,8 +677,8 @@
             </div>
           </div>
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="Fin_Inad">Percentual de Inadimplência para Cálculo Markup:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fin_Inad"
+            <b class="ls-label-text" for="Fin_Inad">Percentual de Inadimplência para Cálculo Markup</b>
+            <input type="text" class="form-control text-center" name="Fin_Inad"
             onblur="fin_Inad()" id="Fin_Inad" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -687,8 +690,8 @@
         </div>
         <div class="form-row">
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="Fin_Lucro">Percentual Médio de Lucratividade para Calculo Markup:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fin_Lucro" id="Fin_Lucro"
+            <b class="ls-label-text" for="Fin_Lucro">Percentual Médio de Lucratividade para Calculo Markup</b>
+            <input type="text" class="form-control text-center" name="Fin_Lucro" id="Fin_Lucro"
             onblur="fin_Lucro()" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -698,8 +701,8 @@
             </div>
           </div>
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="Fin_DescPV">Percentual de Desconto no Preço à Prazo para Chegar no Preço à Vista:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fin_DescPV" 
+            <b class="ls-label-text" for="Fin_DescPV">Percentual de Desconto no Preço à Prazo para Chegar no Preço à Vista</b>
+            <input type="text" class="form-control text-center" name="Fin_DescPV" 
             onblur="fin_DescPV()" id="Fin_DescPV" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -711,8 +714,8 @@
         </div>
         <div class="form-row">
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="Fin_PerDano">Percentual de Perdas e Danos para Cálculo Markup:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fin_PerDano"
+            <b class="ls-label-text" for="Fin_PerDano">Percentual de Perdas e Danos para Cálculo Markup</b>
+            <input type="text" class="form-control text-center" name="Fin_PerDano"
             onblur="fin_PerDano()" id="Fin_PerDano" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -722,8 +725,8 @@
             </div>
           </div>
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="Fin_JurosPadrao">Juros a ser cobrado no Contas a Receber do Sistema:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fin_JurosPadrao"
+            <b class="ls-label-text" for="Fin_JurosPadrao">Juros a ser cobrado no Contas a Receber do Sistema</b>
+            <input type="text" class="form-control text-center" name="Fin_JurosPadrao"
             onblur="fin_JurosPadrao()" id="Fin_JurosPadrao" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -736,8 +739,8 @@
         <hr>
         <div class="form-row">
           <div class="form-group col-lg-12">
-            <b class="ls-label-text" for="Fin_MsgPadrao">Mensagem padrão a ser impressa nos títulos:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fin_MsgPadrao" id="Fin_MsgPadrao" maxlength="50">
+            <b class="ls-label-text" for="Fin_MsgPadrao">Mensagem padrão a ser impressa nos títulos</b>
+            <input type="text" class="form-control text-center" name="Fin_MsgPadrao" id="Fin_MsgPadrao" maxlength="50">
           </div>
           <div class="invalid-feedback">
             Por favor, Campo Obrigatório!
@@ -746,19 +749,11 @@
             Tudo certo!
           </div>
         </div>
-        <div class="form-row">
-        <div class="form-group col-lg-6">
-                <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="Fin_ControlaCaixa" name="Fin_ControlaCaixa" value="1">Efetuar controle de caixa, exigindo abertura e fechamento diário?
-                    </label>
-                  </div>
-            </div>
-            </div>
+        
         <div class="form-row">
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="Fin_MultaPadrao">Multa padrão a ser aplicada no atraso de títulos:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fin_MultaPadrao"
+            <b class="ls-label-text" for="Fin_MultaPadrao">Multa padrão a ser aplicada no atraso de títulos</b>
+            <input type="text" class="form-control text-center" name="Fin_MultaPadrao"
             onblur="fin_MultaPadrao()" id="Fin_MultaPadrao" maxlength="3" minlength="1" value="0.00">
           </div>
           <div class="invalid-feedback">
@@ -768,8 +763,8 @@
             Tudo certo!
           </div>
           <div class="form-group col-lg-6">
-            <b class="ls-label-text" for="Fin_ForImposto">Fornecedor:</b>
-            <select class="form-control input-border-bottom" id="Fin_ForImposto" name="Fin_ForImposto">
+            <b class="ls-label-text" for="Fin_ForImposto">Fornecedor</b>
+            <select class="form-control text-center" id="Fin_ForImposto" name="Fin_ForImposto">
               <option value="0">Selecione</option>
               @foreach ($clifor as $clifor)
               @can("view_clifor",$clifor)
@@ -788,35 +783,17 @@
         <hr>
 
         <div class="form-row">
-            <div class="form-group col-lg-7">
-                <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="Fin_ComiFrac" name="Fin_ComiFrac" value="1">Utilizar pagamento de comissão fracionada aos vendedores?
-                    </label>
-                  </div>
-            </div>
-            <div class="form-group col-lg-5">
-                <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="Fin_ContrComi" name="Fin_ContrComi" value="1">Controlar Comissões?
-                    </label>
-                  </div>
-            </div>
-            
-        </div>
-        <hr>
-        <div class="form-row">
           <div class="form-group col-lg-4">
-            <b class="ls-label-text" for="Fisc_Tributacao">Regime Tributário:</b>
-            <select class="form-control input-border-bottom" id="Fisc_Tributacao" name="Fisc_Tributacao">
+            <b class="ls-label-text" for="Fisc_Tributacao">Regime Tributário</b>
+            <select class="form-control text-center" id="Fisc_Tributacao" name="Fisc_Tributacao">
               <option value="Simples Nacional">Simples Nacional</option>
               <option value="Lucro Real">Lucro Real</option>
               <option value="Lucro Presumido">Lucro Presumido</option>
             </select>
           </div>
           <div class="form-group col-lg-4">
-            <b class="ls-label-text" for="Fisc_ICMS">Percentual de ICMS do Estado:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fisc_ICMS"
+            <b class="ls-label-text" for="Fisc_ICMS">Percentual de ICMS do Estado</b>
+            <input type="text" class="form-control text-center" name="Fisc_ICMS"
             onblur="fisc_ICMS()" id="Fisc_ICMS" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -826,8 +803,8 @@
             </div>
           </div>
           <div class="form-group col-lg-4">
-            <b class="ls-label-text" for="Fisc_PIS">Percentual de PIS da Atividade:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fisc_PIS"
+            <b class="ls-label-text" for="Fisc_PIS">Percentual de PIS da Atividade</b>
+            <input type="text" class="form-control text-center" name="Fisc_PIS"
             onblur="fisc_PIS()" id="Fisc_PIS" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -839,8 +816,8 @@
         </div>
         <div class="form-row">
           <div class="form-group col-lg-4">
-            <b class="ls-label-text" for="Fisc_COFINS">Percentual de COFINS da Atividade:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fisc_COFINS"
+            <b class="ls-label-text" for="Fisc_COFINS">Percentual de COFINS da Atividade</b>
+            <input type="text" class="form-control text-center" name="Fisc_COFINS"
             onblur="fisc_COFINS()" id="Fisc_COFINS" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -850,8 +827,8 @@
             </div>
           </div>
           <div class="form-group col-lg-4">
-            <b class="ls-label-text" for="Fisc_ISSQN">Percentual de ISS da Atividade:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fisc_ISSQN"
+            <b class="ls-label-text" for="Fisc_ISSQN">Percentual de ISS da Atividade</b>
+            <input type="text" class="form-control text-center" name="Fisc_ISSQN"
             onblur="fisc_ISSQN()" id="Fisc_ISSQN" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -861,8 +838,8 @@
             </div>
           </div>
           <div class="form-group col-lg-4">
-            <b class="ls-label-text" for="Fisc_IRPJ">Percentual de IRPJ da Atividade:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fisc_IRPJ"
+            <b class="ls-label-text" for="Fisc_IRPJ">Percentual de IRPJ da Atividade</b>
+            <input type="text" class="form-control text-center" name="Fisc_IRPJ"
             onblur="fisc_IRPJ()"  id="Fisc_IRPJ" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -875,7 +852,7 @@
         <div class="form-row">
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Fisc_CSLL">Percentual de CSLL da Atividade:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fisc_CSLL"
+            <input type="text" class="form-control text-center" name="Fisc_CSLL"
             onblur="fisc_CSLL()" id="Fisc_CSLL" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -886,7 +863,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Fisc_Simples">Tabela do Simples:</b>
-            <input type="text" class="form-control input-border-bottom" name="Fisc_Simples" id="Fisc_Simples" maxlength="3" minlength="1" value="0.00">
+            <input type="text" class="form-control text-center" name="Fisc_Simples" id="Fisc_Simples" maxlength="3" minlength="1" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -896,7 +873,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Fisc_CFOP">Padrão de Vendas:</b>
-            <select class="form-control input-border-bottom" id="Fisc_CFOP">
+            <select class="form-control text-center" id="Fisc_CFOP">
               <option value="0">Selecione</option>
             </select>
             <div class="invalid-feedback">
@@ -907,20 +884,11 @@
             </div>
           </div>
         </div>
-        <div class="form-row">
-        <div class="form-group col-lg-7">
-                <div class="form-check-inline">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input" id="Fisc_ICMSFixo" name="Fisc_ICMSFixo" value="1">Utilizar ICMS Fixo, descontando o percentual nas Notas de empresa Simples?
-                    </label>
-                  </div>
-            </div>
-
-        </div>
+        
         <div class="form-row">
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="NFe_CertDig">Número do certificado A1 ou A3:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFe_CertDig" id="NFe_CertDig" maxlength="45">
+            <input type="text" class="form-control  text-center" name="NFe_CertDig" id="NFe_CertDig" maxlength="45">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -930,7 +898,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="NFe_WebServ">Estado onde o WS está implantado:</b>
-            <select class="form-control input-border-bottom" id="NFe_WebServ" name="NFe_WebServ">
+            <select class="form-control  text-center" id="NFe_WebServ" name="NFe_WebServ">
               <option value="0">Selecione</option>
               <option value="AC">Acre</option>
               <option value="AL">Alagoas</option>
@@ -963,7 +931,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="NFe_Ambiente">Ambiente de Trabalho:</b>
-            <select class="form-control input-border-bottom" id="NFe_Ambiente" name="NFe_Ambiente">
+            <select class="form-control  text-center" id="NFe_Ambiente" name="NFe_Ambiente">
               <option value="2">Produção</option>
               <option value="1">Homologação</option>
             </select>
@@ -979,7 +947,7 @@
         <div class="form-row">
           <div class="form-group col-lg-8">
             <b class="ls-label-text" for="NFe_Proxy">Proxy a ser utilizado:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFe_Proxy" id="NFe_Proxy" maxlength="150">
+            <input type="text" class="form-control  text-center" name="NFe_Proxy" id="NFe_Proxy" maxlength="150">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -989,7 +957,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="NFe_Porta">Porta do Proxy:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFe_Porta" id="NFe_Porta" maxlength="5">
+            <input type="text" class="form-control text-center" name="NFe_Porta" id="NFe_Porta" maxlength="5">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1001,7 +969,7 @@
         <div class="form-row">
           <div class="form-group col-lg-6">
             <b class="ls-label-text" for="NFe_Usuario">Usuário do Proxy a ser utilizado:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFe_Usuario" id="NFe_Usuario" minlength="4" maxlength="50">
+            <input type="text" class="form-control  text-center" name="NFe_Usuario" id="NFe_Usuario" minlength="4" maxlength="50">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1011,7 +979,7 @@
           </div>
           <div class="form-group col-lg-6">
             <b class="ls-label-text" for="NFe_Senha">Senha do Proxy a ser utilizado:</b>
-            <input type="password" class="form-control input-border-bottom" name="NFe_Senha" id="NFe_Senha" minlength="4" maxlength="50">
+            <input type="password" class="form-control  text-center" name="NFe_Senha" id="NFe_Senha" minlength="4" maxlength="50">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1024,7 +992,7 @@
         <div class="form-row">
           <div class="form-group col-lg-8">
             <b class="ls-label-text" for="NFe_DirXML">Diretório dos Schemas e onde serão salvos os XML das NFes:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFe_DirXML" id="NFe_DirXML" maxlength="150">
+            <input type="text" class="form-control  text-center" name="NFe_DirXML" id="NFe_DirXML" maxlength="150">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1034,7 +1002,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="NFe_FormaEmiss">Forma de Emissão da NFe:</b>
-            <select class="form-control input-border-bottom" id="NFe_FormaEmiss" name="NFe_FormaEmiss">
+            <select class="form-control  text-center" id="NFe_FormaEmiss" name="NFe_FormaEmiss">
               <option value="0" >Selecione</option>
               <option value="Normal">Normal</option>
               <option value="Conting">Contingência</option>
@@ -1050,7 +1018,7 @@
         <div class="form-row">
           <div class="form-group col-lg-2">
             <b class="ls-label-text" for="NFe_Serie">Série da Nota:</b>
-            <select class="form-control input-border-bottom" id="NFe_Serie" name="NFe_Serie">
+            <select class="form-control  text-center" id="NFe_Serie" name="NFe_Serie">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -1058,7 +1026,7 @@
           </div>
           <div class="form-group col-lg-5">
             <b class="ls-label-text" for="NFe_Modelo">Modelo da Nota Eletrônica:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFe_Modelo" id="NFe_Modelo" maxlength="3">
+            <input type="text" class="form-control  text-center" name="NFe_Modelo" id="NFe_Modelo" maxlength="3">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1068,7 +1036,7 @@
           </div>
           <div class="form-group col-lg-5">
             <b class="ls-label-text" for="NFe_Versao">Versão dos Schemas para emissão da Nota:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFe_Versao" id="NFe_Versao" maxlength="4">
+            <input type="text" class="form-control  text-center" name="NFe_Versao" id="NFe_Versao" maxlength="4">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1080,7 +1048,7 @@
         <div class="form-row">
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="NFe_Orient">Orientação de Impressao da Nota:</b>
-            <select class="form-control input-border-bottom" id="NFe_Orient" name="NFe_Orient">
+            <select class="form-control  text-center" id="NFe_Orient" name="NFe_Orient">
               <option value="R">Retrato</option>
               <option value="P">Paisagem</option>
             </select>
@@ -1096,7 +1064,7 @@
         <div class="form-row">
           <div class="form-group col-lg-12">
             <b class="ls-label-text" for="NFe_Obs">Observação a ser impressa no rodapé da NFe:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFe_Obs" id="NFe_Obs">
+            <input type="text" class="form-control  text-center" name="NFe_Obs" id="NFe_Obs">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1109,14 +1077,14 @@
         <div class="form-row">
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="NFCe_Ambiente">Ambiente de trabalho NFCe:</b>
-            <select class="form-control input-border-bottom" id="NFCe_Ambiente" name="NFCe_Ambiente">
+            <select class="form-control i text-center" id="NFCe_Ambiente" name="NFCe_Ambiente">
               <option value="2">Produção</option>
               <option value="1">Homologação</option> 
             </select>
           </div>
           <div class="form-group col-lg-2">
             <b class="ls-label-text" for="NFCe_Serie">Série da NFCe:</b>
-            <select class="form-control input-border-bottom" id="NFCe_Serie" name="NFCe_Serie">
+            <select class="form-control  text-center" id="NFCe_Serie" name="NFCe_Serie">
               <option  value="0">Selecione</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -1125,7 +1093,7 @@
           </div>
           <div class="form-group col-lg-6">
             <b class="ls-label-text" for="NFCe_Modelo">Modelo da NFCe:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFCe_Modelo" id="NFCe_Modelo" maxlength="3">
+            <input type="text" class="form-control  text-center" name="NFCe_Modelo" id="NFCe_Modelo" maxlength="3">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1137,7 +1105,7 @@
         <div class="form-row">
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="NFCe_Versao">Versão dos Schemas da NFCe:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFCe_Versao" id="NFCe_Versao" maxlength="4" value="3.10">
+            <input type="text" class="form-control  text-center" name="NFCe_Versao" id="NFCe_Versao" maxlength="4" value="3.10">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1147,7 +1115,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="NFCe_idToken">Código de Identificação do Token:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFCe_idToken" id="NFCe_idToken" maxlength="11">
+            <input type="text" class="form-control  text-center" name="NFCe_idToken" id="NFCe_idToken" maxlength="11">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1157,7 +1125,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="NFCe_CSC">Número CSC a ser gerado:</b>
-            <input type="text" class="form-control input-border-bottom" name="NFCe_CSC" id="NFCe_CSC" maxlength="45">
+            <input type="text" class="form-control  text-center" name="NFCe_CSC" id="NFCe_CSC" maxlength="45">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1170,7 +1138,7 @@
         <div class="form-row">
           <div class="form-group col-lg-6">
             <b class="ls-label-text" for="Ctb_Email">Email do Contador(envio XML):</b>
-            <input type="email" class="form-control input-border-bottom" name="Ctb_Email" id="Ctb_Email" maxlength="150">
+            <input type="email" class="form-control  text-center" name="Ctb_Email" id="Ctb_Email" maxlength="150">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1180,7 +1148,7 @@
           </div>
           <div class="form-group col-lg-6">
             <b class="ls-label-text" for="Ctb_ContNome">Nome do Contador:</b>
-            <input type="text" class="form-control input-border-bottom" name="Ctb_ContNome" id="Ctb_ContNome" maxlength="60" min="3">
+            <input type="text" class="form-control  text-center" name="Ctb_ContNome" id="Ctb_ContNome" maxlength="60" min="3">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1192,7 +1160,7 @@
         <div class="form-row">
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Ctb_ContCRC">CRC do Contador:</b>
-            <input type="text" class="form-control input-border-bottom" name="Ctb_ContCRC" id="Ctb_ContCRC" maxlength="25">
+            <input type="text" class="form-control  text-center" name="Ctb_ContCRC" id="Ctb_ContCRC" maxlength="25">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1202,7 +1170,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Ctb_ContINSS">ISS do Contador:</b>
-            <input type="text" class="form-control input-border-bottom" name="Ctb_ContINSS" id="Ctb_ContINSS" maxlength="25">
+            <input type="text" class="form-control  text-center" name="Ctb_ContINSS" id="Ctb_ContINSS" maxlength="25">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1212,7 +1180,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Ctb_contCPF">CPF do Contador:</b>
-            <input type="text" class="form-control input-border-bottom" name="Ctb_contCPF" id="Ctb_contCPF" maxlength="14" onblur="validarCPF(this)">
+            <input type="text" class="form-control  text-center" name="Ctb_contCPF" id="Ctb_contCPF" maxlength="14" onblur="validarCPF(this)">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1224,7 +1192,7 @@
         <div class="form-row">
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Ctb_ContFone">Telefone do Contador:</b>
-            <input type="text" class="form-control input-border-bottom" name="Ctb_ContFone" id="Ctb_ContFone">
+            <input type="text" class="form-control  text-center" name="Ctb_ContFone" id="Ctb_ContFone">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1234,7 +1202,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Ctb_RegLocal">Local de Registro do Contador:</b>
-            <input type="text" class="form-control input-border-bottom" name="Ctb_RegLocal" id="Ctb_RegLocal" maxlength="100">
+            <input type="text" class="form-control  text-center" name="Ctb_RegLocal" id="Ctb_RegLocal" maxlength="100">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1244,7 +1212,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Ctb_RegNumero">Número de Registro do Contador:</b>
-            <input type="text" class="form-control input-border-bottom" name="Ctb_RegNumero" id="Ctb_RegNumero" maxlength="50">
+            <input type="text" class="form-control  text-center" name="Ctb_RegNumero" id="Ctb_RegNumero" maxlength="50">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1256,7 +1224,7 @@
         <div class="form-row">
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Ctb_RegData">Data de Registro do Contador:</b>
-            <input type="text" class="form-control input-border-bottom" name="Ctb_RegData" id="Ctb_RegData" placeholder="DD/MM/AAAA">
+            <input type="text" class="form-control  text-center" name="Ctb_RegData" id="Ctb_RegData" placeholder="DD/MM/AAAA">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1276,7 +1244,7 @@
         <div class="form-row">
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Vend_CliForPadrao">Vendedor Padrão:</b>
-            <select class="form-control input-border-bottom" id="Vend_CliForPadrao" name="Vend_CliForPadrao" required>
+            <select class="form-control  text-center" id="Vend_CliForPadrao" name="Vend_CliForPadrao" required>
               <option value="0">Selecione</option>
               @foreach($user as $u)
               @if(auth()->user()->id == $u->adm)
@@ -1293,7 +1261,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Condicao">Condição de venda Padrão:</b>
-            <select class="form-control input-border-bottom" id="Condicao" name="Condicao">
+            <select class="form-control  text-center" id="Condicao" name="Condicao">
               <option  value="0">Selecione</option>
               @foreach($cond_pag as $cond_pag)
               @can("view_condPag",$cond_pag)
@@ -1310,7 +1278,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Vend_FormPadrao">Forma de Pagamento Padrão:</b>
-            <select class="form-control input-border-bottom" id="Vend_FormPadrao" name="Vend_FormPadrao">
+            <select class="form-control  text-center" id="Vend_FormPadrao" name="Vend_FormPadrao">
               <option value="0">Selecione</option>
               @foreach($form_pag as $form_pag)
               @can("view_formPag",$form_pag)
@@ -1331,7 +1299,7 @@
         <div class="form-row">
           <div class="form-group col-lg-12">
             <b class="ls-label-text" for="Vend_DescAdicOrca">Descrição adicional a ser impressa no rodapé dos Orçamentos:</b>
-            <input type="text" class="form-control input-border-bottom" name="Vend_DescAdicOrca" id="Vend_DescAdicOrca" maxlength="150">
+            <input type="text" class="form-control  text-center" name="Vend_DescAdicOrca" id="Vend_DescAdicOrca" maxlength="150">
           </div>
           <div class="invalid-feedback">
             Por favor, Campo Obrigatório!
@@ -1343,7 +1311,7 @@
         <div class="form-row">
           <div class="form-group col-lg-12">
             <b class="ls-label-text" for="Vend_DescAdicPed">Descrição adicional a ser impressa no rodapé dos Pedidos:</b>
-            <input type="text" class="form-control input-border-bottom" name="Vend_DescAdicPed" id="Vend_DescAdicPed" maxlength="150">
+            <input type="text" class="form-control  text-center" name="Vend_DescAdicPed" id="Vend_DescAdicPed" maxlength="150">
           </div>
           <div class="invalid-feedback">
             Por favor, Campo Obrigatório!
@@ -1355,7 +1323,7 @@
         <div class="form-row">
           <div class="form-group col-lg-12">
             <b class="ls-label-text" for="Vend_DescAdicOS">Descrição adicional a ser impressa no rodapé da OS:</b>
-            <input type="text" class="form-control input-border-bottom" name="Vend_DescAdicOS" id="Vend_DescAdicOS" maxlength="150">
+            <input type="text" class="form-control  text-center" name="Vend_DescAdicOS" id="Vend_DescAdicOS" maxlength="150">
           </div>
           <div class="invalid-feedback">
             Por favor, Campo Obrigatório!
@@ -1363,6 +1331,25 @@
           <div class="valid-feedback">
             Tudo certo!
           </div>
+        </div>
+        <div class="form-row">
+        <div class="form-group col-lg-6">
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" id="Fin_ControlaCaixa" name="Fin_ControlaCaixa" value="1">Efetuar controle de caixa, exigindo abertura e fechamento diário?
+                    </label>
+                  </div>
+            </div>
+            </div>
+        <div class="form-row">
+        <div class="form-group col-lg-7">
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" id="Fisc_ICMSFixo" name="Fisc_ICMSFixo" value="1">Utilizar ICMS Fixo, descontando o percentual nas Notas de empresa Simples?
+                    </label>
+                  </div>
+            </div>
+
         </div>
         <div class="form-row">
             <div class="form-group col-lg-6">
@@ -1498,11 +1485,28 @@
             </div>
         
       </div>
+      <div class="form-row">
+            <div class="form-group col-lg-7">
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" id="Fin_ComiFrac" name="Fin_ComiFrac" value="1">Utilizar pagamento de comissão fracionada aos vendedores?
+                    </label>
+                  </div>
+            </div>
+            <div class="form-group col-lg-5">
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" id="Fin_ContrComi" name="Fin_ContrComi" value="1">Controlar Comissões?
+                    </label>
+                  </div>
+            </div>
+            
+        </div>
         <hr>
         <div class="form-row">
           <div class="form-group col-lg-6">
             <b class="ls-label-text" for="Vend_DiasLocacao">Dias padrão para Lançamento de Locações:</b>
-            <input type="text" class="form-control input-border-bottom" name="Vend_DiasLocacao" id="Vend_DiasLocacao" maxlength="5" value="0">
+            <input type="text" class="form-control  text-center" name="Vend_DiasLocacao" id="Vend_DiasLocacao" maxlength="5" value="0">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
             </div>
@@ -1512,7 +1516,7 @@
           </div>
           <div class="form-group col-lg-6">
             <b class="ls-label-text" for="Vend_ProgPtos">Valor base de pontos no prog de fidelidade:</b>
-            <input type="text" class="form-control input-border-bottom" name="Vend_ProgPtos"
+            <input type="text" class="form-control  text-center" name="Vend_ProgPtos"
             onblur="val_base()" id="Vend_ProgPtos" maxlength="10" value="0.00">
           </div>
           <div class="invalid-feedback">
@@ -1527,7 +1531,7 @@
         <div class="form-row">
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Vend_TranspPadrao">Transportadora padrão:</b>
-            <select class="form-control input-border-bottom" id="Vend_TranspPadrao" name="Vend_TranspPadrao">
+            <select class="form-control  text-center" id="Vend_TranspPadrao" name="Vend_TranspPadrao">
               <option value="0">Selecione</option>
               @foreach($transportadora as $transportadora)
               @can("view_transp",$transportadora)
@@ -1544,7 +1548,7 @@
           </div>
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Vend_VlrHora">Valor da hora de trabalho:</b>
-            <input type="text" class="form-control input-border-bottom" name="Vend_VlrHora" 
+            <input type="text" class="form-control  text-center" name="Vend_VlrHora" 
             onblur="val_hora()" id="Vend_VlrHora" maxlength="10" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!
@@ -1556,7 +1560,7 @@
           
           <div class="form-group col-lg-4">
             <b class="ls-label-text" for="Vend_VlrMinimo">Valor mínimo de hora de trabalho:</b>
-            <input type="text" class="form-control input-border-bottom" name="Vend_VlrMinimo"
+            <input type="text" class="form-control  text-center" name="Vend_VlrMinimo"
             onblur="min_hora()" id="Vend_VlrMinimo" maxlength="10" value="0.00">
             <div class="invalid-feedback">
               Por favor, Campo Obrigatório!

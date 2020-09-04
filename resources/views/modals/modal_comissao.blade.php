@@ -27,7 +27,7 @@
                     <div class=" form-row">
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="OS_Ped">Pedido / OS:</b>
-                                <select class="form-control input-border-bottom" id="OS_Ped" name="OS_Ped">
+                                <select class="form-control text-center" id="OS_Ped" name="OS_Ped">
                                     <option value="0">Selecione</option>
                                 </select>
                                 <div class="invalid-feedback">
@@ -39,7 +39,7 @@
                             </div>
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Cod_Venda">Venda:</b>
-                                <select class="form-control input-border-bottom" id="Cod_Venda" name="Cod_Venda">
+                                <select class="form-control text-center" id="Cod_Venda" name="Cod_Venda">
                                     <option value="0">Selecione</option>
                                 </select>
                                 <div class="invalid-feedback">
@@ -52,9 +52,9 @@
 
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Cod_Fun">Funcionário:</b>
-                                <select class="form-control input-border-bottom" id="Cod_Fun"
+                                <select class="form-control text-center" id="Cod_Fun"
                                     name="Cod_Fun" required>
-                                    <option value="0">Selecione</option>
+                                    <option value="">Selecione</option>
                                     @foreach($funcionario as $u)
                                     @can('update_funcionario',$u)
                                             <option value="{{ $u->Codigo }}">{{ $u->Nome }}</option>
@@ -70,7 +70,7 @@
                             </div>
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Valor">Valor da Venda:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Valor"
+                                <input type="text" class="form-control text-center" name="Valor"
                                     id="Valor" onblur="valor()" minlength="3"  maxlength="3" value="0.00">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -83,7 +83,7 @@
                         <div class="form-row">
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Cod_Item">Cod do Item:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Cod_Item"
+                                <input type="text" class="form-control text-center" name="Cod_Item"
                                     id="Cod_Item" required>
                                     <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -94,7 +94,7 @@
                             </div>
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Transacao">Transação:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Transacao"
+                                <input type="text" class="form-control text-center" name="Transacao"
                                     id="Transacao" required>
                                     <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -105,7 +105,7 @@
                             </div>
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Comissao">Comissão:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Comissao"
+                                <input type="text" class="form-control text-center" name="Comissao"
                                     id="Comissao" onblur="comissao()" minlength="3" value="0.00">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -116,7 +116,7 @@
                             </div>
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Data_Prev">Previsão para Pagamento:</b>
-                                <input type="date" class="form-control input-border-bottom" name="Data_Prev"
+                                <input type="date" class="form-control text-center" name="Data_Prev"
                                     id="Data_Prev" required>
                                     <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -129,7 +129,7 @@
                         <div class="form-row">
                         <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Situacao">Situação:</b>
-                                <select class="form-control input-border-bottom" id="Situacao" name="Situacao"required>
+                                <select class="form-control text-center" id="Situacao" name="Situacao"required>
                                 <option value="">Selecione</option>
                                     <option value="L">Livre</option>
                                     <option value="B">Bloqueado</option>
@@ -144,7 +144,7 @@
                             </div>
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Status">Status:</b>
-                                <select class="form-control input-border-bottom" id="Status" name="Status" required>
+                                <select class="form-control text-center" id="Status" name="Status" required>
                                 <option value="">Selecione</option>
                                     <option value="A">Aberto</option>
                                     <option value="P">Pago</option>
@@ -159,7 +159,7 @@
 
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Cod_Conta">Contas a Receber:</b>
-                                <select class="form-control input-border-bottom" id="Cod_Conta"
+                                <select class="form-control text-center" id="Cod_Conta"
                                     name="Cod_Conta" required>
                                     <option value="">Selecione</option>
                                     @foreach($contas_receber as $u)

@@ -15,20 +15,20 @@
   <div class="form-row">
             <div class="form-group col-lg-12" hidden>
                 <b class="ls-label-text" for="RG">User_ID:</b>
-                <input type="text" class="form-control input-border-bottom" name="user_id" id="user_id" readonly
+                <input type="text" class="form-control  text-center" name="user_id" id="user_id" readonly
                     value="{{ Auth::user()->id }}">
             </div>
         </div>
     <div class="form-row">
       <div class="form-group col-lg-1" hidden>
         <label for="Cod_Transp">Transportadora:</label>
-        <input type="text" class="form-control input-border-bottom" name="Cod_Transp" id="Cod_Transp" 
+        <input type="text" class="form-control  text-center" name="Cod_Transp" id="Cod_Transp" 
         value="{{$transportadora->Codigo}}" readonly
         >
       </div>
-      <div class="form-group col-lg-3">
+      <div class="form-group col-lg-4">
         <label for="Destino_Cidade">Cidade</label>
-        <input type="text" class="form-control input-border-bottom" name="Destino_Cidade" id="Destino_Cidade" placeholder="Cidade"
+        <input type="text" class="form-control  text-center" name="Destino_Cidade" id="Destino_Cidade"
         required minlength="3" maxlength="50">
         <div class="invalid-feedback">
           Mínimo 3 caracteres!
@@ -37,9 +37,9 @@
           Tudo certo!
         </div>
       </div>
-      <div class="form-group col-lg-2">
-        <label for="Destino_UF">Estado de Destino:</label>
-        <select class="form-control input-border-bottom" id="Destino_UF" name="Destino_UF" required>
+      <div class="form-group col-lg-4">
+        <label for="Destino_UF">Estado de Destino</label>
+        <select class="form-control  text-center" id="Destino_UF" name="Destino_UF" required>
           <option value="">Selecione</option>
           <option value="AC">Acre</option>
           <option value="AL">Alagoas</option>
@@ -76,9 +76,9 @@
           Tudo certo!
         </div>
       </div>
-      <div class="form-group col-lg-2">
+      <div class="form-group col-lg-4">
         <label for="Indice">Índice para cobrança</label>
-        <input type="text" class="form-control input-border-bottom" name="Indice" id="Indice" maxlength="3"
+        <input type="text" class="form-control text-center" name="Indice" id="Indice" maxlength="3"
         minlength="1" value="0.00" required onblur="indice()">
         <div class="invalid-feedback">
           Por favor, Campo Obrigatório!

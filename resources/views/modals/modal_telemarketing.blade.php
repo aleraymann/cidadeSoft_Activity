@@ -32,7 +32,7 @@
                 <div class=" form-row">
                         <div class="form-group col-lg-2"hidden>
                             <b class="ls-label-text" for="Cod_Func">Responsável:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cod_Func" id="Cod_Func"
+                            <input type="text" class="form-control text-center" name="Cod_Func" id="Cod_Func"
                                 value="  {{ Auth::user()->id }}" readonly >
                             <div class="invalid-feedback">
                                 Campo Obrigatório, Mínimo 4 caracteres!!
@@ -45,7 +45,7 @@
                     <div class="form-row">
                     <div class="form-group col-lg-3 ml-2">
                                 <b class="ls-label-text" for="Cod_CliFor">Cliente/Fornecedor:</b>
-                                <select class="form-control input-border-bottom" name="Cod_CliFor" required>
+                                <select class="form-control text-center" name="Cod_CliFor" required>
                                     <option value="">Selecione</option>
                                     @foreach($clifor as $clifor)
                                         @can('view_clifor', $clifor)
@@ -65,14 +65,11 @@
 
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Data">Data do Contato:</b>
-                            <input type="date" class="form-control input-border-bottom" name="Data" id="Data" required
+                            <b class="ls-label-text" for="Data">Data do Contato</b>
+                            <input type="date" class="form-control text-center" name="Data" id="Data" required
                                 minlength="" maxlength="10" value="{{ date('Y-m-d') }}">
                             <div class="invalid-feedback">
-                                Campo Obrigatório, Mínimo 4 caracteres!!
-                            </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
+                                Campo Obrigatório!!
                             </div>
                         </div>
                         <div class="form-group col-lg-3  mt-3">
@@ -102,8 +99,8 @@
                         </div>
                         <div class="form-row">
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Data_Conclusao">Data do Conclusão do Contato:</b>
-                            <input type="date" class="form-control input-border-bottom" name="Data_Conclusao" id="Data_Conclusao" required
+                            <b class="ls-label-text" for="Data_Conclusao">Data do Conclusão do Contato</b>
+                            <input type="date" class="form-control text-center" name="Data_Conclusao" id="Data_Conclusao" required
                                 minlength="" maxlength="10" value="{{ date('Y-m-d') }}">
                             <div class="invalid-feedback">
                                 Campo Obrigatório, Mínimo 4 caracteres!!
@@ -125,15 +122,13 @@
 
                         <div class="form-row">
                         <div class="form-group col-lg-12">
-                            <b class="ls-label-text" for="Assunto">Assunto abordado:</b>
-                            <textarea type="text" class="form-control input-border-bottom" name="Assunto" id="Assunto"
+                            <b class="ls-label-text" for="Assunto">Assunto abordado</b>
+                            <textarea type="text" class="form-control" name="Assunto" id="Assunto"
                              placeholder=""></textarea>
                             <div class="invalid-feedback">
-                                Campo Obrigatório, Mínimo 4 caracteres!!
+                                Campo Obrigatório!
                             </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
-                            </div>
+                           
                         </div>
                     </div>
 

@@ -30,7 +30,7 @@
                 <div class="form-row">
                 <div class="form-group col-lg-6">
                             <b class="ls-label-text" for="cat_id">Categoria:</b>
-                            <select class="form-control input-border-bottom" required id="cat_id" name="cat_id">
+                            <select class="form-control text-center" required id="cat_id" name="cat_id">
                                 <option value="">Selecione</option>
                                 @foreach ($cat_planocontas as $c)
                                 @can('view_cat_planocontas', $c)
@@ -47,7 +47,7 @@
                         </div>
                     <div class="form-group col-lg-6">
                         <b class="ls-label-text" for="Descricao">Descrição:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao" placeholder=""
+                        <input type="text" class="form-control text-center" name="Descricao" id="Descricao" placeholder=""
                             required minlength="" maxlength="15">
                         <div class="invalid-feedback">
                             Campo Obrigatório!!

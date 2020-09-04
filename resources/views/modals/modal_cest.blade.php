@@ -26,8 +26,8 @@
           </div>
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="CEST">CEST:</b>
-                            <input type="text" class="form-control input-border-bottom" name="CEST" id="CEST" minlength="3" required  maxlength="10">
+                            <b class="ls-label-text" for="CEST">CEST</b>
+                            <input type="text" class="form-control text-center" name="CEST" id="CEST" minlength="3" required  maxlength="10">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
                             </div>
@@ -36,8 +36,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="NCM">NCM:</b>
-                            <select class="form-control input-border-bottom" required id="NCM" name="NCM">
+                            <b class="ls-label-text" for="NCM">NCM</b>
+                            <select class="form-control text-center" required id="NCM" name="NCM">
                                 <option value="">Selecione</option>
                                 @foreach ($ncm as $ncm)
                                 @can('view_ncm', $ncm)
@@ -53,9 +53,9 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-6">
-                            <b class="ls-label-text" for="Descricao	">Descrição:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao"
-                            placeholder=""   minlength="5" maxlength="45">
+                            <b class="ls-label-text" for="Descricao">Descrição</b>
+                            <input type="text" class="form-control text-center" name="Descricao" id="Descricao"
+                            placeholder=""   minlength="5" maxlength="45" required>
                             <div class="invalid-feedback">
                                 Por favor, Mínimo 5 caracteres!
                             </div>

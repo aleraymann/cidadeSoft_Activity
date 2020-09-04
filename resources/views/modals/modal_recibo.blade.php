@@ -31,8 +31,8 @@
           </div>
                 <div class=" form-row">
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Pag_Rec">Pago/Recebido:</b>
-                                <select class="form-control input-border-bottom" name="Pag_Rec" required>
+                                <b class="ls-label-text" for="Pag_Rec">Pago/Recebido</b>
+                                <select class="form-control text-center" name="Pag_Rec" required>
                                     <option value="">Selecione</option>
                                     <option value="P">Pago</option>
                                     <option value="R">Recebido</option>
@@ -45,8 +45,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Rec_De">Recebido de:</b>
-                                <select class="form-control input-border-bottom" name="Rec_De" id="Rec_De">
+                                <b class="ls-label-text" for="Rec_De">Recebido de</b>
+                                <select class="form-control text-center" name="Rec_De" id="Rec_De">
                                     <option value="">Selecione</option>
                                     @foreach($clifor as $clifor)
                                         @can('view_clifor', $clifor)
@@ -63,8 +63,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Pag_Para">Pago Para:</b>
-                                <select class="form-control input-border-bottom" name="Pag_Para" id="Pag_Para">
+                                <b class="ls-label-text" for="Pag_Para">Pago Para</b>
+                                <select class="form-control text-center" name="Pag_Para" id="Pag_Para">
                                     <option value="">Selecione</option>
                                     @foreach($clifor1 as $clifor)
                                         @can('view_clifor', $clifor)
@@ -81,8 +81,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Valor">Valor:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Valor" id="Valor"
+                                <b class="ls-label-text" for="Valor">Valor</b>
+                                <input type="text" class="form-control text-center" name="Valor" id="Valor"
                                     minlength="3" maxlength="10" value="0.00" required onblur="valor()" required>
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -95,8 +95,8 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Data">Data:</b>
-                                <input type="date" class="form-control input-border-bottom" name="Data" id="Data"
+                                <b class="ls-label-text" for="Data">Data</b>
+                                <input type="date" class="form-control text-center" name="Data" id="Data"
                                     required minlength="" maxlength="10" required>
                                 <div class="invalid-feedback">
                                     Campo Obrigatório, Mínimo 4 caracteres!!
@@ -107,7 +107,7 @@
                             </div>
                             <div class="form-group col-lg-9">
                                 <b class="ls-label-text" for="Referente">Referente a:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Referente"
+                                <input type="text" class="form-control text-center" name="Referente"
                                     id="Referente" minlength="3" maxlength="100" required>
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -121,7 +121,7 @@
                         <div class="form-row">
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Ben_Nome">Nome do Beneficiário:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Ben_Nome"
+                                <input type="text" class="form-control text-center" name="Ben_Nome"
                                     id="Ben_Nome" minlength="3" maxlength="45">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -132,7 +132,7 @@
                             </div>
                             <div class="form-group col-lg-4">
                                 <b class="ls-label-text" for="Ben_End">Endereço do Beneficiário:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Ben_End" id="Ben_End"
+                                <input type="text" class="form-control text-center" name="Ben_End" id="Ben_End"
                                     minlength="3" maxlength="45">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -143,29 +143,24 @@
                             </div>
                             <div class="form-group col-lg-2">
                                 <b class="ls-label-text" for="Doc">Documento:</b>
-                                <select onchange="verifica(this.value)" class="form-control input-border-bottom"
+                                <select onchange="verifica(this.value)" class="form-control text-center"
                                     id="Doc" name="Doc">
                                     <option value="0">Selecione</option>
                                     <option value="1">CPF</option>
                                     <option value="2">CNPJ</option>
                                 </select>
-                                <div class="invalid-feedback">
-                                    Por favor, Campo Obrigatório!
-                                </div>
-                                <div class="valid-feedback">
-                                    Tudo certo!
-                                </div>
+                             
                             </div>
                             <div class="form-group col-lg-3" id="CPF" hidden>
                                 <b class="ls-label-text" for="Ben_CPF_CNPJ">CPF do Beneficiario:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Ben_CPF_CNPJ"
+                                <input type="text" class="form-control text-center" name="Ben_CPF_CNPJ"
                                     id="iCPF" minlength="3" maxlength="11" onblur="validarCPF(this)">
 
                             </div>
 
                             <div class="form-group col-lg-3" id="CNPJ" hidden >
                                 <b class="ls-label-text" for="Ben_CPF_CNPJ">CNPJ do Beneficiario:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Ben_CPF_CNPJ"
+                                <input type="text" class="form-control text-center" name="Ben_CPF_CNPJ"
                                     id="iCNPJ" minlength="3" maxlength="14" onblur="validarCNPJ(this)">
                             </div>
 
@@ -173,7 +168,7 @@
                         <div class="form-row">
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Em_Nome">Nome do Emitente:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Em_Nome" id="Em_Nome"
+                                <input type="text" class="form-control text-center" name="Em_Nome" id="Em_Nome"
                                     minlength="3" maxlength="45">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -184,7 +179,7 @@
                             </div>
                             <div class="form-group col-lg-4">
                                 <b class="ls-label-text" for="Em_End">Endereço do Emitente:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Em_End" id="Em_End"
+                                <input type="text" class="form-control text-center" name="Em_End" id="Em_End"
                                     minlength="3" maxlength="45">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -195,38 +190,33 @@
                             </div>
                             <div class="form-group col-lg-2">
                                 <b class="ls-label-text" for="Doc2">Documento:</b>
-                                <select onchange="verifica2(this.value)" class="form-control input-border-bottom"
+                                <select onchange="verifica2(this.value)" class="form-control text-center"
                                     id="Doc2" name="Doc2">
                                     <option value="0">Selecione</option>
                                     <option value="1">CPF</option>
                                     <option value="2">CNPJ</option>
                                 </select>
-                                <div class="invalid-feedback">
-                                    Por favor, Campo Obrigatório!
-                                </div>
-                                <div class="valid-feedback">
-                                    Tudo certo!
-                                </div>
+                              
                             </div>
                             <div class="form-group col-lg-3" id="CPF2" hidden>
                             
                                 <b class="ls-label-text" for="Em_CPF_CNPJ">CPF do Emitente:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Em_CPF_CNPJ"
+                                <input type="text" class="form-control text-center" name="Em_CPF_CNPJ"
                                     id="iCPF2" minlength="3" maxlength="11" onblur="validarCPF(this)" >
                             </div>
                             
 
                             <div class="form-group col-lg-3" id="CNPJ2" hidden>
                                 <b class="ls-label-text" for="Em_CPF_CNPJ">CNPJ do Emitente:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Em_CPF_CNPJ"
+                                <input type="text" class="form-control text-center" name="Em_CPF_CNPJ"
                                     id="iCNPJ2" minlength="3" maxlength="14" onblur="validarCNPJ(this)">
                             </div>
 
                         </div>
                         <div class="form-row">
-                            <div class="form-group col-lg-2">
+                            <div class="form-group col-lg-3">
                                 <label for="Transacao">Transação:</label>
-                                <input type="text" class="form-control input-border-bottom" name="Transacao"
+                                <input type="text" class="form-control text-center" name="Transacao"
                                     id="Transacao" minlength="3" maxlength="11">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -237,8 +227,8 @@
                             </div>
                             <div class="form-group col-lg-4">
                                 <label for="Empresa">Empresa:</label>
-                                <select class="form-control input-border-bottom" id="Empresa" name="Empresa">
-                                    <option value="0">Selecione</option>
+                                <select class="form-control text-center" id="Empresa" name="Empresa" required>
+                                    <option value="">Selecione</option>
 
                                     @foreach($empresa as $empresa)
                                         @can("view_empresa",$empresa)

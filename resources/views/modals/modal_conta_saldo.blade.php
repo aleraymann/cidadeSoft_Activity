@@ -38,12 +38,12 @@
         <div class="form-row">
             <div class="form-group col-lg-1" hidden>
                 <label for="Cod_Conta">Conta:</label>
-                <input type="text" class="form-control input-border-bottom" name="Cod_Conta" id="Cod_Conta"
+                <input type="text" class="form-control text-center" name="Cod_Conta" id="Cod_Conta"
                     value="{{ $contacadastro->Codigo }}" readonly>
             </div>
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-4">
                 <b class="ls-label-text" for="Data">Data/Hora Abertura:</b>
-                <input type="text" class="form-control  input-border-bottom" name="Data" id="Data"
+                <input type="text" class="form-control  text-center" name="Data" id="Data"
                     value="{{ date('Y-m-d H:i:s') }}" readonly required>
                 <div class="invalid-feedback">
                     Por Favor, Campo Obrigatório!
@@ -55,13 +55,13 @@
             <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Turno">Turno de Movimento:</b>
                 @if(date('H')>=6 && date('H')<=12)
-                    <input type="text" class="form-control input-border-bottom" name="Turno" id="Turno" value="1"
+                    <input type="text" class="form-control text-center" name="Turno" id="Turno" value="1"
                         readonly required>
                 @elseif(date('H')>=12 && date('H')<=19)
-                    <input type="text" class="form-control input-border-bottom" name="Turno" id="Turno" value="2"
+                    <input type="text" class="form-control text-center" name="Turno" id="Turno" value="2"
                         readonly required>
                 @else
-                    <input type="text" class="form-control input-border-bottom" name="Turno" id="Turno" value="3"
+                    <input type="text" class="form-control text-center" name="Turno" id="Turno" value="3"
                         readonly required>
                 @endif
                 <div class="invalid-feedback">
@@ -73,7 +73,7 @@
             </div>
             <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Saldo_Inicial">Saldo Inicial</b>
-                <input type="text" class="form-control input-border-bottom" name="Saldo_Inicial" id="Saldo_Inicial"
+                <input type="text" class="form-control text-center" name="Saldo_Inicial" id="Saldo_Inicial"
                     minlength="1" maxlength="10" value="0.00" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
@@ -84,7 +84,7 @@
             </div>
             <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Total_Ent">Total de Entrada</b>
-                <input type="text" class="form-control input-border-bottom" name="Total_Ent" id="Total_Ent"
+                <input type="text" class="form-control text-center" name="Total_Ent" id="Total_Ent"
                     minlength="1" maxlength="10" value="0.00" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
@@ -95,7 +95,7 @@
             </div>
             <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Total_Sai">Total de Saída</b>
-                <input type="text" class="form-control input-border-bottom" name="Total_Sai" id="Total_Sai"
+                <input type="text" class="form-control text-center" name="Total_Sai" id="Total_Sai"
                     minlength="1" maxlength="10" value="0.00" required onblur="calcular()">
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
@@ -104,9 +104,12 @@
                     Tudo certo!
                 </div>
             </div>
-            <div class="form-group col-lg-2">
+            
+        </div>
+        <div class="form-row">
+        <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Saldo_Final">Saldo Total: </b>
-                <input type="text" class="form-control input-border-bottom" name="Saldo_Final" id="Saldo_Final"
+                <input type="text" class="form-control text-center" name="Saldo_Final" id="Saldo_Final"
                     minlength="1" maxlength="10" value="0.00" required readonly>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
@@ -115,12 +118,9 @@
                     Tudo certo!
                 </div>
             </div>
-        </div>
-        <div class="form-row">
-
             <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Total_Dinheiro">Total Dinheiro</b>
-                <input type="text" class="form-control input-border-bottom" name="Total_Dinheiro" id="Total_Dinheiro"
+                <input type="text" class="form-control text-center" name="Total_Dinheiro" id="Total_Dinheiro"
                     minlength="1" maxlength="10" value="0.00" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
@@ -131,7 +131,7 @@
             </div>
             <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Total_Cheque">Total Cheque</b>
-                <input type="text" class="form-control input-border-bottom" name="Total_Cheque" id="Total_Cheque"
+                <input type="text" class="form-control text-center" name="Total_Cheque" id="Total_Cheque"
                     minlength="1" maxlength="10" value="0.00" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
@@ -142,7 +142,7 @@
             </div>
             <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Total_Cartao">Total Cartão</b>
-                <input type="text" class="form-control input-border-bottom" name="Total_Cartao" id="Total_Cartao"
+                <input type="text" class="form-control text-center" name="Total_Cartao" id="Total_Cartao"
                     minlength="1" maxlength="10" value="0.00" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
@@ -153,7 +153,7 @@
             </div>
             <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Total_Duplicata">Total Duplicata</b>
-                <input type="text" class="form-control input-border-bottom" name="Total_Duplicata" id="Total_Duplicata"
+                <input type="text" class="form-control text-center" name="Total_Duplicata" id="Total_Duplicata"
                     minlength="1" maxlength="10" value="0.00" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
@@ -164,7 +164,7 @@
             </div>
             <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Tipo">Situação:</b>
-                <select class="form-control input-border-bottom" id="Tipo" name="Tipo">
+                <select class="form-control text-center" id="Tipo" name="Tipo">
                     <option value="A">Aberto</option>
                     <option value="X">Ausente</option>
                     <option value="F">Fechado</option>
@@ -177,9 +177,9 @@
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-lg-4">
+                <div class="form-group col-lg-4" hidden>
                     <b class="ls-label-text" for="Cod_Fun">Funcionário:</b>
-                    <input type="text" class="form-control input-border-bottom" name="Cod_Fun" id="Cod_Fun"
+                    <input type="text" class="form-control text-center" name="Cod_Fun" id="Cod_Fun"
                         minlength="1" maxlength="4" value="{{ Auth::user()->id }}" required readonly>
                     <div class="invalid-feedback">
                         Por favor, Campo Obrigatório!
@@ -188,9 +188,9 @@
                         Tudo certo!
                     </div>
                 </div>
-                <div class="form-group col-lg-3">
+                <div class="form-group col-lg-3" hidden>
                     <b class="ls-label-text" for="Empresa">Empresa:</b>
-                    <input type="text" class="form-control input-border-bottom" name="Empresa" id="Empresa"
+                    <input type="text" class="form-control text-center" name="Empresa" id="Empresa"
                         minlength="1" maxlength="4" value="{{ $contacadastro->Empresa }}" required readonly>
                     <div class="invalid-feedback">
                         Por favor, Campo Obrigatório!

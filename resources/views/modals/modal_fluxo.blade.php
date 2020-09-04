@@ -25,9 +25,9 @@
             </div>
           </div>
                     <div class="form-row">
-                    <div class="form-group col-lg-3">
+                    <div class="form-group col-lg-4">
                                 <b class="ls-label-text" for="Cod_Conta">Conta:</b>
-                                <select class="form-control input-border-bottom" name="Cod_Conta" id="Cod_Conta"
+                                <select class="form-control text-center" name="Cod_Conta" id="Cod_Conta"
                                     required>
                                     <option value="">Selecione</option>
                                     @foreach($conta as $conta)
@@ -47,7 +47,7 @@
                             </div>
                     <div class="form-group col-lg-3">
                         <b class="ls-label-text" for="Data">Data:</b>
-                        <input type="date" class="form-control input-border-bottom" name="Data" id="Data" 
+                        <input type="date" class="form-control text-center" name="Data" id="Data" 
                             required minlength="" maxlength="10"  value="{{ date('Y-m-d') }}">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!!
@@ -58,7 +58,7 @@
                     </div>
                         <div class="form-group col-lg-2">
                             <b class="ls-label-text" for="Saldo">Saldo:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Saldo" id="Saldo" minlength="3" 
+                            <input type="text" class="form-control text-center" name="Saldo" id="Saldo" minlength="3" 
                             maxlength="10" value="0.00" required onblur="saldo()">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -69,7 +69,7 @@
                         </div>
                         <div class="form-group col-lg-3">
                         <b class="ls-label-text" for="Empresa">Empresa:</b>
-                        <select class="form-control input-border-bottom" required id="Empresa" name="Empresa">
+                        <select class="form-control text-center" required id="Empresa" name="Empresa">
                             <option value="">Selecione</option>
                             @foreach($empresa as $empresa)
                             @can('view_empresa', $empresa)

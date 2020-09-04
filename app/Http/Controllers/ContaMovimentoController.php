@@ -11,6 +11,7 @@ use App\model\CentroCusto;
 use App\model\Empresa;
 use App\model\DataContaMovimento;
 use App\model\ContaSaldo;
+
 use Gate;
 use Illuminate\Support\Facades\DB;
 
@@ -21,6 +22,7 @@ class ContaMovimentoController extends Controller
     
     {  
         $conta_movimento = $conta_movimento->all();
+       
         return view('movimento',compact('conta_movimento'));
        
     }
@@ -96,6 +98,7 @@ class ContaMovimentoController extends Controller
     public function visualizar(ContaMovimento $conta_movimento, $id)
     {
         $conta_movimento = ContaMovimento::find($id);
+       
         return view("visual.view_movimento", compact("conta_movimento","id"));
     }
 

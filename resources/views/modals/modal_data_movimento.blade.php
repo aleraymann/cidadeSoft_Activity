@@ -36,10 +36,10 @@
                 <div class=" form-row">
                         <div class="form-group col-lg-6">
                             <b class="ls-label-text" for="Num_caixa">Número do Caixa:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Num_caixa" id="Num_caixa"
+                            <input type="text" class="form-control  text-center" name="Num_caixa" id="Num_caixa"
                                 required minlength="1" maxlength="3">
                             <div class="invalid-feedback">
-                                Campo Obrigatório, Mínimo 4 caracteres!!
+                                Campo Obrigatório!
                             </div>
                             <div class="valid-feedback">
                                 Tudo certo!
@@ -48,13 +48,13 @@
                         <div class="form-group col-lg-6">
                             <b class="ls-label-text" for="Turno">Turno:</b>
                             @if(date('H')>=6 && date('H')<=12)
-                                <input type="text" class="form-control input-border-bottom" name="Turno" id="Turno" value="1"
+                                <input type="text" class="form-control  text-center" name="Turno" id="Turno" value="1"
                                     readonly required>
                             @elseif(date('H')>=12 && date('H')<=19)
-                                <input type="text" class="form-control input-border-bottom" name="Turno" id="Turno" value="2"
+                                <input type="text" class="form-control  text-center" name="Turno" id="Turno" value="2"
                                     readonly required>
                             @else
-                                <input type="text" class="form-control input-border-bottom" name="Turno" id="Turno" value="3"
+                                <input type="text" class="form-control  text-center" name="Turno" id="Turno" value="3"
                                     readonly required>
                             @endif
                             <div class="invalid-feedback">
@@ -68,7 +68,7 @@
                     <div class="form-row">
                         <div class="form-group col-lg-12">
                             <b class="ls-label-text" for="Data">Data do Movimento:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Data" id="Data" required
+                            <input type="text" class="form-control  text-center" name="Data" id="Data" required
                                 minlength="" maxlength="10" value="{{ date('Y-m-d') }}">
                             <div class="invalid-feedback">
                                 Campo Obrigatório, Mínimo 4 caracteres!!

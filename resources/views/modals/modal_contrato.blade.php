@@ -49,7 +49,7 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Dia_Venc">Dia do Venc das Parcelas:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Dia_Venc" id="Dia_Venc" minlength="1" 
+                            <input type="text" class="form-control text-center" name="Dia_Venc" id="Dia_Venc" minlength="1" 
                             maxlength="5" value="0" required onblur="comissao()">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -60,20 +60,15 @@
                         </div>
                         <div class="form-group col-lg-2">
                             <b class="ls-label-text" for="Parceria">Parceria:</b>
-                            <select class="form-control input-border-bottom" name="Parceria" id="Parceria" required onchange="verifica(this.value)">
+                            <select class="form-control text-center" name="Parceria" id="Parceria" required onchange="verifica(this.value)">
                                 <option value="0">Não</option>
                                 <option value="1">Sim</option>
                             </select>
-                            <div class="invalid-feedback">
-                                Por favor, Campo Obrigatório!
-                            </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
-                            </div>
+                           
                         </div>
                         <div class="form-group col-lg-4">
                             <b class="ls-label-text" for="Parceiro">Parceiro:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Parceiro" id="Parceiro" minlength="3" 
+                            <input type="text" class="form-control text-center" name="Parceiro" id="Parceiro" minlength="3" 
                             maxlength="60" disabled placeholder="Parceiro não necessário">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -86,7 +81,7 @@
                     <div class="form-row">
                     <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Perc_Comissao">Comissão:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Perc_Comissao" id="Perc_Comissao" minlength="3" 
+                            <input type="text" class="form-control text-center" name="Perc_Comissao" id="Perc_Comissao" minlength="3" 
                             maxlength="3" value="0.00" required onblur="perc_Comissao()">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -97,7 +92,7 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Data">Data do Contrato:</b>
-                            <input type="date" class="form-control input-border-bottom" name="Data" id="Data" required >
+                            <input type="date" class="form-control text-center" name="Data" id="Data" required >
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
                             </div>
@@ -107,7 +102,7 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Tipo_Cob">Tipo de Cobrança:</b>
-                            <select class="form-control input-border-bottom" name="Tipo_Cob" id="Tipo_Cob" required>
+                            <select class="form-control text-center" name="Tipo_Cob" id="Tipo_Cob" required>
                                 <option value="">Selecione</option>
                                 <option value="Boleto">Boleto</option>
                                 <option value="Cheque">Cheque</option>
@@ -123,7 +118,7 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Convenio">Convenio:</b>
-                            <select class="form-control input-border-bottom"
+                            <select class="form-control text-center"
                                 name="Convenio" required>
                                 <option value="">Selecione</option>
                                 @foreach($convenio as $convenio)
@@ -143,7 +138,7 @@
                     <div class="form-row">
                     <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Valor">Valor da Mensalidade:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Valor" id="Valor" minlength="3" 
+                            <input type="text" class="form-control text-center" name="Valor" id="Valor" minlength="3" 
                             maxlength="10" value="0.00" required onblur="valor()">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -156,7 +151,7 @@
                         <div class="form-row">  
                         <div class="form-group col-lg-12">
                          <label for="Observacoes">Observções Gerais:</label>
-                         <textarea type="text" class="form-control input-border-bottom" name="Observacoes" id="Observacoes"
+                         <textarea type="text" class="form-control text-center" name="Observacoes" id="Observacoes"
                              placeholder=""></textarea>
                          <div class="invalid-feedback">
                              Por favor, Campo Obrigatório!

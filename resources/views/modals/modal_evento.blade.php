@@ -31,8 +31,8 @@
           </div>
           <div class=" form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="cor">Cor de destaque:</b>
-                            <input type="color" class="form-control input-border-bottom" name="cor" id="cor" value="#3e84e0">
+                            <b class="ls-label-text" for="cor">Cor de destaque</b>
+                            <input type="color" class="form-control text-center" name="cor" id="cor" value="#3e84e0">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
                             </div>
@@ -41,8 +41,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-4">
-                        <b class="ls-label-text" for="cod_usuario">Responsável:</b>
-                         <select class="form-control input-border-bottom" id="cod_usuario" name="cod_usuario" required>
+                        <b class="ls-label-text" for="cod_usuario">Responsável</b>
+                         <select class="form-control text-center" id="cod_usuario" name="cod_usuario" required>
                              <option value="">Selecione o Responável</option>
                              <option value="{{ Auth::user()->id }}">{{Auth::user()->name}}</option>
                              @foreach($user as $u)
@@ -60,9 +60,9 @@
                              Tudo certo!
                          </div>
                      </div>
-                     <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="evento">Titulo do evento:</b>
-                            <input type="text" class="form-control input-border-bottom" name="evento" id="evento"
+                     <div class="form-group col-lg-5">
+                            <b class="ls-label-text" for="evento">Titulo do evento</b>
+                            <input type="text" class="form-control text-center" name="evento" id="evento"
                                 minlength="3" maxlength="20" required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -73,9 +73,9 @@
                         </div>
                     </div>
                     <div class=" form-row">
-                    <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="descricao">Descrição:</b>
-                            <input type="text" class="form-control input-border-bottom" name="descricao" id="descricao"
+                    <div class="form-group col-lg-6">
+                            <b class="ls-label-text" for="descricao">Descrição</b>
+                            <input type="text" class="form-control text-center" name="descricao" id="descricao"
                                 minlength="3" maxlength="20" required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -85,8 +85,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="data_inicio">Data de Início:</b>
-                            <input type="date" class="form-control input-border-bottom" name="data_inicio" id="data_inicio"
+                            <b class="ls-label-text" for="data_inicio">Data de Início</b>
+                            <input type="date" class="form-control text-center" name="data_inicio" id="data_inicio"
                                 required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -96,8 +96,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="data_fim">Data de Fim:</b>
-                            <input type="date" class="form-control input-border-bottom" name="data_fim" id="data_fim"
+                            <b class="ls-label-text" for="data_fim">Data de Fim</b>
+                            <input type="date" class="form-control text-center" name="data_fim" id="data_fim"
                                 required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!

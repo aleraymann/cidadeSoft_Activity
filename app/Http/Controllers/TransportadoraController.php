@@ -18,7 +18,9 @@ class TransportadoraController extends Controller
         $criterio = "";
         return view("transportadoras", compact("transportadora","empresa",'criterio'));
     }
-    public function salvar(Request $dadosFormulario, Transportadora $transportadora, $id = null)
+    public function salvar(Request $request, Transportadora $transportadora, $id = null,
+                            Transportadora_Destino $transportadora_destino,
+                            Transportadora_Valor $transportadora_valor)
     {
        //dd($dadosFormulario);
         try
@@ -28,16 +30,59 @@ class TransportadoraController extends Controller
              
                 $dados = $transportadora->find($id);
                 
-                $dados->update($dadosFormulario->all());
+                $dados->update($request->all());
                 return redirect()
                 ->action("TransportadoraController@listar")
                 ->with("toast_success", "Registro Editado Com Sucesso");
             }
             else
             {   
-                $transportadora->create($dadosFormulario->all());
-               //dd($dadosFormulario);
-               //dd($id);
+               //Transportadora
+               $transportadora = new Transportadora;
+               $transportadora->user_id = $request->user_id;
+               $transportadora->Fis_Jur = $request->Fis_Jur;
+               $transportadora->Razao_Social = $request->Razao_Social;
+               $transportadora->Nome_Fantasia = $request->Nome_Fantasia;
+               $transportadora->Endereco = $request->Endereco;
+               $transportadora->Bairro = $request->Bairro;
+               $transportadora->Cidade = $request->Cidade;
+               $transportadora->Estado = $request->Estado;
+               $transportadora->CEP = $request->CEP;
+               $transportadora->Telefone = $request->Telefone;
+               $transportadora->Celular = $request->Celular;
+               $transportadora->Comercial = $request->Comercial;
+               $transportadora->Email = $request->Email;
+               $transportadora->RG = $request->RG;
+               $transportadora->CPF = $request->CPF;
+               $transportadora->IE = $request->IE;
+               $transportadora->CNPJ = $request->CNPJ;
+               $transportadora->Tipo_Frete = $request->Tipo_Frete;
+               $transportadora->FreteM2 = $request->FreteM2;
+               $transportadora->FreteM3 = $request->FreteM3;
+               $transportadora->FretePor = $request->FretePor;
+               $transportadora->FreteM = $request->FreteM;
+               $transportadora->Empresa = $request->Empresa;
+               $transportadora->save();
+
+               //Endereço
+               $transportadora_destino = new Transportadora_Destino;
+               $transportadora_destino->Cod_Transp = $transportadora->Codigo;
+               $transportadora_destino->user_id = $request->user_id;
+               $transportadora_destino->Destino_Cidade = $request->Destino_Cidade;
+               $transportadora_destino->Destino_UF = $request->Destino_UF;
+               $transportadora_destino->Indice = $request->Indice;
+               $transportadora_destino->save();
+
+               //Valor
+                $transportadora_valor = new Transportadora_Valor;
+                $transportadora_valor->Cod_Transp = $transportadora->Codigo;
+                $transportadora_valor->user_id = $request->user_id;
+                $transportadora_valor->KmIni = $request->KmIni;
+                $transportadora_valor->KmFim = $request->KmFim;
+                $transportadora_valor->Indice_v = $request->Indice_v;
+               $transportadora_valor->save();
+            
+
             }
             
             return redirect()

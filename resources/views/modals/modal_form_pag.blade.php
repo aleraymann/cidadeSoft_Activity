@@ -29,9 +29,9 @@
             </div>
           </div>
                     <div class="form-row">
-                        <div class="form-group col-lg-4">
+                        <div class="form-group col-lg-8">
                             <b class="ls-label-text" for="Descricao	">Descrição:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao"
+                            <input type="text" class="form-control text-center" name="Descricao" id="Descricao"
                             placeholder="" required  minlength="2" maxlength="45">
                             <div class="invalid-feedback">
                                 Por favor, Mínimo 2 caracteres!
@@ -40,20 +40,10 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Comi_Operad">Comissão a ser paga:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Comi_Operad" id="Comi_Operad"
-                            onblur="comi_Operad()" minlength="3" value="0.00" required>
-                            <div class="invalid-feedback">
-                                Por favor, Campo Obrigatório!
-                            </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
-                            </div>
-                        </div>
+                       
                         <div class="form-group col-lg-4">
                             <b class="ls-label-text" for="Tx_Antecip">Tava de antecip. de Crédito:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Tx_Antecip" id="Tx_Antecip"
+                            <input type="text" class="form-control text-center" name="Tx_Antecip" id="Tx_Antecip"
                             onblur="tx_Antecip()" minlength="3" value="0.00" required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -62,32 +52,13 @@
                                 Tudo certo!
                             </div>
                         </div>
+                        
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Tipo">Código:</b>
-                            <select class="form-control input-border-bottom" id="Tipo" name="Tipo">
-                                <option value="DI">Dinheiro</option>
-                                <option value="CH">Cheque</option> 
-                                <option value="CC">Cartão de Credito</option> 
-                                <option value="CD">Cartão de Débito</option> 
-                                <option value="BO">BoLeto</option> 
-                                <option value="DM">Duplicata Mercantil</option> 
-                            </select>
-                            <div class="invalid-feedback">
-                                Por favor, Campo Obrigatório!
-                            </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
-                            </div>
-                        </div>
-                        <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Destino">Destino do Pagamento:</b>
-                            <select class="form-control input-border-bottom" id="Destino" name="Destino">
-                                <option value="CX">Caixa</option>
-                                <option value="BC">Banco</option> 
-                                <option value="CT">Contas</option> 
-                            </select>
+                    <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="Comi_Operad">Comissão a ser paga:</b>
+                            <input type="text" class="form-control text-center" name="Comi_Operad" id="Comi_Operad"
+                            onblur="comi_Operad()" minlength="3" value="0.00" required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
                             </div>
@@ -96,14 +67,30 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="Tipo">Código:</b>
+                            <select class="form-control text-center" id="Tipo" name="Tipo">
+                                <option value="DI">Dinheiro</option>
+                                <option value="CH">Cheque</option> 
+                                <option value="CC">Cartão de Credito</option> 
+                                <option value="CD">Cartão de Débito</option> 
+                                <option value="BO">BoLeto</option> 
+                                <option value="DM">Duplicata Mercantil</option> 
+                            </select>
+                            
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="Destino">Destino do Pagamento:</b>
+                            <select class="form-control text-center" id="Destino" name="Destino">
+                                <option value="CX">Caixa</option>
+                                <option value="BC">Banco</option> 
+                                <option value="CT">Contas</option> 
+                            </select>
+                            
+                        </div>
+                        <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Dest_CliFor">Cli/For de Destino:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Dest_CliFor" id="Dest_CliFor" minlength="1" placeholder="COD CliFor">
-                            <div class="invalid-feedback">
-                                Por favor, Campo Obrigatório!
-                            </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
-                            </div>
+                            <input type="text" class="form-control text-center" name="Dest_CliFor" id="Dest_CliFor" minlength="1" placeholder="COD CliFor">
+                            
                         </div>
                     </div>
 

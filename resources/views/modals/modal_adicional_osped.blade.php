@@ -2,7 +2,7 @@
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal">
-    <div class="modal-dialog  modal-lg">
+    <div class="modal-dialog  modal-md">
       <div class="modal-content">
   
         <!-- Modal Header -->
@@ -31,9 +31,9 @@
             </div>
           </div>
             <div class="form-row">
-              <div class="form-group col-lg-3">
+              <div class="form-group col-lg-6">
                 <b class="ls-label-text" for="Cod_item">Cód Item</b>
-                <input type="text" class="form-control input-border-bottom" name="Cod_item" id="Cod_item"
+                <input type="text" class="form-control text-center" name="Cod_item" id="Cod_item"
                 placeholder="" required  minlength="" maxlength="11">
                 <div class="invalid-feedback">
                   Por favor, Campo Obrigatório!
@@ -42,9 +42,9 @@
                   Tudo certo!
                 </div>
               </div>
-              <div class="form-group col-lg-3">
-                <b class="ls-label-text" for="Cod_Ref">Cód de Refêrencia do Item:</b>
-                <input type="text" class="form-control input-border-bottom" name="Cod_Ref" id="Cod_Ref" minlength="5" maxlength="25" required>
+              <div class="form-group col-lg-6">
+                <b class="ls-label-text" for="Cod_Ref">Cód de Refêrencia do Item</b>
+                <input type="text" class="form-control text-center" name="Cod_Ref" id="Cod_Ref" minlength="5" maxlength="25" required>
                 <div class="invalid-feedback"  placeholder="" >
                   Por favor, Campo Obrigatório!
                 </div>
@@ -52,9 +52,11 @@
                   Tudo certo!
                 </div>
               </div>
-              <div class="form-group col-lg-5">
-                <b class="ls-label-text" for="Descricao">Descrição:</b>
-                <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao" minlength="5" maxlength="40" required >
+              </div>
+              <div class="form-row">
+              <div class="form-group col-lg-12">
+                <b class="ls-label-text" for="Descricao">Descrição</b>
+                <input type="text" class="form-control text-center" name="Descricao" id="Descricao" minlength="5" maxlength="40" required >
                 <div class="invalid-feedback">
                   Por favor, Campo Obrigatório!
                 </div>
@@ -64,9 +66,9 @@
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-lg-3">
+              <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Valor">Valor</b>
-                <input type="text" class="form-control input-border-bottom" name="Valor" id="Valor" 
+                <input type="text" class="form-control text-center" name="Valor" id="Valor" 
                 onblur="valor()" value="0.00" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
@@ -75,9 +77,9 @@
                     Tudo certo!
                   </div>
               </div>
-              <div class="form-group col-lg-3">
+              <div class="form-group col-lg-5">
                 <b class="ls-label-text" for="Qtd_Alterar">Quantidade a Alterar:</b>
-                <input type="text" class="form-control input-border-bottom" name="Qtd_Alterar" id="Qtd_Alterar" value="0.0000" required>
+                <input type="text" class="form-control text-center" name="Qtd_Alterar" id="Qtd_Alterar" value="0.0000" required>
               </div>
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
@@ -85,9 +87,9 @@
               <div class="valid-feedback">
                 Tudo certo!
               </div>
-              <div class="form-group col-lg-3">
+              <div class="form-group col-lg-5">
                 <b class="ls-label-text" for="Cod_Item_Dev">Cod Item de Devoluçao:</b>
-                <input type="text" class="form-control input-border-bottom" name="Cod_Item_Dev" id="Cod_Item_Dev"
+                <input type="text" class="form-control text-center" name="Cod_Item_Dev" id="Cod_Item_Dev"
                 value="0" required>
               </div>
               <div class="invalid-feedback">
@@ -98,9 +100,9 @@
               </div>
             </div>
             <div class="form-row">
-              <div class="form-group col-lg-4">
+              <div class="form-group col-lg-6">
                 <b class="ls-label-text" for="Cod_Ref_Dev">Cod Ref Item de Devoluçao:</b>
-                <input type="text" class="form-control input-border-bottom" name="Cod_Ref_Dev" id="Cod_Ref_Dev"
+                <input type="text" class="form-control text-center" name="Cod_Ref_Dev" id="Cod_Ref_Dev"
                  required>
                  <div class="invalid-feedback">
                   Por favor, Campo Obrigatório!
@@ -110,9 +112,9 @@
                 </div>
               </div>
               
-              <div class="form-group col-lg-4">
+              <div class="form-group col-lg-6">
                 <b class="ls-label-text" for="Qtd_Dev">Quantidade a Devolver:</b>
-                <input type="text" class="form-control input-border-bottom" name="Qtd_Dev" id="Qtd_Dev"
+                <input type="text" class="form-control text-center" name="Qtd_Dev" id="Qtd_Dev"
                 value="0.0000" required>
               </div>
               <div class="invalid-feedback">

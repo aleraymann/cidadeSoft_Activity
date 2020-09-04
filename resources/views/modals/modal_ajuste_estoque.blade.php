@@ -28,7 +28,7 @@
             <div class=" form-row">
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Data">Data do Ajuste</b>
-                                <input type="date" class="form-control input-border-bottom" name="Data" id="Data"
+                                <input type="date" class="form-control text-center" name="Data" id="Data"
                                     required maxlength="10"  value="{{ date('Y-m-d') }}">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -39,20 +39,15 @@
                             </div>
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Tipo_Mov">Tipo do Movimento</b>
-                                <select class="form-control input-border-bottom" id="Tipo_Mov" name="Tipo_Mov">
+                                <select class="form-control text-center" id="Tipo_Mov" name="Tipo_Mov">
                                     <option value="E">Entrada</option>
                                     <option value="S">Saída</option>
                                 </select>
-                                <div class="invalid-feedback">
-                                    Por favor, Campo Obrigatório!
-                                </div>
-                                <div class="valid-feedback">
-                                    Tudo certo!
-                                </div>
+                               
                             </div>
                             <div class="form-group col-lg-6">
                                 <b class="ls-label-text" for="Justificativa">Justificativa:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Justificativa"
+                                <input type="text" class="form-control text-center" name="Justificativa"
                                     id="Justificativa" minlength="5" maxlength="50" required>
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -66,21 +61,16 @@
                         <div class="form-row">
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Situacao">Tipo do Movimento</b>
-                                <select class="form-control input-border-bottom" id="Situacao" name="Situacao">
+                                <select class="form-control text-center" id="Situacao" name="Situacao">
                                     <option value="Aberto">Aberto</option>
                                     <option value="Executado">Executado</option>
                                 </select>
-                                <div class="invalid-feedback">
-                                    Por favor, Campo Obrigatório!
-                                </div>
-                                <div class="valid-feedback">
-                                    Tudo certo!
-                                </div>
+                               
                             </div>
                             
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Cod_Fun">Funcionário:</b>
-                                <select class="form-control input-border-bottom" id="Cod_Fun"
+                                <select class="form-control text-center" id="Cod_Fun"
                                     name="Cod_Fun" required>
                                     <option value="0">Selecione</option>
                                     @foreach($funcionario as $u)
@@ -98,7 +88,7 @@
                             </div>
                             <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="Cod_CliFor">Cliente/Fornecedor:</b>
-                                <select class="form-control input-border-bottom" id="Cod_CliFor" name="Cod_CliFor">
+                                <select class="form-control text-center" id="Cod_CliFor" name="Cod_CliFor">
                                     <option value="0">Selecione</option>
                                     @foreach($clifor as $clifor)
                                         @can('view_clifor', $clifor)
@@ -116,7 +106,7 @@
                             </div>
                                 <div class="form-group col-lg-3">
                                     <b class="ls-label-text" for="Empresa">Empresa:</b>
-                                    <select class="form-control input-border-bottom" id="Empresa" name="Empresa">
+                                    <select class="form-control text-center" id="Empresa" name="Empresa">
                                         <option value="0">Selecione</option>
                                         @foreach($empresa as $empresa)
                                             @can('view_empresa', $empresa)

@@ -29,8 +29,8 @@
                 </div>
                 <div class=" form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Data">Data da Remessa:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Data" id="Data"
+                            <b class="ls-label-text" for="Data">Data da Remessa</b>
+                            <input type="text" class="form-control text-center" name="Data" id="Data"
                                 value="{{ date('Y-m-d') }}" required readonly>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -40,8 +40,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Hora">Hora da Remessa:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Hora" id="Hora"
+                            <b class="ls-label-text" for="Hora">Hora da Remessa</b>
+                            <input type="text" class="form-control text-center" name="Hora" id="Hora"
                                 value="{{ date(' H:i:s') }}" readonly required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -52,7 +52,7 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Numero_Rem">Numero da Remessa</b>
-                            <input type="text" class="form-control input-border-bottom" name="Numero_Rem"
+                            <input type="text" class="form-control text-center" name="Numero_Rem"
                                 id="Numero_Rem" placeholder="" required minlength="" maxlength="11">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -63,9 +63,9 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Cod_Conv">Convênio da Cobrança</b>
-                            <select class="form-control input-border-bottom"
+                            <select class="form-control text-center"
                                 name="Cod_Conv" required>
-                                <option value="0">Selecione</option>
+                                <option value="">Selecione</option>
                                 @foreach($convenio as $convenio)
                                     @can("view_convenio",$convenio)
                                         <option value="{{ $convenio->Codigo }}">{{ $convenio->Convenio }}</option>
@@ -81,9 +81,9 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-lg-6">
-                            <b class="ls-label-text" for="Arquivo">Caminho do Arquivo:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Arquivo" id="Arquivo"
+                        <div class="form-group col-lg-12">
+                            <b class="ls-label-text" for="Arquivo">Caminho do Arquivo</b>
+                            <input type="text" class="form-control text-center" name="Arquivo" id="Arquivo"
                                 required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!

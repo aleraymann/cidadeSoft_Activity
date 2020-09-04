@@ -30,8 +30,8 @@
           </div>
                     <div class="form-row">
                     <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Moeda">Moeda:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Moeda" id="Moeda" minlength="1" placeholder="Real, Euro, Dolar, etc." required>
+                            <b class="ls-label-text" for="Moeda">Moeda</b>
+                            <input type="text" class="form-control text-center" name="Moeda" id="Moeda" minlength="1" placeholder="Real, Euro, Dolar, etc." required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
                             </div>
@@ -40,8 +40,8 @@
                             </div>
                         </div>
                     <div class="form-group col-lg-4">
-                        <b class="ls-label-text" for="Data">Data da Cotação:</b>
-                        <input type="date" class="form-control input-border-bottom" name="Data" id="Data" 
+                        <b class="ls-label-text" for="Data">Data da Cotação</b>
+                        <input type="date" class="form-control text-center" name="Data" id="Data" 
                             required minlength="" maxlength="10"  value="{{ date('Y-m-d') }}">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!!
@@ -51,8 +51,8 @@
                         </div>
                     </div>
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Cotacao">Cotação:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cotacao" id="Cotacao" minlength="3" 
+                            <b class="ls-label-text" for="Cotacao">Cotação</b>
+                            <input type="text" class="form-control text-center" name="Cotacao" id="Cotacao" minlength="3" 
                             maxlength="10" value="0.00" required onblur="cotacao()">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!

@@ -31,8 +31,8 @@
           </div>
                 <div class=" form-row">
                         <div class="form-group col-lg-2"hidden>
-                            <b class="ls-label-text" for="Responsavel">Responsável:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Responsavel" id="Responsavel"
+                            <b class="ls-label-text" for="Responsavel">Responsável</b>
+                            <input type="text" class="form-control text-center" name="Responsavel" id="Responsavel"
                                 value="  {{ Auth::user()->id }}" readonly >
                             <div class="invalid-feedback">
                                 Campo Obrigatório, Mínimo 4 caracteres!!
@@ -44,8 +44,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Data">Data:</b>
-                            <input type="date" class="form-control input-border-bottom" name="Data" id="Data" required
+                            <b class="ls-label-text" for="Data">Data</b>
+                            <input type="date" class="form-control text-center" name="Data" id="Data" required
                                 minlength="" maxlength="10" value="{{ date('Y-m-d') }}">
                             <div class="invalid-feedback">
                                 Campo Obrigatório, Mínimo 4 caracteres!!
@@ -55,8 +55,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-9">
-                            <b class="ls-label-text" for="Descricao">Descrição:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao" required
+                            <b class="ls-label-text" for="Descricao">Descrição</b>
+                            <input type="text" class="form-control text-center" name="Descricao" id="Descricao" required
                                 minlength="4" maxlength="30">
                             <div class="invalid-feedback">
                                 Campo Obrigatório, Mínimo 4 caracteres!!

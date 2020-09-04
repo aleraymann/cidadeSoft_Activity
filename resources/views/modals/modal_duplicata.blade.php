@@ -26,8 +26,8 @@
           </div>
           <div class=" form-row">
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Cod_NF">NF:</b>
-                            <select class="form-control input-border-bottom" name="Cod_NF" id="Cod_NF" required>
+                            <b class="ls-label-text" for="Cod_NF">NF</b>
+                            <select class="form-control text-center" name="Cod_NF" id="Cod_NF" required>
                                 <option value="0">Selecione</option>
                             </select>
                             <div class="invalid-feedback">
@@ -38,8 +38,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Fatura">Num da Fatura:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Fatura" id="Fatura"
+                            <b class="ls-label-text" for="Fatura">Num da Fatura</b>
+                            <input type="text" class="form-control text-center" name="Fatura" id="Fatura"
                                 maxlength="10" required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -49,8 +49,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Valor">Valor:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Valor" id="Valor"
+                            <b class="ls-label-text" for="Valor">Valor</b>
+                            <input type="text" class="form-control text-center" name="Valor" id="Valor"
                                 maxlength="10" required onblur="valor()" value="0.00">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -60,8 +60,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Vencimento">Vencimento:</b>
-                            <input type="date" class="form-control input-border-bottom" name="Vencimento" id="Vencimento"
+                            <b class="ls-label-text" for="Vencimento">Vencimento</b>
+                            <input type="date" class="form-control text-center" name="Vencimento" id="Vencimento"
                                 maxlength="10" required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -71,8 +71,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_CliFor">Cliente/Fornecedor:</b>
-                            <select class="form-control input-border-bottom" name="Cod_CliFor" id="Cod_CliFor" required>
+                            <b class="ls-label-text" for="Cod_CliFor">Cliente/Fornecedor</b>
+                            <select class="form-control text-center" name="Cod_CliFor" id="Cod_CliFor" required>
                                 <option value="">Selecione</option>
                                 @foreach($clifor as $clifor)
                                     @can('view_clifor', $clifor)
@@ -89,9 +89,9 @@
                         </div>
                     </div>
                     <div class="form-row">
-                    <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_Boleto">Boleto:</b>
-                            <select class="form-control input-border-bottom" name="Cod_Boleto" id="Cod_Boleto" required>
+                    <div class="form-group col-lg-4">
+                            <b class="ls-label-text" for="Cod_Boleto">Boleto</b>
+                            <select class="form-control text-center" name="Cod_Boleto" id="Cod_Boleto" required>
                                 <option value="">Selecione</option>
                                 @foreach($boleto as $boleto)
                                     @can('view_boletoTit', $boleto)
@@ -106,9 +106,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Empresa">Empresa:</b>
-                            <select class="form-control input-border-bottom" name="Empresa" id="Empresa" required>
+                        <div class="form-group col-lg-4">
+                            <b class="ls-label-text" for="Empresa">Empresa</b>
+                            <select class="form-control text-center" name="Empresa" id="Empresa" required>
                                 <option value="">Selecione</option>
                                 @foreach($empresa as $empresa)
                                     @can('view_empresa', $empresa)
@@ -123,9 +123,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Transacao">Transação:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Transacao" id="Transacao"
+                        <div class="form-group col-lg-4">
+                            <b class="ls-label-text" for="Transacao">Transação</b>
+                            <input type="text" class="form-control text-center" name="Transacao" id="Transacao"
                                 maxlength="10" required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!

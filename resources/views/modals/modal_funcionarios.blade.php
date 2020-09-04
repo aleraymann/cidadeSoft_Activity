@@ -28,7 +28,7 @@
           <div class="form-row">
             <div class="form-group col-lg-4">
               <b class="ls-label-text" for="Nome">Nome</b>
-              <input type="text" class="form-control  input-border-bottom" name="Nome" id="Nome"
+              <input type="text" class="form-control  text-center" name="Nome" id="Nome"
               placeholder="Nome do Funcionário" required  minlength="3" maxlength="45">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
@@ -38,68 +38,58 @@
               </div>
             </div>
             <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="RG">RG:</b>
-              <input type="text" class="form-control  input-border-bottom" name="RG" id="RG" minlength="8" maxlength="13">
-              <div class="invalid-feedback"  placeholder="Somente os números" >
-                Por favor, Campo Obrigatório!
-              </div>
-              <div class="valid-feedback">
-                Tudo certo!
-              </div>
+              <b class="ls-label-text" for="RG">RG</b>
+              <input type="text" class="form-control  text-center" name="RG" id="RG" minlength="8" maxlength="13">
+              
             </div>
             <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="CPF">CPF:</b>
-              <input type="text" class="form-control  input-border-bottom" name="CPF" id="CPF" minlength="11" maxlength="13" onblur="validarCPF(this)">
-              <div class="invalid-feedback">
-                Por favor, Campo Obrigatório!
-              </div>
-              <div class="valid-feedback">
-                Tudo certo!
-              </div>
+              <b class="ls-label-text" for="CPF">CPF</b>
+              <input type="text" class="form-control text-center" name="CPF" id="CPF" minlength="11" maxlength="13" onblur="validarCPF(this)">
+              
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-lg-4">
               <b class="ls-label-text" for="CEP">CEP</b>
-              <input type="text" class="form-control input-border-bottom" name="CEP" id="CEP"
+              <input type="text" class="form-control text-center" name="CEP" id="CEP"
               placeholder="Somente os números">
             </div>
             <div class="form-group col-lg-8">
               <b class="ls-label-text" for="Endereco">Endereço:</b>
-              <input type="text" class="form-control input-border-bottom" name="Endereco" id="Endereco" placeholder="Rua, Travessa, Av.">
+              <input type="text" class="form-control text-center" name="Endereco" id="Endereco" placeholder="Rua, Travessa, Av.">
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="Bairro">Bairro:</b>
-              <input type="text" class="form-control input-border-bottom" name="Bairro" id="Bairro"
+              <b class="ls-label-text" for="Bairro">Bairro</b>
+              <input type="text" class="form-control text-center" name="Bairro" id="Bairro"
               placeholder="Bairro">
             </div>
             <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="Cidade">Cidade:</b>
-              <input type="text" class="form-control input-border-bottom" name="Cidade" id="Cidade"
+              <b class="ls-label-text" for="Cidade">Cidade</b>
+              <input type="text" class="form-control text-center" name="Cidade" id="Cidade"
               placeholder="Cidade">
             </div>
             <div class="form-group col-lg-4">
-              <b class="ls-label-text" for="Estado">Estado:</b>
-              <input type="text" class="form-control input-border-bottom" name="Estado" id="Estado" maxlength="2" minlength="2"
+              <b class="ls-label-text" for="Estado">Estado</b>
+              <input type="text" class="form-control text-center" name="Estado" id="Estado" maxlength="2" minlength="2"
               placeholder="Sigla">
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-lg-3">
-              <b class="ls-label-text" for="Telefone">Telefone:</b>
-              <input type="text" class="form-control input-border-bottom" name="Telefone" id="Telefone" placeholder="00-0000-0000">
+              <b class="ls-label-text" for="Telefone">Telefone</b>
+              <input type="text" class="form-control text-center" name="Telefone" id="Telefone" placeholder="00-0000-0000">
             </div>
             <div class="form-group col-lg-3">
-              <b class="ls-label-text" for="Celular">Celular:</b>
-              <input type="text" class="form-control input-border-bottom" name="Celular" id="Celular" placeholder="00-00000-0000">
+              <b class="ls-label-text" for="Celular">Celular</b>
+              <input type="text" class="form-control text-center" name="Celular" id="Celular" placeholder="00-00000-0000">
             </div>
             <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Email">Email:</b>
-              <input type="email" class="form-control input-border-bottom" name="Email" id="Email"
+              <b class="ls-label-text" for="Email">Email</b>
+              <input type="email" class="form-control text-center" name="Email" id="Email"
               placeholder="algo@algo.com">
             </div>
           </div>
@@ -107,8 +97,8 @@
           <hr>
           <div class="form-row " >
             <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Usuario">Usuário:</b>
-              <input type="text"  class="form-control input-border-bottom" name="Usuario" id="Usuario" minlength="4" maxlength="50"  required placeholder="Mínimo 4 caracteres">
+              <b class="ls-label-text" for="Usuario">Usuário</b>
+              <input type="text"  class="form-control text-center" name="Usuario" id="Usuario" minlength="4" maxlength="50"  required placeholder="Mínimo 4 caracteres">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -117,8 +107,8 @@
               </div>
             </div>
             <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="Senha">Senha:</b>
-              <input type="password" class="form-control input-border-bottom" name="Senha" id="Senha" minlength="4" maxlength="15" required placeholder="Mímino 6 caracteres">
+              <b class="ls-label-text" for="Senha">Senha</b>
+              <input type="password" class="form-control text-center" name="Senha" id="Senha" minlength="4" maxlength="15" required placeholder="Mímino 6 caracteres">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -131,8 +121,8 @@
           <hr>
           <div class="form-row">
             <div class="form-group col-lg-3">
-              <b class="ls-label-text" for="ComiVend">Comissão de Venda:</b>
-              <input type="text" class="form-control input-border-bottom" name="ComiVend" id="ComiVend" 
+              <b class="ls-label-text" for="ComiVend">Comissão de Venda</b>
+              <input type="text" class="form-control text-center" name="ComiVend" id="ComiVend" 
              onblur="com_vend()" minlength="3" maxlength="4" value="00.00">
               <div class="invalid-feedback" placeholder="0.00">
                 Por favor, Campo Obrigatório!
@@ -142,8 +132,8 @@
               </div>
             </div>
             <div class="form-group col-lg-3">
-              <b class="ls-label-text" for="ComiServ">Comissão de Seriços:</b>
-              <input type="text" class="form-control input-border-bottom" name="ComiServ" id="ComiServ" 
+              <b class="ls-label-text" for="ComiServ">Comissão de Seriços</b>
+              <input type="text" class="form-control text-center" name="ComiServ" id="ComiServ" 
               onblur="com_serv()" minlength="3" maxlength="4" value="00.00">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
@@ -153,8 +143,8 @@
               </div>
             </div>
             <div class="form-group col-lg-3">
-              <b class="ls-label-text" for="LimDescPV">Limite desc à vista:</b>
-              <input type="text" class="form-control input-border-bottom" name="LimDescPV" id="LimDescPV" minlength="3" maxlength="4" value="00.00" onblur="lim_vista()">
+              <b class="ls-label-text" for="LimDescPV">Limite desc à vista</b>
+              <input type="text" class="form-control text-center" name="LimDescPV" id="LimDescPV" minlength="3" maxlength="4" value="00.00" onblur="lim_vista()">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -163,8 +153,8 @@
               </div>
             </div>
             <div class="form-group col-lg-3">
-              <b class="ls-label-text" for="LimDescPP">Limite desc à Prazo:</b>
-              <input type="text" class="form-control input-border-bottom" name="LimDescPP" id="LimDescPP" minlength="3" value="00.00" onblur="lim_prazo()">
+              <b class="ls-label-text" for="LimDescPP">Limite desc à Prazo</b>
+              <input type="text" class="form-control text-center" name="LimDescPP" id="LimDescPP" minlength="3" value="00.00" onblur="lim_prazo()">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -175,8 +165,8 @@
           </div>
           <div class="form-row">
             <div class="form-group col-lg-6">
-              <b class="ls-label-text" for="idmsgs">Número de Identificação para abrir chamados:</b>
-              <input type="text" class="form-control input-border-bottom" name="idmsgs" id="idmsgs" required>
+              <b class="ls-label-text" for="idmsgs">Número de Identificação para abrir chamados</b>
+              <input type="text" class="form-control text-center" name="idmsgs" id="idmsgs" required>
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>

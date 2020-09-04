@@ -18,6 +18,7 @@
         $("#IEST").mask("99999999999999");
         $("#LimiCred").mask("99999999.99");
         $("#PercDescAcresc").mask("99.99");
+        $("#Numero").mask("99999");
     });
 
 </script>
@@ -43,7 +44,7 @@
                     @can('insere_cliente')
                         <button type="button" class="btn btn-success btn-rounded float-right" data-toggle="modal"
                             data-target="#myModal">
-                            <i class='fas fa-plus'></i> Cliente
+                            <i class='fas fa-plus'></i> Cliente / Fornecedor
                         </button>
                     @endcan
                 </h4>

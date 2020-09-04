@@ -9,6 +9,7 @@ use App\model\ContaCadastro;
 use App\model\CentroCusto;
 use App\model\Empresa;
 use App\model\ContaMovimento;
+use App\model\PlanoContas;
 use Gate;
 
 class DataContaMovimentoController extends Controller
@@ -63,7 +64,8 @@ class DataContaMovimentoController extends Controller
         $conta = ContaCadastro::all();
         $custo = CentroCusto::all();
         $empresa = Empresa::all();
-        return view("visual.view_data_movimento", compact("data_movimento","id",'clifor','conta','custo','empresa','conta_movimento'));
+        $planocontas = PlanoContas::all();
+        return view("visual.view_data_movimento", compact("data_movimento","id",'clifor',"planocontas",'conta','custo','empresa','conta_movimento'));
     }
 
     public function destroy($Codigo,DataContaMovimento $data_movimento)

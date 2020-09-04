@@ -23,13 +23,13 @@
     <div class="form-row">
       <div class="form-group col-lg-1" hidden>
         <label for="Cod_Transp">Transportadora:</label>
-        <input type="text" class="form-control input-border-bottom" name="Cod_Transp" id="Cod_Transp" 
+        <input type="text" class="form-control  text-center" name="Cod_Transp" id="Cod_Transp" 
         value="{{$transportadora->Codigo}}" readonly
         >
       </div>
-      <div class="form-group col-lg-3">
-        <label for="KmIni">Km Início</label>
-        <input type="text" class="form-control input-border-bottom" name="KmIni" id="KmIni" placeholder=""
+      <div class="form-group col-lg-4">
+        <label for="KmIni">Km Inicial</label>
+        <input type="text" class="form-control  text-center" name="KmIni" id="KmIni" placeholder=""
         required>
         <div class="invalid-feedback">
           Por Favor, Campo Obrigatório!
@@ -38,9 +38,9 @@
           Tudo certo!
         </div>
       </div>
-      <div class="form-group col-lg-3">
+      <div class="form-group col-lg-4">
         <label for="KmFim">Km Final</label>
-        <input type="text" class="form-control input-border-bottom" name="KmFim" id="KmFim" placeholder=""
+        <input type="text" class="form-control text-center" name="KmFim" id="KmFim" placeholder=""
         required>
         <div class="invalid-feedback">
           Por Favor, Campo Obrigatório!
@@ -49,9 +49,9 @@
           Tudo certo!
         </div>
       </div>
-      <div class="form-group col-lg-2">
+      <div class="form-group col-lg-4">
         <label for="Indice_v">Índice para cobrança</label>
-        <input type="text" class="form-control input-border-bottom" name="Indice_v" id="Indice_v" 
+        <input type="text" class="form-control  text-center" name="Indice_v" id="Indice_v" 
         minlength="1" value="0.00" required onblur="indice_v()">
         <div class="invalid-feedback">
           Por favor, Campo Obrigatório!

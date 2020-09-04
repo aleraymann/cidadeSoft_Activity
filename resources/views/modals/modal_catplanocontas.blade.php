@@ -17,7 +17,7 @@
                         action="{{ url("/CatPlanoContas/salvar") }}" onsubmit="return checkForm(this);">
                 <div class="form-row">
                 <div class="form-group col-lg-12" hidden>
-              <b class="ls-label-text" for="user_id">User_ID:</b>
+              <b class="ls-label-text" for="user_id">User_ID</b>
               <input type="text" class="form-control input-border-bottom" name="user_id" id="user_id"
               readonly value="
               @if(Auth::user()->hasAnyRoles('adm') || Auth::user()->hasAnyRoles('s_adm'))
@@ -29,8 +29,8 @@
           </div>
                 <div class="form-row">
                     <div class="form-group col-lg-12">
-                        <b class="ls-label-text" for="Descricao">Descrição:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao" placeholder=""
+                        <b class="ls-label-text" for="Descricao">Descrição</b>
+                        <input type="text" class="form-control text-center" name="Descricao" id="Descricao" placeholder=""
                             required minlength="" maxlength="15">
                         <div class="invalid-feedback">
                             Campo Obrigatório!!

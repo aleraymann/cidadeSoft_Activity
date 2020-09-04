@@ -25,9 +25,9 @@
                         </div>
                     </div>
                         <div class=" form-row">
-                            <div class="form-group col-lg-2">
+                            <div class="form-group col-lg-3">
                                 <b class="ls-label-text" for="CFOP">Num da CFOP:</b>
-                                <input type="text" class="form-control input-border-bottom" name="CFOP" id="CFOP"
+                                <input type="text" class="form-control text-center" name="CFOP" id="CFOP"
                                     maxlength="10" required>
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -38,17 +38,12 @@
                             </div>
 
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="ES">Entrada / Saída:</b>
-                                <select class="form-control input-border-bottom" name="ES" id="ES" required>
+                                <b class="ls-label-text" for="ES">Entrada / Saída</b>
+                                <select class="form-control text-center" name="ES" id="ES" required>
                                     <option value="S">Saída</option>
                                     <option value="E">Entrada</option>
                                 </select>
-                                <div class="invalid-feedback">
-                                    Por favor, Campo Obrigatório!
-                                </div>
-                                <div class="valid-feedback">
-                                    Tudo certo!
-                                </div>
+                                
                             </div>
 
                             <div class="form-group col-lg-3 ml-2">
@@ -68,8 +63,8 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-lg-12">
-                                <b class="ls-label-text" for="Descricao">Descrição:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Descricao"
+                                <b class="ls-label-text" for="Descricao">Descrição</b>
+                                <input type="text" class="form-control text-center" name="Descricao"
                                     id="Descricao" maxlength="400" required>
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -81,8 +76,8 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-lg-12">
-                                <b class="ls-label-text" for="Aplicacao">Aplicação:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Aplicacao"
+                                <b class="ls-label-text" for="Aplicacao">Aplicação</b>
+                                <input type="text" class="form-control text-center" name="Aplicacao"
                                     id="Aplicacao" maxlength="400" required>
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -94,8 +89,8 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-lg-12">
-                                <b class="ls-label-text" for="Dispositivo">Dispositivo:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Dispositivo"
+                                <b class="ls-label-text" for="Dispositivo">Dispositivo</b>
+                                <input type="text" class="form-control text-center" name="Dispositivo"
                                     id="Dispositivo" maxlength="200" required>
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -107,8 +102,8 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-lg-12">
-                                <b class="ls-label-text" for="ObsnaNFe">Observação a adicionar na NFe:</b>
-                                <input type="text" class="form-control input-border-bottom" name="ObsnaNFe"
+                                <b class="ls-label-text" for="ObsnaNFe">Observação a adicionar na NFe</b>
+                                <input type="text" class="form-control text-center" name="ObsnaNFe"
                                     id="ObsnaNFe" maxlength="200" required>
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!

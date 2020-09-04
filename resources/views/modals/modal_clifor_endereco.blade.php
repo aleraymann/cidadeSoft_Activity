@@ -80,7 +80,7 @@
         <div class="form-row">
             <div class="form-group col-lg-12" hidden>
                 <b class="ls-label-text" for="RG">User_ID:</b>
-                <input type="text" class="form-control input-border-bottom" name="user_id" id="user_id" readonly
+                <input type="text" class="form-control " name="user_id" id="user_id" readonly
                     value="{{ Auth::user()->id }}">
             </div>
         </div>
@@ -89,10 +89,10 @@
               <label for="Cod_CliFor">Nome do Cliente:</label>
               <input type="text" class="form-control" name="Cod_CliFor" id="Cod_CliFor" value="{{ $clifor->Codigo }} ">
             </div>
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-2 ">
               <label for="Tipo_Endereco">Tipo do Endereço</label>
-              <select class="form-control input-border-bottom" id="Tipo_Endereco" name="Tipo_Endereco" required>
-                <option></option>
+              <select class="form-control  text-center" id="Tipo_Endereco" name="Tipo_Endereco" required>
+                <option>Selecione</option>
                 <option value="C">Correspondência</option>
                 <option value="E">Entrega</option>
                 <option value="A">Ambos</option>
@@ -104,9 +104,9 @@
                 Tudo certo!
               </div>
             </div>
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-2 ">
               <label for="CEP">CEP</label>
-              <input type="text" class="form-control input-border-bottom" name="CEP" id="CEP"
+              <input type="text" class="form-control  text-center" name="CEP" id="CEP"
               placeholder="000000000" required>
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
@@ -115,9 +115,9 @@
                 Tudo certo!
               </div>
             </div>
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-2 ">
               <label for="Cod_IBGE"> Codido IBGE</label>
-              <input type="number" class="form-control input-border-bottom" name="Cod_IBGE" id="Cod_IBGE">
+              <input type="number" class="form-control  text-center" readonly name="Cod_IBGE" id="Cod_IBGE">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -126,9 +126,9 @@
               </div>
             </div>
           
-            <div class="form-group col-lg-4">
+            <div class="form-group col-lg-4 ">
               <label for="Endereco">Endereço</label>
-              <input type="text" class="form-control input-border-bottom" name="Endereco" id="Endereco">
+              <input type="text" class="form-control text-center" name="Endereco" id="Endereco">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -136,9 +136,9 @@
                 Tudo certo!
               </div>
             </div>
-            <div class="form-group col-lg-1">
+            <div class="form-group col-lg-1 ">
               <label for="Estado">Estado:</label>
-              <input type="text" class="form-control input-border-bottom" name="Estado" id="Estado"
+              <input type="text" class="form-control text-center" readonly name="Estado" id="Estado"
               placeholder="">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
@@ -152,7 +152,7 @@
           <div class="form-row">
             <div class="form-group col-lg-1">
               <label for="Numero">Número</label>
-              <input type="number" class="form-control input-border-bottom" name="Numero" id="Numero">
+              <input type="number" class="form-control  text-center" name="Numero" id="Numero">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -162,7 +162,7 @@
             </div>
             <div class="form-group col-lg-2">
               <label for="Bairro">Bairro</label>
-              <input type="text" class="form-control input-border-bottom" name="Bairro" id="Bairro"
+              <input type="text" class="form-control text-center" name="Bairro" id="Bairro"
               placeholder="Bairro">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
@@ -172,7 +172,7 @@
               </div>
             </div> <div class="form-group col-lg-2">
               <label for="Complemento">Complemento</label>
-              <input type="text" class="form-control input-border-bottom" name="Complemento" id="Complemento"
+              <input type="text" class="form-control text-center" name="Complemento" id="Complemento"
               placeholder="">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
@@ -181,9 +181,9 @@
                 Tudo certo!
               </div>
             </div>
-            <div class="form-group col-lg-4">
+            <div class="form-group col-lg-4 ">
               <label for="">Ponto de Referência</label>
-              <input type="text" class="form-control input-border-bottom" name="Ponto_Referencia" id="Ponto_Referencia">
+              <input type="text" class="form-control text-center" name="Ponto_Referencia " id="Ponto_Referencia">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!
               </div>
@@ -191,9 +191,9 @@
                 Tudo certo!
               </div>
             </div>
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-2 ">
               <label for="Cidade">Cidade:</label>
-              <input type="text" class="form-control input-border-bottom" name="Cidade" id="Cidade"
+              <input type="text" class="form-control  text-center" readonly name="Cidade" id="Cidade"
               placeholder="">
               <div class="invalid-feedback">
                 Por favor, Campo Obrigatório!

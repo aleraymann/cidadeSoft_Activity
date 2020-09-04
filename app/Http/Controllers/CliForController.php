@@ -23,7 +23,7 @@ class CliForController extends Controller
         $clifor = CliFor::paginate(10);
         $vendedor = Funcionario::all();
         $empresa = Empresa::all();
-        $user = User::all();
+        $user = Funcionario::all();
         $criterio = "";
         return view("clifor", compact("clifor","vendedor","empresa","user","criterio")); 
     }
@@ -157,7 +157,7 @@ class CliForController extends Controller
         }
         $vendedor = Funcionario::all();
         $empresa = Empresa::all();
-        $user = User::all();
+        $user = Funcionario::all();
         return view("edit.edit_clifor", compact("clifor","id","vendedor","empresa","user"));
     }
 

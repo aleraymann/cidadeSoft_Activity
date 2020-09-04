@@ -30,7 +30,7 @@
                 <div class="form-row">
                     <div class="form-group col-lg-4">
                         <b class="ls-label-text" for="Conta">Num de Classificação:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Conta" id="Conta" placeholder=""
+                        <input type="text" class="form-control text-center" name="Conta" id="Conta" placeholder=""
                             required minlength="" maxlength="15">
                         <div class="invalid-feedback">
                             Campo Obrigatório!!
@@ -41,36 +41,26 @@
                     </div>
                     <div class="form-group col-lg-4">
                             <b class="ls-label-text" for="Tipo_Custo">Tipo de Custo:</b>
-                            <select class="form-control input-border-bottom" id="Tipo_Custo" name="Tipo_Custo">
+                            <select class="form-control text-center" id="Tipo_Custo" name="Tipo_Custo">
                                 <option value="CF">Custo Fixo</option>
                                 <option value="CV">Custo Variável</option>  
                             </select>
-                            <div class="invalid-feedback">
-                                Por favor, Campo Obrigatório!
-                            </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
-                            </div>
+                           
                         </div>
                         <div class="form-group col-lg-4">
                             <b class="ls-label-text" for="CD">Crédito/Débito:</b>
-                            <select class="form-control input-border-bottom" id="CD" name="CD">
+                            <select class="form-control text-center" id="CD" name="CD">
                                 <option value="C">Crédito</option>
                                 <option value="D">Débito</option>  
                             </select>
-                            <div class="invalid-feedback">
-                                Por favor, Campo Obrigatório!
-                            </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
-                            </div>
+                           
                         </div>
                        
                 </div>
                 <div class="form-row">
                 <div class="form-group col-lg-6">
                             <b class="ls-label-text" for="CodPai">Categoria:</b>
-                            <select class="form-control input-border-bottom" required id="CodPai" name="CodPai" onchange="defineSub()">
+                            <select class="form-control text-center" required id="CodPai" name="CodPai" onchange="defineSub()">
                                 <option value="">Selecione</option>
                                 @foreach ($cat_planocontas as $c)
                                 @can('view_cat_planocontas', $c)
@@ -87,7 +77,7 @@
                         </div>
                         <div class="form-group col-lg-6">
                             <b class="ls-label-text" for="Descricao">Sub-Categoria:</b>
-                            <select class="form-control input-border-bottom" required id="Descricao" name="Descricao">
+                            <select class="form-control text-center" required id="Descricao" name="Descricao">
                                 <option value="">Selecione</option>
                                
                             </select>

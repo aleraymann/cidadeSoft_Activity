@@ -34,8 +34,8 @@
           </div>
                 <div class="form-row">
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="NCM">NCM:</b>
-                        <input type="text" class="form-control input-border-bottom" name="NCM" id="NCM" placeholder=""
+                        <b class="ls-label-text" for="NCM">NCM</b>
+                        <input type="text" class="form-control text-center" name="NCM" id="NCM" placeholder=""
                             required minlength="" maxlength="10">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!!
@@ -45,8 +45,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Descricao">Descrição:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao"
+                        <b class="ls-label-text" for="Descricao">Descrição</b>
+                        <input type="text" class="form-control text-center" name="Descricao" id="Descricao"
                             placeholder="" required minlength="4" maxlength="60">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -56,8 +56,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="AliqIBPT">Aliquota de Imposto IBPT:</b>
-                        <input type="text" class="form-control input-border-bottom" name="AliqIBPT" id="AliqIBPT"
+                        <b class="ls-label-text" for="AliqIBPT">Aliquota de Imposto IBPT</b>
+                        <input type="text" class="form-control text-center" name="AliqIBPT" id="AliqIBPT"
                             maxlength="3" minlength="1" value="0.00" required onblur="aliqIBPT()">
                         <div class="invalid-feedback">
                             Por favor, Campo Obrigatório!
@@ -67,8 +67,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="AliqImp">Aliquota Importado:</b>
-                        <input type="text" class="form-control input-border-bottom" name="AliqImp" id="AliqImp"
+                        <b class="ls-label-text" for="AliqImp">Aliquota Importado</b>
+                        <input type="text" class="form-control text-center" name="AliqImp" id="AliqImp"
                             maxlength="3" minlength="1" value="0.00" required  onblur="aliqImp()">
                         <div class="invalid-feedback">
                             Por favor, Campo Obrigatório!
@@ -80,8 +80,8 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="AliqEst">Aliquota Estadual:</b>
-                        <input type="text" class="form-control input-border-bottom" name="AliqEst" id="AliqEst"
+                        <b class="ls-label-text" for="AliqEst">Aliquota Estadual</b>
+                        <input type="text" class="form-control text-center" name="AliqEst" id="AliqEst"
                             maxlength="3" minlength="1" value="0.00"  onblur="aliqEst()">
                         <div class="invalid-feedback">
                             Por favor, Campo Obrigatório!
@@ -91,8 +91,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="AliqMun">Aliquota Municipal:</b>
-                        <input type="text" class="form-control input-border-bottom" name="AliqMun" id="AliqMun"
+                        <b class="ls-label-text" for="AliqMun">Aliquota Municipal</b>
+                        <input type="text" class="form-control text-center" name="AliqMun" id="AliqMun"
                             maxlength="3" minlength="1" value="0.00" onblur="aliqMun()">
                         <div class="invalid-feedback">
                             Por favor, Campo Obrigatório!
@@ -101,9 +101,9 @@
                             Tudo certo!
                         </div>
                     </div>
-                    <div class="form-group col-lg-2">
-                        <b class="ls-label-text" for="Ex">Ex:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Ex" id="Ex" placeholder=""
+                    <div class="form-group col-lg-3">
+                        <b class="ls-label-text" for="Ex">Ex</b>
+                        <input type="text" class="form-control text-center" name="Ex" id="Ex" placeholder=""
                             required minlength="" maxlength="5">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -112,9 +112,9 @@
                             Tudo certo!
                         </div>
                     </div>
-                    <div class="form-group col-lg-2">
-                        <b class="ls-label-text" for="Tipo">Tipo:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Tipo" id="Tipo" placeholder=""
+                    <div class="form-group col-lg-3">
+                        <b class="ls-label-text" for="Tipo">Tipo</b>
+                        <input type="text" class="form-control text-center" name="Tipo" id="Tipo" placeholder=""
                             required minlength="" maxlength="2">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -126,14 +126,9 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="VigenciaIni">Início da Vigência:</b>
-                        <input type="text" class="form-control input-border-bottom" name="VigenciaIni" id="VigenciaIni" placeholder="DD/MM/AAAA">
-                        <div class="invalid-feedback">
-                            Campo Obrigatório, Mínimo 4 caracteres!
-                        </div>
-                        <div class="valid-feedback">
-                            Tudo certo!
-                        </div>
+                        <b class="ls-label-text" for="VigenciaIni">Início da Vigência</b>
+                        <input type="text" class="form-control text-center" name="VigenciaIni" id="VigenciaIni" placeholder="DD/MM/AAAA">
+                       
                         <script type="text/javascript">
             $(function () {
                 $('#VigenciaIni').datetimepicker({
@@ -143,14 +138,9 @@
         </script>
                     </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="VigenciaFim">Fim da Vigência:</b>
-                        <input type="text" class="form-control input-border-bottom" name="VigenciaFim" id="VigenciaFim" placeholder="DD/MM/AAAA">
-                        <div class="invalid-feedback">
-                            Campo Obrigatório, Mínimo 4 caracteres!
-                        </div>
-                        <div class="valid-feedback">
-                            Tudo certo!
-                        </div>
+                        <b class="ls-label-text" for="VigenciaFim">Fim da Vigência</b>
+                        <input type="text" class="form-control text-center" name="VigenciaFim" id="VigenciaFim" placeholder="DD/MM/AAAA">
+                        
                         <script type="text/javascript">
             $(function () {
                 $('#VigenciaFim').datetimepicker({
@@ -160,8 +150,8 @@
         </script>
                     </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Versao">Versão da Tabela IBPT:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Versao" id="Versao"
+                        <b class="ls-label-text" for="Versao">Versão da Tabela IBPT</b>
+                        <input type="text" class="form-control text-center" name="Versao" id="Versao"
                             placeholder="" required minlength="2" maxlength="6">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 2 caracteres!
@@ -171,8 +161,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Chave">Chave IBPT:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Chave" id="Chave"
+                        <b class="ls-label-text" for="Chave">Chave IBPT</b>
+                        <input type="text" class="form-control text-center" name="Chave" id="Chave"
                             placeholder="" required minlength="2" maxlength="6">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 2 caracteres!

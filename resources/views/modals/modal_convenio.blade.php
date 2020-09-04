@@ -1,7 +1,7 @@
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal">
-    <div class="modal-dialog  modal-lg">
+    <div class="modal-dialog  modal-md">
         <div class="modal-content">
 
             <!-- Modal Header -->
@@ -29,9 +29,9 @@
             </div>
           </div>
                     <div class="form-row">
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Convenio">Convenio:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Convenio" id="Convenio" minlength="1" value="" required>
+                        <div class="form-group col-lg-6">
+                            <b class="ls-label-text" for="Convenio">Convênio</b>
+                            <input type="text" class="form-control text-center" name="Convenio" id="Convenio" minlength="1" value="" required>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
                             </div>
@@ -39,9 +39,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Comissao">Comissão:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Comissao" id="Comissao" minlength="3" 
+                        <div class="form-group col-lg-6">
+                            <b class="ls-label-text" for="Comissao">Comissão</b>
+                            <input type="text" class="form-control text-center" name="Comissao" id="Comissao" minlength="3" 
                             maxlength="10" value="0.00" required onblur="comissao()">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!

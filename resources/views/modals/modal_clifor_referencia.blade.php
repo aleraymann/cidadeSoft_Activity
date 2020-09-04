@@ -23,7 +23,7 @@
     <div class="form-row">
       <div class="form-group col-lg-1" hidden>
         <label for="Cod_CliFor">Nome do Cliente:</label>
-        <input type="text" class="form-control input-border-bottom" name="Cod_CliFor" id="Cod_CliFor" 
+        <input type="text" class="form-control " name="Cod_CliFor" id="Cod_CliFor" 
         value="{{$clifor->Codigo}}" readonly>
         <div class="invalid-feedback">
           Campo obrigatório!
@@ -32,9 +32,9 @@
           Tudo certo!
         </div>
       </div>
-      <div class="form-group col-lg-4">
+      <div class="form-group col-lg-3 ">
         <label for="Loja_Banco"> Banco/Loja de Referência</label>
-        <input type="text" class="form-control input-border-bottom" name="Loja_Banco" id="Loja_Banco" maxlength="45" required>
+        <input type="text" class="form-control  text-center" name="Loja_Banco" id="Loja_Banco" maxlength="45" required>
         <div class="invalid-feedback">
           Campo obrigatório!
         </div>
@@ -42,9 +42,19 @@
           Tudo certo!
         </div>
       </div>
-      <div class="form-group col-lg-3">
+      <div class="form-group col-lg-3 ">
         <label for="Conta"> Num. da conta no Estabelecimento</label>
-        <input type="text" class="form-control input-border-bottom" name="Conta" id="Conta">
+        <input type="text" class="form-control text-center" name="Conta" id="Conta">
+        <div class="invalid-feedback">
+          Campo obrigatório!
+        </div>
+        <div class="valid-feedback">
+          Tudo certo!
+        </div>
+      </div>
+      <div class="form-group col-lg-3 ">
+        <label for="Telefone">Telefone do Estabelecimento</label>
+        <input type="text" class="form-control text-center" name="Telefone" id="Telefone">
         <div class="invalid-feedback">
           Campo obrigatório!
         </div>
@@ -53,21 +63,8 @@
         </div>
       </div>
       <div class="form-group col-lg-3">
-        <label for="Telefone">Telefone do Estabelecimento</label>
-        <input type="text" class="form-control input-border-bottom" name="Telefone" id="Telefone">
-        <div class="invalid-feedback">
-          Campo obrigatório!
-        </div>
-        <div class="valid-feedback">
-          Tudo certo!
-        </div>
-      </div>
-    </div>
-
-    <div class="form-row">
-      <div class="form-group col-lg-4">
         <label for="Ult_Compra">Data da última compra</label>
-        <input type="text" class="form-control input-border-bottom" name="Ult_Compra" id="Ult_Compra" placeholder="DD/MM/AAAA">
+        <input type="text" class="form-control text-center" name="Ult_Compra" id="Ult_Compra" placeholder="DD/MM/AAAA">
         <div class="invalid-feedback">
           Campo obrigatório!
         </div>
@@ -82,9 +79,13 @@
             });
             </script>
       </div>
-      <div class="form-group col-lg-4">
+    </div>
+
+    <div class="form-row">
+     
+      <div class="form-group col-lg-4 ">
         <label for="Ult_Compra">Valor da última compra</label>
-        <input type="text" class="form-control input-border-bottom" name="Valor_UltCompra"
+        <input type="text" class="form-control  text-center" name="Valor_UltCompra"
         require id="Valor_UltCompra" maxlength="10">
         
         <div class="invalid-feedback">
@@ -94,9 +95,9 @@
           Tudo certo!
         </div>
       </div>
-      <div class="form-group col-lg-4">
+      <div class="form-group col-lg-4 ">
         <label for="Limite">Limite que tem no Estabelecimento</label>
-        <input type="text" class="form-control input-border-bottom" name="Limite" id="Limite"
+        <input type="text" class="form-control  text-center" name="Limite" id="Limite"
         placeholder="" maxlength="10" require>
         <div class="invalid-feedback">
           Campo obrigatório!

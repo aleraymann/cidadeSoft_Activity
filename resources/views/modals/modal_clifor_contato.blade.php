@@ -23,13 +23,13 @@
         <div class="form-row">
             <div class="form-group col-lg-1" hidden>
                 <label for="Cod_CliFor">Nome do Cliente:</label>
-                <input type="text" class="form-control input-border-bottom" name="Cod_CliFor" id="Cod_CliFor"
+                <input type="text" class="form-control text-center" name="Cod_CliFor" id="Cod_CliFor"
                     value="{{ $clifor->Codigo }}" readonly>
             </div>
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-2 ">
                 <label for="Tipo">Tipo de Contato</label>
-                <input type="text" class="form-control input-border-bottom" name="Tipo" id="Tipo"
-                    placeholder="Avô, Pai, Sócio, etc." required minlength="3" maxlength="10">
+                <input type="text" class="form-control text-center" name="Tipo" id="Tipo"
+                    placeholder="Avô, Pai, Sócio" required minlength="3" maxlength="10">
                 <div class="invalid-feedback">
                     Máximo 10 caracteres!
                 </div>
@@ -38,10 +38,10 @@
                 </div>
             </div>
 
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-3 ">
                 <label for="Setor">Setor para Contato</label>
-                <select class="form-control input-border-bottom" id="Setor" name="Setor" required>
-                    <option></option>
+                <select class="form-control text-center" id="Setor" name="Setor" required>
+                    <option>Selecione</option>
                     <option value="Vendas">Vendas</option>
                     <option value="Financeiro">Financeiro</option>
                     <option value="Fiscal">Fiscal</option>
@@ -53,9 +53,9 @@
                     Tudo certo!
                 </div>
             </div>
-            <div class="form-group col-lg-6">
+            <div class="form-group col-lg-5 ">
                 <label for="Nome">Nome Completo</label>
-                <input type="text" class="form-control input-border-bottom" name="Nome" id="Nome"
+                <input type="text" class="form-control text-center" name="Nome" id="Nome"
                     placeholder="Nome completo" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
@@ -64,9 +64,9 @@
                     Tudo certo!
                 </div>
             </div>
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-2 ">
                 <label for="Data_Nasc">Data de nascimento</label>
-                <input type="text" class="form-control input-border-bottom" name="Data_Nasc" id="Data_Nasc" placeholder="DD/MM/AAAA" required>
+                <input type="text" class="form-control  text-center" name="Data_Nasc" id="Data_Nasc" placeholder="DD/MM/AAAA" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
                 </div>
@@ -83,9 +83,9 @@
             </div>
         </div>
         <div class="form-row">
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-2 ">
                 <label for="RG">RG do Contato</label>
-                <input type="text" class="form-control input-border-bottom" name="RG" id="RG" required>
+                <input type="text" class="form-control text-center" name="RG" id="RG" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
                 </div>
@@ -93,9 +93,9 @@
                     Tudo certo!
                 </div>
             </div>
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-2 ">
                 <label for="CPF">CPF do contato</label>
-                <input type="text" class="form-control input-border-bottom" name="CPF" id="CPF" required
+                <input type="text" class="form-control text-center" name="CPF" id="CPF" required
                     onblur="validarCPF(this)">
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
@@ -104,9 +104,9 @@
                     Tudo certo!
                 </div>
             </div>
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-2 ">
                 <label for="Celular">Celular</label>
-                <input type="text" class="form-control input-border-bottom" name="Celular" id="Celular" required>
+                <input type="text" class="form-control text-center" name="Celular" id="Celular" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
                 </div>
@@ -114,9 +114,9 @@
                     Tudo certo!
                 </div>
             </div>
-            <div class="form-group col-lg-6">
+            <div class="form-group col-lg-6 ">
                 <label for="Email">Email:</label>
-                <input type="email" class="form-control input-border-bottom" name="Email" id="Email" required>
+                <input type="email" class="form-control  text-center" name="Email" id="Email" required>
                 <div class="invalid-feedback">
                     Por favor, Campo Obrigatório!
                 </div>

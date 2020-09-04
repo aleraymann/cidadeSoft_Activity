@@ -30,8 +30,8 @@
           </div>
           <div class=" form-row">
                             <div class="form-group col-lg-12">
-                                <b class="ls-label-text" for="Codigo_Barras">Agrupado de Codigo de barras:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Codigo_Barras"
+                                <b class="ls-label-text" for="Codigo_Barras">Agrupado de Codigo de Barras</b>
+                                <input type="text" class="form-control text-center" name="Codigo_Barras"
                                     id="Codigo_Barras" maxlength="13" required>
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!

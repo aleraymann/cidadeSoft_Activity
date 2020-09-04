@@ -30,8 +30,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-12">
-                            <b class="ls-label-text" for="Descricao">Descrição:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao"
+                            <b class="ls-label-text" for="Descricao">Descrição</b>
+                            <input type="text" class="form-control text-center" name="Descricao" id="Descricao"
                             placeholder="" required  minlength="2" maxlength="30">
                             <div class="invalid-feedback">
                                 Por favor, Mínimo 2 caracteres!
