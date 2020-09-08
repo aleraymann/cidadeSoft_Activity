@@ -26,7 +26,14 @@ class Comissao extends Model
     protected static $logOnlyDirty = true;
     public function getDescriptionForEvent(string $eventName): string
     {
-        return "Comissao {$eventName}";
+        if($eventName == "created"){
+            $eventName = "criado";
+        }else if($eventName == "updated"){
+            $eventName = "editado";
+        }else if($eventName == "deleted"){
+            $eventName = "excluido";
+        }
+        return "Comissão {$eventName}";
     }
 
     protected $table = "funcionario_comissao";

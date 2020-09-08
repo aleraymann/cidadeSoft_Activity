@@ -15,10 +15,17 @@ class CEST extends Model
         "NCM",
         "Descricao"
     ];
-    protected static $logName = 'cest';
+    protected static $logName = 'Cest';
     protected static $logOnlyDirty = true;
     public function getDescriptionForEvent(string $eventName): string
     {
+        if($eventName == "created"){
+            $eventName = "criado";
+        }else if($eventName == "updated"){
+            $eventName = "editado";
+        }else if($eventName == "deleted"){
+            $eventName = "excluido";
+        }
         return "Cest {$eventName}";
     }
 

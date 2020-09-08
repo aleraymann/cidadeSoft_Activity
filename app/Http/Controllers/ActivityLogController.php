@@ -15,7 +15,8 @@ class ActivityLogController extends Controller
         if( auth()->user()->hasAnyRoles('s_adm')){
             $activity = DB::select("SELECT activity_log.*, users.name USUARIO, empresa.Nome_Fantasia NOMEFANTASIA FROM `activity_log` 
         LEFT JOIN  users ON users.id = activity_log.causer_id 
-        LEFT JOIN empresa on empresa.user_id = users.id");
+        LEFT JOIN empresa on empresa.user_id = users.id
+        order by activity_log.created_at desc");
             $empresa = Empresa::all();
             $criterio = "";
         }else{

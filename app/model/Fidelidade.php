@@ -22,6 +22,13 @@ class Fidelidade extends Model
     protected static $logOnlyDirty = true;
     public function getDescriptionForEvent(string $eventName): string
     {
+        if($eventName == "created"){
+            $eventName = "criado";
+        }else if($eventName == "updated"){
+            $eventName = "editado";
+        }else if($eventName == "deleted"){
+            $eventName = "excluido";
+        }
         return "Fidelidade {$eventName}";
     }
 
