@@ -85,46 +85,52 @@ class CliForController extends Controller
                 $clifor->save();
 
                 //Endereço
-                $clifor_endereco = new CliForEndereco;
-                $clifor_endereco->Cod_CliFor = $clifor->Codigo;
-                $clifor_endereco->user_id = $request->user_id;
-                $clifor_endereco->CEP = $request->CEP;
-                $clifor_endereco->Tipo_Endereco = $request->Tipo_Endereco;
-                $clifor_endereco->Endereco = $request->Endereco;
-                $clifor_endereco->Numero = $request->Numero;
-                $clifor_endereco->Bairro = $request->Bairro;
-                $clifor_endereco->Complemento = $request->Complemento;
-                $clifor_endereco->Ponto_Referencia = $request->Ponto_Referencia;
-                $clifor_endereco->Cod_IBGE = $request->Cod_IBGE;
-                $clifor_endereco->Cidade = $request->Cidade;
-                $clifor_endereco->Estado = $request->Estado;
-                $clifor_endereco->save();
+                if ($request->CEP != null) {
+                    $clifor_endereco = new CliForEndereco;
+                    $clifor_endereco->Cod_CliFor = $clifor->Codigo;
+                    $clifor_endereco->user_id = $request->user_id;
+                    $clifor_endereco->CEP = $request->CEP;
+                    $clifor_endereco->Tipo_Endereco = $request->Tipo_Endereco;
+                    $clifor_endereco->Endereco = $request->Endereco;
+                    $clifor_endereco->Numero = $request->Numero;
+                    $clifor_endereco->Bairro = $request->Bairro;
+                    $clifor_endereco->Complemento = $request->Complemento;
+                    $clifor_endereco->Ponto_Referencia = $request->Ponto_Referencia;
+                    $clifor_endereco->Cod_IBGE = $request->Cod_IBGE;
+                    $clifor_endereco->Cidade = $request->Cidade;
+                    $clifor_endereco->Estado = $request->Estado;
+                    $clifor_endereco->save();
+                }
 
                 //Contato
-                $clifor_contato = new CliForContato;
-                $clifor_contato->Cod_CliFor = $clifor->Codigo;
-                $clifor_contato->user_id = $request->user_id;
-                $clifor_contato->Tipo = $request->Tipo;
-                $clifor_contato->Setor = $request->Setor;
-                $clifor_contato->Nome = $request->Nome;
-                $clifor_contato->Data_Nasc = $request->Data_Nasc;
-                $clifor_contato->RG = $request->RG;
-                $clifor_contato->CPF = $request->CPF;
-                $clifor_contato->Celular = $request->Celular;
-                $clifor_contato->Email = $request->Email;
-                $clifor_contato->save();
+                if ($request->Nome != null) {
+                    $clifor_contato = new CliForContato;
+                    $clifor_contato->Cod_CliFor = $clifor->Codigo;
+                    $clifor_contato->user_id = $request->user_id;
+                    $clifor_contato->Tipo = $request->Tipo;
+                    $clifor_contato->Setor = $request->Setor;
+                    $clifor_contato->Nome = $request->Nome;
+                    $clifor_contato->Data_Nasc = $request->Data_Nasc;
+                    $clifor_contato->RG = $request->RG;
+                    $clifor_contato->CPF = $request->CPF;
+                    $clifor_contato->Celular = $request->Celular;
+                    $clifor_contato->Email = $request->Email;
+                    $clifor_contato->save();
+                }
 
                 //Referencia
-                $clifor_referencia = new CliForReferencia;
-                $clifor_referencia->Cod_CliFor = $clifor->Codigo;
-                $clifor_referencia->user_id = $request->user_id;
-                $clifor_referencia->Loja_Banco = $request->Loja_Banco;
-                $clifor_referencia->Conta = $request->Conta;
-                $clifor_referencia->Telefone = $request->Telefone;
-                $clifor_referencia->Ult_Compra = $request->Ult_Compra;
-                $clifor_referencia->Valor_UltCompra = $request->Valor_UltCompra;
-                $clifor_referencia->Limite = $request->Limite;
-                $clifor_referencia->save();
+                if ($request->Loja_Banco != null) {
+                    $clifor_referencia = new CliForReferencia;
+                    $clifor_referencia->Cod_CliFor = $clifor->Codigo;
+                    $clifor_referencia->user_id = $request->user_id;
+                    $clifor_referencia->Loja_Banco = $request->Loja_Banco;
+                    $clifor_referencia->Conta = $request->Conta;
+                    $clifor_referencia->Telefone = $request->Telefone;
+                    $clifor_referencia->Ult_Compra = $request->Ult_Compra;
+                    $clifor_referencia->Valor_UltCompra = $request->Valor_UltCompra;
+                    $clifor_referencia->Limite = $request->Limite;
+                    $clifor_referencia->save();
+                }
 
             }
             

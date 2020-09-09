@@ -65,15 +65,20 @@ class TransportadoraController extends Controller
                $transportadora->save();
 
                //Endereço
-               $transportadora_destino = new Transportadora_Destino;
-               $transportadora_destino->Cod_Transp = $transportadora->Codigo;
-               $transportadora_destino->user_id = $request->user_id;
-               $transportadora_destino->Destino_Cidade = $request->Destino_Cidade;
-               $transportadora_destino->Destino_UF = $request->Destino_UF;
-               $transportadora_destino->Indice = $request->Indice;
-               $transportadora_destino->save();
+               if ($request->Destino_Cidade != null) {
+                   $transportadora_destino = new Transportadora_Destino;
+                   $transportadora_destino->Cod_Transp = $transportadora->Codigo;
+                   $transportadora_destino->user_id = $request->user_id;
+                   $transportadora_destino->Destino_Cidade = $request->Destino_Cidade;
+                   $transportadora_destino->Destino_UF = $request->Destino_UF;
+                   $transportadora_destino->Indice = $request->Indice;
+                   $transportadora_destino->save();
+               }
+               
+               }
 
                //Valor
+               if($request->KmIni != null ){
                 $transportadora_valor = new Transportadora_Valor;
                 $transportadora_valor->Cod_Transp = $transportadora->Codigo;
                 $transportadora_valor->user_id = $request->user_id;

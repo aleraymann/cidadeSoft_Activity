@@ -274,7 +274,7 @@
                                             <option value="">Selecione</option>
                                             @foreach($user as $u)
                                                 @if( $u->user_id == Auth::user()->id )
-                                                    <option value="{{ $u->id }}">
+                                                    <option value="{{ $u->Codigo }}">
                                                         {{ $u->Nome }}
                                                     </option>
                                                 @endif
@@ -377,7 +377,7 @@
                                     <div class="form-group col-lg-2 ">
                                         <label for="Tipo">Tipo de Contato</label>
                                         <input type="text" class="form-control text-center"
-                                            name="Tipo" id="Tipo" placeholder="Pai, Sócio" required minlength="3"
+                                            name="Tipo" id="Tipo" placeholder="Pai, Sócio"  minlength="3"
                                             maxlength="10">
                                         <div class="invalid-feedback">
                                             Máximo 10 caracteres!
@@ -390,7 +390,7 @@
                                     <div class="form-group col-lg-3 ">
                                         <label for="Setor">Setor para Contato</label>
                                         <select class="form-control text-center" id="Setor"
-                                            name="Setor" required>
+                                            name="Setor" >
                                             <option value="">Selecione</option>
                                             <option value="Vendas">Vendas</option>
                                             <option value="Financeiro">Financeiro</option>
@@ -406,7 +406,7 @@
                                     <div class="form-group col-lg-4 ">
                                         <label for="Nome">Nome Completo</label>
                                         <input type="text" class="form-control text-center"
-                                            name="Nome" id="Nome" required>
+                                            name="Nome" id="Nome" >
                                         <div class="invalid-feedback">
                                             Por favor, Campo Obrigatório!
                                         </div>
@@ -417,7 +417,7 @@
                                     <div class="form-group col-lg-3">
                                         <label for="Data_Nasc">Data de Nascimento</label>
                                         <input type="text" class="form-control text-center"
-                                            name="Data_Nasc" id="Data_Nasc" placeholder="DD/MM/AAAA" required>
+                                            name="Data_Nasc" id="Data_Nasc" placeholder="DD/MM/AAAA" >
                                         <div class="invalid-feedback">
                                             Por favor, Campo Obrigatório!
                                         </div>
@@ -439,7 +439,7 @@
                                     <div class="form-group col-lg-2">
                                         <label for="RG">RG do Contato</label>
                                         <input type="text" class="form-control text-center"
-                                            name="RG" id="RG" required>
+                                            name="RG" id="RG" >
                                         <div class="invalid-feedback">
                                             Por favor, Campo Obrigatório!
                                         </div>
@@ -450,7 +450,7 @@
                                     <div class="form-group col-lg-2">
                                         <label for="CPF">CPF do contato</label>
                                         <input type="text" class="form-control text-center"
-                                            name="CPF" id="CPF" required onblur="validarCPF(this)">
+                                            name="CPF" id="CPF"  onblur="validarCPF(this)">
                                         <div class="invalid-feedback">
                                             Por favor, Campo Obrigatório!
                                         </div>
@@ -461,7 +461,7 @@
                                     <div class="form-group col-lg-2">
                                         <label for="Celular">Celular</label>
                                         <input type="text" class="form-control text-center"
-                                            name="Celular" id="Celular" required>
+                                            name="Celular" id="Celular" >
                                         <div class="invalid-feedback">
                                             Por favor, Campo Obrigatório!
                                         </div>
@@ -472,7 +472,7 @@
                                     <div class="form-group col-lg-6">
                                         <label for="Email">Email:</label>
                                         <input type="email" class="form-control text-center"
-                                            name="Email" id="Email" required>
+                                            name="Email" id="Email" >
                                         <div class="invalid-feedback">
                                             Por favor, Campo Obrigatório!
                                         </div>
@@ -496,7 +496,7 @@
                                     <div class="form-group col-lg-3">
                                         <label for="Tipo_Endereco">Tipo do Endereço</label>
                                         <select class="form-control text-center" id="Tipo_Endereco"
-                                            name="Tipo_Endereco" required>
+                                            name="Tipo_Endereco" >
                                             <option value="">Selecione</option>
                                             <option value="C">Correspondência</option>
                                             <option value="E">Entrega</option>
@@ -512,7 +512,7 @@
                                     <div class="form-group col-lg-2">
                                         <label for="CEP">CEP</label>
                                         <input type="text" class="form-control text-center"
-                                            name="CEP" id="CEP" placeholder="000000000" required>
+                                            name="CEP" id="CEP" placeholder="000000000" >
                                         <div class="invalid-feedback">
                                             Por favor, Campo Obrigatório!
                                         </div>
@@ -535,7 +535,7 @@
                                     <div class="form-group col-lg-4 ">
                                         <label for="Endereco">Endereço</label>
                                         <input type="text" class="form-control text-center"
-                                            name="Endereco" id="Endereco" required>
+                                            name="Endereco" id="Endereco" >
                                         <div class="invalid-feedback">
                                             Por favor, Campo Obrigatório!
                                         </div>
@@ -608,7 +608,7 @@
                                     <div class="form-group col-lg-4">
                                         <label for="Loja_Banco"> Banco / Loja de Referência</label>
                                         <input type="text" class="form-control text-center"
-                                            name="Loja_Banco" id="Loja_Banco" maxlength="45" required>
+                                            name="Loja_Banco" id="Loja_Banco" maxlength="45" >
                                         <div class="invalid-feedback">
                                             Campo obrigatório!
                                         </div>
@@ -645,7 +645,7 @@
                                     <div class="form-group col-sm-4 ">
                                         <label for="Valor_UltCompra">Valor da última compra</label>
                                         <input type="text" class="form-control text-center"
-                                            name="Valor_UltCompra" required id="Valor_UltCompra" maxlength="10">
+                                            name="Valor_UltCompra"  id="Valor_UltCompra" maxlength="10">
                                         <div class="invalid-feedback">
                                             Campo obrigatório!
                                         </div>
@@ -656,7 +656,7 @@
                                     <div class="form-group col-sm-4">
                                         <label for="Limite">Limite que tem no estabelecimento</label>
                                         <input type="text" class="form-control text-center"
-                                            name="Limite" id="Limite" placeholder="" maxlength="10" required>
+                                            name="Limite" id="Limite" placeholder="" maxlength="10" >
                                         <div class="invalid-feedback">
                                             Campo obrigatório!
                                         </div>

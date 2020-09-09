@@ -3,10 +3,65 @@
 namespace App\model;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Activitylog\Traits\LogsActivity;
 
 
 class CliFor extends Model
 {
+  use LogsActivity;
+
+  protected static $logAttributes = [
+    "Class_ABC",
+    "Tip",
+    "Ativo",
+    "Data_Cadastro",
+    "Fis_Jur",
+    "Razao_Social",
+    "Nome_Fantasia",
+    "Data_Nascimento",
+    "Estado_Civil",
+    "Sexo",
+    "CNPJ",
+    "IE",
+    "IEST",
+    "IM",
+    "CPF",
+    "RG",
+    "Telefone",
+    "Operadora1",
+    "Celular",
+    "Operadora2",
+    "Comercial",
+    "Operadora3",
+    "Email",
+    "Site",
+    "Cli_Atacado",
+    "Perfil",
+    "Profissao",
+    "SitFinanc",
+    "LimiCred",
+    "PercDescAcresc",
+    "Vendedor",
+    "Local_UltMov",
+    "Data_UltMov",
+    "Observacoes",
+    "Aviso",
+    "Empresa",
+  ];
+  protected static $logName = 'CliFor';
+  protected static $logOnlyDirty = true;
+  public function getDescriptionForEvent(string $eventName): string
+  {   
+      if($eventName == "created"){
+          $eventName = "criado";
+      }else if($eventName == "updated"){
+          $eventName = "editado";
+      }else if($eventName == "deleted"){
+          $eventName = "excluido";
+      }
+      return "CliFor {$eventName}";
+  }
+
   protected $table = "clifor";
   public $timestamps = false;
   protected $primaryKey = 'Codigo';

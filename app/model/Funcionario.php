@@ -3,11 +3,46 @@
 
 namespace App\model;
 use Illuminate\Database\Eloquent\Model;
-
-
+use Spatie\Activitylog\Traits\LogsActivity;
 
 class Funcionario extends Model
 {
+    use LogsActivity;
+
+  protected static $logAttributes = [
+    "Nome",
+    "CPF",
+    "RG",
+    "CEP",
+    "Endereco",
+    "Bairro",
+    "Cidade",
+    "Estado",
+    "Telefone",
+    "Celular",
+    "Email",
+    "Usuario",
+    "Senha",
+    "ComiVend",
+    "ComiServ",
+    "LimDescPV",
+    "LimDescPP",
+    "idmsgs"
+  ];
+  protected static $logName = 'Funcionário';
+  protected static $logOnlyDirty = true;
+  public function getDescriptionForEvent(string $eventName): string
+  {   
+      if($eventName == "created"){
+          $eventName = "criado";
+      }else if($eventName == "updated"){
+          $eventName = "editado";
+      }else if($eventName == "deleted"){
+          $eventName = "excluido";
+      }
+      return "Funcionário {$eventName}";
+  }
+
     protected $table = "funcionario";
     public $timestamps = false;
     protected $primaryKey = 'Codigo';

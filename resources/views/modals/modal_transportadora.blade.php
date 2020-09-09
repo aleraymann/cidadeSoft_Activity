@@ -322,7 +322,7 @@
                                     <div class="form-group col-lg-4">
                                         <label for="Destino_Cidade">Cidade</label>
                                         <input type="text" class="form-control text-center" name="Destino_Cidade"
-                                            id="Destino_Cidade" placeholder="Cidade" required minlength="3"
+                                            id="Destino_Cidade" placeholder="Cidade"  minlength="3"
                                             maxlength="50">
                                         <div class="invalid-feedback">
                                             Campo Obrigatório, Mínimo 3 caracteres!
@@ -334,7 +334,7 @@
                                     <div class="form-group col-lg-4">
                                         <label for="Destino_UF">Estado de Destino</label>
                                         <select class="form-control text-center" id="Destino_UF" name="Destino_UF"
-                                            required>
+                                            >
                                             <option value="">Selecione</option>
                                             <option value="AC">Acre</option>
                                             <option value="AL">Alagoas</option>
@@ -374,7 +374,7 @@
                                     <div class="form-group col-lg-4">
                                         <label for="Indice">Índice para cobrança</label>
                                         <input type="text" class="form-control text-center" name="Indice" id="Indice"
-                                            maxlength="3" minlength="1" value="0.00" required onblur="indice()">
+                                            maxlength="3" minlength="1" value="0.00"  onblur="indice()">
                                         <div class="invalid-feedback">
                                             Por favor, Campo Obrigatório!
                                         </div>
@@ -403,7 +403,7 @@
                                     <div class="form-group col-lg-4">
                                         <label for="KmIni">Km Inicial</label>
                                         <input type="text" class="form-control text-center" name="KmIni" id="KmIni"
-                                            placeholder="" required>
+                                            placeholder="" >
                                         <div class="invalid-feedback">
                                             Por Favor, Campo Obrigatório!
                                         </div>
@@ -414,7 +414,7 @@
                                     <div class="form-group col-lg-4">
                                         <label for="KmFim">Km Final</label>
                                         <input type="text" class="form-control text-center" name="KmFim" id="KmFim"
-                                            placeholder="" required>
+                                            placeholder="" >
                                         <div class="invalid-feedback">
                                             Por Favor, Campo Obrigatório!
                                         </div>
@@ -425,7 +425,7 @@
                                     <div class="form-group col-lg-4">
                                         <label for="Indice_v">Índice para cobrança</label>
                                         <input type="text" class="form-control text-center" name="Indice_v"
-                                            id="Indice_v" minlength="1" value="0.00" required onblur="indice_v()">
+                                            id="Indice_v" minlength="1" value="0.00"  onblur="indice_v()">
                                         <div class="invalid-feedback">
                                             Por favor, Campo Obrigatório!
                                         </div>
