@@ -62,6 +62,8 @@
                                     <label>{{ $funcionario->Usuario }} </label><br>
                                     <b class="ls-label-text">Numero de Identificação:</b>
                                     <label>{{ $funcionario->idmsgs }} </label><br>
+                                    <b class="ls-label-text">Cod da Empresa:</b>
+                                    <label>{{ $funcionario->Empresa }} </label><br>
                                 </td>
                                 <td>
                                     <b class="ls-label-text">Comissão de Venda:</b>

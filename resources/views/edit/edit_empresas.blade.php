@@ -200,8 +200,8 @@
                     </div>
                     <div class="form-row">
                       <div class="form-group col-lg-4">
-                        <label for="Nome_Fantasia">Nome Fantasia:</label>
-                        <input type="text" class="form-control input-border-bottom" name="Nome_Fantasia" id="Nome_Fantasia"
+                        <label for="Nome_Fantasia">Nome Fantasia</label>
+                        <input type="text" class="form-control text-center" name="Nome_Fantasia" id="Nome_Fantasia"
                         placeholder="Nome Fantasia ou Apelido" required minlength="4" maxlength="60" 
                         value="{{isset($empresa->Nome_Fantasia) ? $empresa->Nome_Fantasia : '' }}" >
                         <div class="invalid-feedback">
@@ -212,8 +212,8 @@
                         </div>
                       </div>
                       <div class="form-group col-lg-4">
-                        <label for="Razao_Social">Razão Social:</label>
-                        <input type="text" class="form-control input-border-bottom" name="Razao_Social" id="Razao_Social"
+                        <label for="Razao_Social">Razão Social</label>
+                        <input type="text" class="form-control text-center" name="Razao_Social" id="Razao_Social"
                         placeholder="Razão Social" required  minlength="4" maxlength="60"  
                         value="{{isset($empresa->Razao_Social) ? $empresa->Razao_Social : '' }}" >
                         <div class="invalid-feedback">
@@ -224,8 +224,8 @@
                         </div>
                       </div>
                       <div class="form-group col-lg-2">
-                        <label for="CEP">CEP:</label>
-                        <input type="text" class="form-control input-border-bottom" name="CEP" id="CEP" placeholder="000000000"  
+                        <label for="CEP">CEP</label>
+                        <input type="text" class="form-control text-center" name="CEP" id="CEP" placeholder="000000000"  
                         value="{{isset($empresa->CEP) ? $empresa->CEP : '' }}" >
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -235,10 +235,10 @@
                         </div>      
                       </div>
                       <div class="form-group col-lg-2">
-                        <label for="Cod_IBGE">Codigo IBGE:</label>
-                        <input type="number" class="form-control input-border-bottom" name="Cod_IBGE" id="Cod_IBGE"
+                        <label for="Cod_IBGE">Codigo IBGE</label>
+                        <input type="number" class="form-control text-center" name="Cod_IBGE" id="Cod_IBGE"
                         placeholder=""  value="{{isset($empresa->Cod_IBGE) ? $empresa->Cod_IBGE : '' }}" >
-                        <div class="invalid-feedback">
+                        <div class="invalid-feedback" readonly>
                           Por favor, Campo Obrigatório!
                         </div>
                         <div class="valid-feedback">
@@ -248,8 +248,8 @@
                     </div>
                     <div class="form-row">
                       <div class="form-group col-lg-5">
-                        <label for="Endereco">Endereço:</label>
-                        <input type="text" class="form-control input-border-bottom" name="Endereco" id="Endereco"
+                        <label for="Endereco">Endereço</label>
+                        <input type="text" class="form-control text-center" name="Endereco" id="Endereco"
                         placeholder="Rua, Travessa, Avenida"  value="{{isset($empresa->Endereco) ? $empresa->Endereco : '' }}" >
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -259,8 +259,8 @@
                         </div>
                       </div>
                       <div class="form-group col-lg-1">
-                        <label for="Numero">Número:</label>
-                        <input type="number" class="form-control input-border-bottom" name="Numero" id="Numero" 
+                        <label for="Numero">Número</label>
+                        <input type="number" class="form-control text-center" name="Numero" id="Numero" 
                         value="{{isset($empresa->Numero) ? $empresa->Numero : '' }}" >
                         <div class="invalid-feedback" >
                           Por favor, Campo Obrigatório!
@@ -270,8 +270,8 @@
                         </div>
                       </div>
                       <div class="form-group col-lg-2">
-                        <label for="Bairro">Bairro: </label>
-                        <input type="text" class="form-control input-border-bottom" name="Bairro" id="Bairro" 
+                        <label for="Bairro">Bairro </label>
+                        <input type="text" class="form-control text-center" name="Bairro" id="Bairro" 
                         value="{{isset($empresa->Bairro) ? $empresa->Bairro : '' }}" >
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -281,9 +281,9 @@
                         </div>
                       </div>
                       <div class="form-group col-lg-2">
-                        <label for="Cidade">Cidade:</label>
-                        <input type="text" class="form-control input-border-bottom" name="Cidade" id="Cidade"  
-                        value="{{isset($empresa->Cidade) ? $empresa->Cidade : '' }}" >
+                        <label for="Cidade">Cidade</label>
+                        <input type="text" class="form-control text-center" name="Cidade" id="Cidade"  
+                        value="{{isset($empresa->Cidade) ? $empresa->Cidade : '' }}" readonly >
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
                         </div>
@@ -292,9 +292,9 @@
                         </div>
                       </div>
                       <div class="form-group col-lg-2">
-                        <label for="Estado">Estado:</label>
-                        <input type="text" class="form-control input-border-bottom" name="Estado" id="Estado" minlength="2" maxlength="2" placeholder="Sigla"
-                        value="{{isset($empresa->Sigla) ? $empresa->Sigla : '' }}" >
+                        <label for="Estado">Estado</label>
+                        <input type="text" class="form-control text-center" name="Estado" id="Estado" minlength="2" maxlength="2" placeholder="Sigla"
+                        value="{{isset($empresa->Sigla) ? $empresa->Sigla : '' }}" readonly>
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
                         </div>
@@ -307,7 +307,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-2">
                         <label for="Telefone">Telefone Principal</label>
-                        <input type="text" class="form-control input-border-bottom" name="Telefone" id="Telefone"  
+                        <input type="text" class="form-control text-center" name="Telefone" id="Telefone"  
                         value="{{isset($empresa->Telefone) ? $empresa->Telefone : '' }}" >
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -319,7 +319,7 @@
                       
                       <div class="form-group col-lg-2">
                         <label for="Celular">Celular de Plantão</label>
-                        <input type="text" class="form-control input-border-bottom" name="Celular" id="Celular"  
+                        <input type="text" class="form-control text-center" name="Celular" id="Celular"  
                         value="{{isset($empresa->Celular) ? $empresa->Celular : '' }}" >
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -331,7 +331,7 @@
                       
                       <div class="form-group col-lg-2">
                         <label for="FAX">Fax</label>
-                        <input type="text" class="form-control input-border-bottom" name="FAX" id="FAX"  value="{{isset($empresa->FAX) ? $empresa->FAX : '' }}" >
+                        <input type="text" class="form-control text-center" name="FAX" id="FAX"  value="{{isset($empresa->FAX) ? $empresa->FAX : '' }}" >
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
                         </div>
@@ -341,7 +341,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Email">Email:</label>
-                        <input type="email" class="form-control input-border-bottom" name="Email" id="Email"
+                        <input type="email" class="form-control text-center" name="Email" id="Email"
                         placeholder="algo@algo.com"  value="{{isset($empresa->Email) ? $empresa->Email : '' }}" >
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -352,7 +352,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Site">Web Site:</label>
-                        <input type="text" class="form-control input-border-bottom" name="Site" id="Site"
+                        <input type="text" class="form-control text-center" name="Site" id="Site"
                         placeholder="www.algo.com"  value="{{isset($empresa->Site) ? $empresa->Site : '' }}" >
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -365,7 +365,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-2">
                         <label for="IM">Incrição Municipal</label>
-                        <input type="text" class="form-control input-border-bottom" name="IM" id="IM"  minlength="7" maxlength="14" 
+                        <input type="text" class="form-control text-center" name="IM" id="IM"  minlength="7" maxlength="14" 
                         value="{{isset($empresa->IM) ? $empresa->IM : '' }}" >
                         <div class="invalid-feedback">
                           Mínimo 7 caracteres!
@@ -376,7 +376,7 @@
                       </div>
                       <div class="form-group col-lg-2">
                         <label for="IE">incrição Estadual</label>
-                        <input type="text" class="form-control input-border-bottom" name="IE" id="IE"  minlength="9" maxlength="13"  
+                        <input type="text" class="form-control text-center" name="IE" id="IE"  minlength="9" maxlength="13"  
                         value="{{isset($empresa->IE) ? $empresa->IE : '' }}" >
                         <div class="invalid-feedback">
                           Mínimo 9 caracteres!
@@ -387,7 +387,7 @@
                       </div>
                       <div class="form-group col-lg-2">
                         <label for="CNPJ">CNPJ</label>
-                        <input type="text" class="form-control input-border-bottom" name="CNPJ" id="CNPJ"  
+                        <input type="text" class="form-control text-center" name="CNPJ" id="CNPJ"  
                         value="{{isset($empresa->CNPJ) ? $empresa->CNPJ : '' }}"  onblur="validarCNPJ(this)">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -398,7 +398,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Atividade">Ramo da Atividade:</label>
-                        <select class="form-control input-border-bottom" id="Atividade" name="Atividade">
+                        <select class="form-control text-center" id="Atividade" name="Atividade">
                           <option value="{{isset($empresa->Atividade) ? $empresa->Atividade : '' }} ">{{ $empresa->Atividade}}</option>
                           <option value="0">Selecione</option>
                           <option value="Açougue">Açougue</option>
@@ -457,7 +457,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="CNAE">Cod. Nac. de Ativ. da Empresa</label>
-                        <input type="text" class="form-control input-border-bottom" name="CNAE" id="CNAE"  maxlength="10"  
+                        <input type="text" class="form-control text-center" name="CNAE" id="CNAE"  maxlength="10"  
                         value="{{isset($empresa->CNAE) ? $empresa->CNAE : '' }}" >
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -471,7 +471,7 @@
                       
                       <div class="form-group col-lg-2">
                         <label for="CliFor_Saida">Cli/For Saída</label>
-                        <input type="text" class="form-control input-border-bottom" name="CliFor_Saida" id="CliFor_Saida"
+                        <input type="text" class="form-control text-center" name="CliFor_Saida" id="CliFor_Saida"
                         value="{{isset($empresa->CliFor_Saida) ? $empresa->CliFor_Saida : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -482,7 +482,7 @@
                       </div>
                       <div class="form-group col-lg-2">
                         <label for="CliFor_Entrada">Cli/For Entrada</label>
-                        <input type="text" class="form-control input-border-bottom" name="CliFor_Entrada" id="CliFor_Entrada" 
+                        <input type="text" class="form-control text-center" name="CliFor_Entrada" id="CliFor_Entrada" 
                         value="{{isset($empresa->CliFor_Entrada) ? $empresa->CliFor_Entrada : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -493,7 +493,7 @@
                       </div>
                       <div class="form-group col-lg-2">
                         <label for="`Cfg_DataUltExec">Últ Exec do Sistema</label>
-                        <input type="date" class="form-control input-border-bottom" name="Cfg_DataUltExec" id="Cfg_DataUltExec"  
+                        <input type="date" class="form-control text-center" name="Cfg_DataUltExec" id="Cfg_DataUltExec"  
                         value="{{isset($empresa->Cfg_DataUltExec) ? $empresa->Cfg_DataUltExec : '' }}" readonly>
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -504,8 +504,8 @@
                       </div>
 
                       <div class="form-group col-lg-2">
-                        <label for="`Cfg_Ultbackup">Ultimo Backup:</label>
-                        <input type="date" class="form-control input-border-bottom" name="Cfg_Ultbackup" id="Cfg_Ultbackup"  
+                        <label for="`Cfg_Ultbackup">Ultimo Backup</label>
+                        <input type="date" class="form-control text-center" name="Cfg_Ultbackup" id="Cfg_Ultbackup"  
                         value="{{isset($empresa->Cfg_Ultbackup) ? $empresa->Cfg_Ultbackup : '' }}" readonly>
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -518,7 +518,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-3">
                         <label for="Vend_CliForPadrao">Vendedor Padrão </label>
-                        <select class="form-control input-border-bottom" id="Vend_CliForPadrao" name="Vend_CliForPadrao">
+                        <select class="form-control text-center" id="Vend_CliForPadrao" name="Vend_CliForPadrao">
                           @foreach($user as $u)
                           @if(auth()->user()->id == $u->adm)
                           <option value="{{$u->id}}" {{ $empresa->Vend_CliForPadrao == $u->id ? "selected" : "" }} >{{ $u->name}}</option>
@@ -534,7 +534,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Vend_CondPadrao">Condição de venda Padrão</label>
-                        <select class="form-control input-border-bottom" id="Vend_CondPadrao" name="Vend_CondPadrao">
+                        <select class="form-control text-center" id="Vend_CondPadrao" name="Vend_CondPadrao">
                           @foreach($cond_pag as $cond_pag)
                           <option value="{{$cond_pag->Codigo}}" {{ $empresa->Vend_CondPadrao == $cond_pag->Codigo ? "selected" : "" }} >{{ $cond_pag->Condicao}}</option>
                           @endforeach                          
@@ -548,7 +548,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Vend_FormPadrao">Forma de Pagamento padrão</label>
-                        <select class="form-control input-border-bottom" id="Vend_FormPadrao" name="Vend_FormPadrao">
+                        <select class="form-control text-center" id="Vend_FormPadrao" name="Vend_FormPadrao">
                           @foreach($form_pag as $form_pag)
                           <option value="{{$form_pag->Codigo}}" {{ $empresa->Vend_FormPadrao == $form_pag->Codigo ? "selected" : "" }} >{{ $form_pag->Descricao }}</option>
                           @endforeach                             
@@ -570,7 +570,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-4">
                         <label for="Cfg_DirRel">Diretorio dos registros</label>
-                        <input type="text" class="form-control input-border-bottom" name="Cfg_DirRel" id="Cfg_DirRel" minlength="5" maxlength="150" 
+                        <input type="text" class="form-control text-center" name="Cfg_DirRel" id="Cfg_DirRel" minlength="5" maxlength="150" 
                         value="{{isset($empresa->Cfg_DirRel) ? $empresa->Cfg_DirRel : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -581,7 +581,7 @@
                       </div>
                       <div class="form-group col-lg-4">
                         <label for="Cfg_DirFotoProd">Diretorio das fotos dos Produtos:</label>
-                        <input type="text" class="form-control input-border-bottom" name="Cfg_DirFotoProd" id="Cfg_DirFotoProd" minlength="5" maxlength="150"
+                        <input type="text" class="form-control text-center" name="Cfg_DirFotoProd" id="Cfg_DirFotoProd" minlength="5" maxlength="150"
                         value="{{isset($empresa->Cfg_DirFotoProd) ? $empresa->Cfg_DirFotoProd : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -592,7 +592,7 @@
                       </div>
                       <div class="form-group col-lg-4">
                         <label for="Cfg_ImpOrcamento">Nome da Impressora(Orçamentos)</label>
-                        <input type="text" class="form-control input-border-bottom" name="Cfg_ImpOrcamento" id="Cfg_ImpOrcamento" minlength="3" maxlength="20"
+                        <input type="text" class="form-control text-center" name="Cfg_ImpOrcamento" id="Cfg_ImpOrcamento" minlength="3" maxlength="20"
                         value="{{isset($empresa->Cfg_ImpOrcamento) ? $empresa->Cfg_ImpOrcamento : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -605,7 +605,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-4">
                         <label for="Cfg_ImpPedido">Nome da Impressora(Pedidos)</label>
-                        <input type="text" class="form-control input-border-bottom" name="Cfg_ImpPedido" id="Cfg_ImpPedido" minlength="3" maxlength="20"
+                        <input type="text" class="form-control text-center" name="Cfg_ImpPedido" id="Cfg_ImpPedido" minlength="3" maxlength="20"
                         value="{{isset($empresa->Cfg_ImpPedido) ? $empresa->Cfg_ImpPedido : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -616,7 +616,7 @@
                       </div>
                       <div class="form-group col-lg-4">
                         <label for="Cfg_ImpOs">Nome da Impressora(OS)</label>
-                        <input type="text" class="form-control input-border-bottom" name="Cfg_ImpOs" id="Cfg_ImpOs" minlength="3" maxlength="20"
+                        <input type="text" class="form-control text-center" name="Cfg_ImpOs" id="Cfg_ImpOs" minlength="3" maxlength="20"
                         value="{{isset($empresa->Cfg_ImpOs) ? $empresa->Cfg_ImpOs : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -627,7 +627,7 @@
                       </div>
                       <div class="form-group col-lg-4">
                         <label for="Cfg_ImpNfe">Nome da Impressora(NFEs)</label>
-                        <input type="text" class="form-control input-border-bottom" name="Cfg_ImpNfe" id="Cfg_ImpNfe" minlength="3" maxlength="20"
+                        <input type="text" class="form-control text-center" name="Cfg_ImpNfe" id="Cfg_ImpNfe" minlength="3" maxlength="20"
                         value="{{isset($empresa->Cfg_ImpNfe) ? $empresa->Cfg_ImpNfe : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -640,7 +640,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-4">
                         <label for="Cfg_ImpEtiq">Nome da Impressora(Etiquetas)</label>
-                        <input type="text" class="form-control input-border-bottom" name="Cfg_ImpEtiq" id="Cfg_ImpEtiq" minlength="3" maxlength="20"
+                        <input type="text" class="form-control text-center" name="Cfg_ImpEtiq" id="Cfg_ImpEtiq" minlength="3" maxlength="20"
                         value="{{isset($empresa->Cfg_ImpEtiq) ? $empresa->Cfg_ImpEtiq : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -651,7 +651,7 @@
                       </div>
                       <div class="form-group col-lg-4">
                         <label for="Cfg_ImpEtiqMod">Nome da Impressora(Etiquetas Modelo1)</label>
-                        <input type="text" class="form-control input-border-bottom" name="Cfg_ImpEtiqMod" id="Cfg_ImpEtiqMod" minlength="3" maxlength="20"
+                        <input type="text" class="form-control text-center" name="Cfg_ImpEtiqMod" id="Cfg_ImpEtiqMod" minlength="3" maxlength="20"
                         value="{{isset($empresa->Cfg_ImpEtiqMod) ? $empresa->Cfg_ImpEtiqMod : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -662,7 +662,7 @@
                       </div>
                       <div class="form-group col-lg-4">
                         <label for="Cfg_TranSeq">Num Sequen. das Transacoes Fiscais Financeiras</label>
-                        <input type="text" class="form-control input-border-bottom" name="Cfg_TranSeq" id="Cfg_TranSeq"  maxlength="10"
+                        <input type="text" class="form-control text-center" name="Cfg_TranSeq" id="Cfg_TranSeq"  maxlength="10"
                         value="{{isset($empresa->Cfg_TranSeq) ? $empresa->Cfg_TranSeq : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -678,9 +678,9 @@
                 <div role="tabpanel" class="tab-pane fade" id="smtp">
                   <div class="container">
                     <div class="form-row">
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-5">
                         <label for="SMTP_CorpoEmail">Corpo da Mensagem a ser enviada por email</label>
-                        <input type="text" class="form-control input-border-bottom" name="SMTP_CorpoEmail" id="SMTP_CorpoEmail" 
+                        <input type="text" class="form-control text-center" name="SMTP_CorpoEmail" id="SMTP_CorpoEmail" 
                         value="{{isset($empresa->SMTP_CorpoEmail) ? $empresa->SMTP_CorpoEmail : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -689,9 +689,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-5">
                         <label for="SMTP_Serv">Endereço do servidor SMTP</label>
-                        <input type="text" class="form-control input-border-bottom" name="SMTP_Serv" id="SMTP_Serv"  maxlength="50"
+                        <input type="text" class="form-control text-center" name="SMTP_Serv" id="SMTP_Serv"  maxlength="50"
                         value="{{isset($empresa->SMTP_Serv) ? $empresa->SMTP_Serv : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -702,7 +702,7 @@
                       </div>
                       <div class="form-group col-lg-2">
                         <label for="SMTP_Porta">Porta SMTP</label>
-                        <input type="text" class="form-control input-border-bottom" name="SMTP_Porta" id="SMTP_Porta" minlength="1" maxlength="5"
+                        <input type="text" class="form-control text-center" name="SMTP_Porta" id="SMTP_Porta" minlength="1" maxlength="5"
                         value="{{isset($empresa->SMTP_Porta) ? $empresa->SMTP_Porta : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -715,7 +715,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-6">
                         <label for="SMTP_Usuario">Nome do usuario no servidor SMTP</label>
-                        <input type="text" class="form-control input-border-bottom" name="SMTP_Usuario" id="SMTP_Usuario"  minlength="5" maxlength="45"
+                        <input type="text" class="form-control text-center" name="SMTP_Usuario" id="SMTP_Usuario"  minlength="5" maxlength="45"
                         value="{{isset($empresa->SMTP_Usuario) ? $empresa->SMTP_Usuario : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -724,9 +724,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-6">
                         <label for="SMTP_Senha">Senha do usuário SMTP</label>
-                        <input type="password" class="form-control input-border-bottom" name="SMTP_Senha" id="SMTP_Senha"  minlength="5" maxlength="45"
+                        <input type="password" class="form-control text-center" name="SMTP_Senha" id="SMTP_Senha"  minlength="5" maxlength="45"
                         value="{{isset($empresa->SMTP_Senha) ? $empresa->SMTP_Senha : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -737,38 +737,33 @@
                       </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-lg-6">
+                      <div class="form-group col-lg-4">
                         <div class="form-check-inline">
                           <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" id="SMTP_Seguro" name="SMTP_Seguro" value="1"  <?php if($empresa->SMTP_Seguro == '1'){ echo "checked"; } ?>>Utiliza Sistema de Seguranca SSL ou TLS?
                           </label>
                         </div>
                       </div>
-                      <div class="form-group col-lg-6">
+                      <div class="form-group col-lg-4">
                         <div class="form-check-inline">
                           <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" id="SMTP_EmailCopia" name="SMTP_EmailCopia" value="1"  <?php if($empresa->SMTP_EmailCopia == '1'){ echo "checked"; } ?>>Enviar cópia de email para e Empresa?
                           </label>
                         </div>
                       </div>
-                      
-                    </div>
-                    <div class="form-row">
                       <div class="form-group col-lg-4">
                         <label for="SMTP_SSL">Tipo de Segurança SSL ou TLS</label>
-                        <select class="form-control input-border-bottom" id="SMTP_SSL" name="SMTP_SSL">
+                        <select class="form-control text-center" id="SMTP_SSL" name="SMTP_SSL">
                           <option value="{{isset($empresa->SMTP_SSL) ? $empresa->SMTP_SSL : '' }} ">{{ $empresa->SMTP_SSL}}</option> 
                           <option value="TLS">TLS</option>
                           <option value="SSL">SSL</option>
                         </select>
                       </div>
                     </div>
-                    <br>
-                    <hr>
                     <div class="form-row">
-                      <div class="form-group col-lg-3">
+                      <div class="form-group col-lg-4">
                         <label for="WS_Plataforma">Plataforma WebService</label>
-                        <input type="text" class="form-control input-border-bottom" name="WS_Plataforma" id="WS_Plataforma"  maxlength="15"
+                        <input type="text" class="form-control text-center" name="WS_Plataforma" id="WS_Plataforma"  maxlength="15"
                         value="{{isset($empresa->WS_Plataforma) ? $empresa->WS_Plataforma : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -777,9 +772,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-3">
+                      <div class="form-group col-lg-4">
                         <label for="WB_Endereco">End. do Web Service Ecommerce</label>
-                        <input type="text" class="form-control input-border-bottom" name="WB_Endereco" id="WB_Endereco" maxlength="150"
+                        <input type="text" class="form-control text-center" name="WB_Endereco" id="WB_Endereco" maxlength="150"
                         value="{{isset($empresa->WB_Endereco) ? $empresa->WB_Endereco : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -789,9 +784,9 @@
                         </div>
                       </div>
                       
-                      <div class="form-group col-lg-3">
+                      <div class="form-group col-lg-4">
                         <label for="WS_WSDL">WSDL do WebService Ecommerce</label>
-                        <input type="text" class="form-control input-border-bottom" name="WS_WSDL" id="WS_WSDL"  maxlength="150"
+                        <input type="text" class="form-control text-center" name="WS_WSDL" id="WS_WSDL"  maxlength="150"
                         value="{{isset($empresa->WS_WSDL) ? $empresa->WS_WSDL : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -802,9 +797,9 @@
                       </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-6">
                         <label for="WS_Usuario">Usuário no WebService Ecommerce</label>
-                        <input type="text" class="form-control input-border-bottom" name="WS_Usuario" id="WS_Usuario"  minlength="4" maxlength="45"
+                        <input type="text" class="form-control text-center" name="WS_Usuario" id="WS_Usuario"  minlength="4" maxlength="45"
                         value="{{isset($empresa->WS_Usuario) ? $empresa->WS_Usuario : '' }} ">
                         <div class="invalid-feedback">
                           Mínimo 4 caracteres!
@@ -813,9 +808,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-6">
                         <label for="WS_Senha">Senha no WebService Ecommerce</label>
-                        <input type="password" class="form-control input-border-bottom" name="WS_Senha" id="WS_Senha"  minlength="4" maxlength="45"
+                        <input type="password" class="form-control text-center" name="WS_Senha" id="WS_Senha"  minlength="4" maxlength="45"
                         value="{{isset($empresa->WS_Senha) ? $empresa->WS_Senha : '' }} ">
                         <div class="invalid-feedback">
                           Mínimo 4 caracteres!
@@ -831,9 +826,9 @@
                 <div role="tabpanel" class="tab-pane fade" id="custos">
                   <div class="container mt-2">
                     <div class="form-row">
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-6">
                         <label for="Fin_CFixos"> Percentual de Custos Fixos para Calculo Markup</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fin_CFixos" id="Fin_CFixos" 
+                        <input type="text" class="form-control text-center" name="Fin_CFixos" id="Fin_CFixos" 
                         onblur="fin_CFixos()"maxlength="3" minlength="1"
                         value="{{isset($empresa->Fin_CFixos) ? $empresa->Fin_CFixos : '' }} ">
                         <div class="invalid-feedback">
@@ -843,9 +838,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-6">
                         <label for="Fin_Desloc">Preço Deslocamento para Calculo Markup</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fin_Desloc" id="Fin_Desloc" 
+                        <input type="text" class="form-control text-center" name="Fin_Desloc" id="Fin_Desloc" 
                         onblur="fin_Desloc()" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fin_Desloc) ? $empresa->Fin_Desloc : '' }} ">
                         <div class="invalid-feedback">
@@ -855,9 +850,11 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-4">
+                      </div>
+                      <div class="form-row">
+                      <div class="form-group col-lg-6">
                         <label for="Fin_Comissao">Percentual de Comissão para Cálculo Markup</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fin_Comissao"
+                        <input type="text" class="form-control text-center" name="Fin_Comissao"
                         onblur="fin_Comissao()" id="Fin_Comissao" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fin_Comissao) ? $empresa->Fin_Comissao : '' }} ">
                         <div class="invalid-feedback">
@@ -867,14 +864,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                    </div>
-                    <div class="form-row">
-                     
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-6">
                         <label for="Fin_Inad">Percentual de Inadimplência para Cálculo Markup</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fin_Inad"
+                        <input type="text" class="form-control text-center" name="Fin_Inad"
                         onblur="fin_Inad()"  id="Fin_Inad" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fin_Inad) ? $empresa->Fin_Inad : '' }} ">
                         <div class="invalid-feedback">
@@ -884,9 +876,13 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-4">
+                    </div>
+          
+                    <div class="form-row">
+                      
+                      <div class="form-group col-lg-6">
                         <label for="Fin_Lucro"> Percentual Médio de Lucratividade para Calculo Markup</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fin_Lucro"
+                        <input type="text" class="form-control text-center" name="Fin_Lucro"
                         onblur="fin_Lucro()" id="Fin_Lucro" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fin_Lucro) ? $empresa->Fin_Lucro : '' }} ">
                         <div class="invalid-feedback">
@@ -896,9 +892,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-6">
                         <label for="Fin_DescPV">Percentual de Desc. a Prazo para Chegar no Preço à Vista</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fin_DescPV"
+                        <input type="text" class="form-control text-center" name="Fin_DescPV"
                         onblur="fin_DescPV()" id="Fin_DescPV" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fin_DescPV) ? $empresa->Fin_DescPV : '' }} ">
                         <div class="invalid-feedback">
@@ -911,9 +907,9 @@
                       
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-6">
                         <label for="Fin_PerDano">Percentual de Perdas e Danos para Cálculo Markup</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fin_PerDano"
+                        <input type="text" class="form-control text-center" name="Fin_PerDano"
                         onblur="fin_PerDano()" id="Fin_PerDano" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fin_DescPV) ? $empresa->Fin_DescPV : '' }} ">
                         <div class="invalid-feedback">
@@ -923,9 +919,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-6">
                         <label for="Fin_JurosPadrao">Juros a ser cobrado no Contas a Receber do Sistema</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fin_JurosPadrao"
+                        <input type="text" class="form-control text-center" name="Fin_JurosPadrao"
                         onblur="fin_JurosPadrao()" id="Fin_JurosPadrao" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fin_JurosPadrao) ? $empresa->Fin_JurosPadrao : '' }} ">
                         <div class="invalid-feedback">
@@ -934,17 +930,6 @@
                         <div class="valid-feedback">
                           Tudo certo!
                         </div>
-                      </div>
-                      <div class="form-group col-lg-4">
-                        <label for="Fin_MsgPadrao">Mensagem padrão a ser impressa nos títulos</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fin_MsgPadrao" id="Fin_MsgPadrao" maxlength="50"
-                        value="{{isset($empresa->Fin_MsgPadrao) ? $empresa->Fin_MsgPadrao : '' }} ">
-                      </div>
-                      <div class="invalid-feedback">
-                        Por favor, Campo Obrigatório!
-                      </div>
-                      <div class="valid-feedback">
-                        Tudo certo!
                       </div>
                     </div>
                     <div class="form-row">
@@ -957,9 +942,10 @@
                       </div>
                     </div>
                     <div class="form-row">
+                   
                       <div class="form-group col-lg-4">
                         <label for="Fin_MultaPadrao">Multa padrão a ser aplicada no atraso de títulos</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fin_MultaPadrao"
+                        <input type="text" class="form-control text-center" name="Fin_MultaPadrao"
                         onblur="fin_MultaPadrao()" id="Fin_MultaPadrao" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fin_MultaPadrao) ? $empresa->Fin_MultaPadrao : '' }} ">
                       </div>
@@ -971,7 +957,7 @@
                       </div>
                       <div class="form-group col-lg-4">
                         <label for="Fin_ForImposto">Fornecedor</label>
-                        <select class="form-control input-border-bottom" id="Fin_ForImposto" name="Fin_ForImposto">
+                        <select class="form-control text-center" id="Fin_ForImposto" name="Fin_ForImposto">
                           @foreach($clifor as $clifor)
                           @can('view_clifor', $clifor)
                           <option value="{{$clifor->Codigo}}" {{ $empresa->Vend_CliForPadrao == $clifor->Codigo ? "selected" : "Selecione" }} >{{$clifor->Nome_Fantasia}}</option>
@@ -985,6 +971,17 @@
                           Tudo certo!
                         </div>
                       </div>
+                      <div class="form-group col-lg-4">
+                        <label for="Fin_MsgPadrao">Mensagem padrão a ser impressa nos títulos</label>
+                        <input type="text" class="form-control text-center" name="Fin_MsgPadrao" id="Fin_MsgPadrao" maxlength="50"
+                        value="{{isset($empresa->Fin_MsgPadrao) ? $empresa->Fin_MsgPadrao : '' }} ">
+                      </div>
+                      <div class="invalid-feedback">
+                        Por favor, Campo Obrigatório!
+                      </div>
+                      <div class="valid-feedback">
+                        Tudo certo!
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -992,9 +989,9 @@
                 <div role="tabpanel" class="tab-pane fade" id="tributos">
                   <div class="container mt-2">
                     <div class="form-row">
-                      <div class="form-group col-lg-2">
+                      <div class="form-group col-lg-3">
                         <label for="Fisc_Tributacao">Regime tributário</label>
-                        <select class="form-control input-border-bottom" id="Fisc_Tributacao" name="Fisc_Tributacao">
+                        <select class="form-control itext-center" id="Fisc_Tributacao" name="Fisc_Tributacao">
                           <option value="{{isset($empresa->Fisc_Tributacao) ? $empresa->Fisc_Tributacao : '' }} ">{{ $empresa->Fisc_Tributacao}}</option>
                           <option value="Simples Nacional">Simples Nacional</option>
                           <option value="Lucro Real">Lucro Real</option>
@@ -1003,7 +1000,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Fisc_ICMS">Percentual de ICMS do Estado</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fisc_ICMS"
+                        <input type="text" class="form-control text-center" name="Fisc_ICMS"
                         onblur="fisc_ICMS()" id="Fisc_ICMS" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fisc_ICMS) ? $empresa->Fisc_ICMS : '' }}" >
                         <div class="invalid-feedback">
@@ -1015,7 +1012,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Fisc_PIS">Percentual de PIS da Atividade</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fisc_PIS"
+                        <input type="text" class="form-control text-center" name="Fisc_PIS"
                         onblur="fisc_PIS()" id="Fisc_PIS" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fisc_PIS) ? $empresa->Fisc_PIS : '' }}">
                         <div class="invalid-feedback">
@@ -1027,7 +1024,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Fisc_COFINS">Percentual de COFINS da Atividade</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fisc_COFINS"
+                        <input type="text" class="form-control text-center" name="Fisc_COFINS"
                         onblur="fisc_COFINS()" id="Fisc_COFINS" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fisc_COFINS) ? $empresa->Fisc_COFINS : '' }}">
                         <div class="invalid-feedback">
@@ -1041,7 +1038,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-3">
                         <label for="Fisc_ISSQN">Percentual de ISS da Atividade</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fisc_ISSQN"
+                        <input type="text" class="form-control text-center" name="Fisc_ISSQN"
                         onblur="fisc_ISSQN()" id="Fisc_ISSQN" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fisc_ISSQN) ? $empresa->Fisc_ISSQN : '' }}">
                         <div class="invalid-feedback">
@@ -1053,7 +1050,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Fisc_IRPJ">Percentual de IRPJ da Atividade</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fisc_IRPJ"
+                        <input type="text" class="form-control text-center" name="Fisc_IRPJ"
                         onblur="fisc_IRPJ()" id="Fisc_IRPJ" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fisc_IRPJ) ? $empresa->Fisc_IRPJ : '' }}">
                         <div class="invalid-feedback">
@@ -1065,7 +1062,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Fisc_CSLL">Percentual de CSLL da Atividade</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fisc_CSLL" 
+                        <input type="text" class="form-control text-center" name="Fisc_CSLL" 
                         onblur="fisc_CSLL()" id="Fisc_CSLL" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fisc_CSLL) ? $empresa->Fisc_CSLL : '' }}">
                         <div class="invalid-feedback">
@@ -1075,9 +1072,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-2">
+                      <div class="form-group col-lg-3">
                         <label for="Fisc_Simples">Tabela do Simples</label>
-                        <input type="text" class="form-control input-border-bottom" name="Fisc_Simples" id="Fisc_Simples" maxlength="3" minlength="1"
+                        <input type="text" class="form-control text-center" name="Fisc_Simples" id="Fisc_Simples" maxlength="3" minlength="1"
                         value="{{isset($empresa->Fisc_Simples) ? $empresa->Fisc_Simples : '' }}">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1091,7 +1088,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-2">
                         <label for="Fisc_CFOP">Padrão de vendas</label>
-                        <select class="form-control input-border-bottom" id="Fisc_CFOP" name="Fisc_CFOP">
+                        <select class="form-control itext-center" id="Fisc_CFOP" name="Fisc_CFOP">
                           <option value="{{isset($empresa->Fisc_CFOP) ? $empresa->Fisc_CFOP : '' }} ">{{ $empresa->Fisc_CFOP}}</option>
                         </select>
                         <div class="invalid-feedback">
@@ -1101,9 +1098,7 @@
                           Tudo certo!
                         </div>
                       </div>
-                    </div>
-                    <div class="form-row">
-                      <div class="form-group col-lg-7">
+                      <div class="form-group col-lg-7 ml-3 mt-4">
                         <div class="form-check-inline">
                           <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" id="Fisc_ICMSFixo" name="Fisc_ICMSFixo" value="1"  <?php if($empresa->Fisc_ICMSFixo == '1'){ echo "checked"; } ?>>Utilizar ICMS Fixo, descontando o percentual nas Notas de empresa Simples?
@@ -1111,16 +1106,16 @@
                         </div>
                       </div>
                     </div>
+                    </div>
                     
-                  </div>
                 </div>
                 <!-- Proxy-->
                 <div role="tabpanel" class="tab-pane fade" id="proxy">
                   <div class="container mt-2">
                     <div class="form-row">
-                      <div class="form-group col-lg-8">
+                      <div class="form-group col-lg-12">
                         <label for="NFe_Proxy">Proxy a ser utilizado</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFe_Proxy" id="NFe_Proxy" maxlength="150"
+                        <input type="text" class="form-control text-center" name="NFe_Proxy" id="NFe_Proxy" maxlength="150"
                         value="{{isset($empresa->NFe_Proxy) ? $empresa->NFe_Proxy : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1134,7 +1129,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-4">
                         <label for="NFe_Porta">Porta do Proxy</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFe_Porta" id="NFe_Porta" maxlength="5"
+                        <input type="text" class="form-control text-center" name="NFe_Porta" id="NFe_Porta" maxlength="5"
                         value="{{isset($empresa->NFe_Porta) ? $empresa->NFe_Porta : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1145,7 +1140,7 @@
                       </div>
                       <div class="form-group col-lg-4">
                         <label for="NFe_Usuario">Usuário do Proxy a ser utilizado</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFe_Usuario" id="NFe_Usuario" minlength="4" maxlength="50"
+                        <input type="text" class="form-control text-center" name="NFe_Usuario" id="NFe_Usuario" minlength="4" maxlength="50"
                         value="{{isset($empresa->NFe_Usuario) ? $empresa->NFe_Usuario : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1156,7 +1151,7 @@
                       </div>
                       <div class="form-group col-lg-4">
                         <label for="NFe_Senha">Senha do Proxy a ser utilizado </label>
-                        <input type="password" class="form-control input-border-bottom" name="NFe_Senha" id="NFe_Senha" minlength="4" maxlength="50"
+                        <input type="password" class="form-control text-center" name="NFe_Senha" id="NFe_Senha" minlength="4" maxlength="50"
                         value="{{isset($empresa->NFe_Senha) ? $empresa->NFe_Senha : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1174,7 +1169,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-4">
                         <label for="FTP_Endereco">Endereço FTP para subir arquivos</label>
-                        <input type="text" class="form-control input-border-bottom " name="FTP_Endereco" id="FTP_Endereco"  maxlength="150"
+                        <input type="text" class="form-control text-center " name="FTP_Endereco" id="FTP_Endereco"  maxlength="150"
                         value="{{isset($empresa->FTP_Endereco) ? $empresa->FTP_Endereco : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1185,7 +1180,7 @@
                       </div>
                       <div class="form-group col-lg-2">
                         <label for="FTP_Porta">Porta FTP:</label>
-                        <input type="text" class="form-control input-border-bottom" name="FTP_Porta" id="FTP_Porta"
+                        <input type="text" class="form-control text-center" name="FTP_Porta" id="FTP_Porta"
                         value="{{isset($empresa->FTP_Porta) ? $empresa->FTP_Porta : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1196,7 +1191,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="FTP_Usuario">Usuário FTP:</label>
-                        <input type="text" class="form-control input-border-bottom" name="FTP_Usuario" id="FTP_Usuario" maxlength="50"
+                        <input type="text" class="form-control text-center" name="FTP_Usuario" id="FTP_Usuario" maxlength="50"
                         value="{{isset($empresa->FTP_Usuario) ? $empresa->FTP_Usuario : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1207,7 +1202,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="FTP_Senha">Senha FTP:</label>
-                        <input type="password" class="form-control input-border-bottom" name="FTP_Senha" id="FTP_Senha"  maxlength="88"
+                        <input type="password" class="form-control text-center" name="FTP_Senha" id="FTP_Senha"  maxlength="88"
                         value="{{isset($empresa->FTP_Senha) ? $empresa->FTP_Senha : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1223,9 +1218,9 @@
                 <div role="tabpanel" class="tab-pane fade" id="nfe">
                   <div class="container mt-2">
                     <div class="form-row">
-                      <div class="form-group col-lg-3">
+                      <div class="form-group col-lg-4">
                         <label for="NFe_CertDig">Numero do certificado A1 ou A3</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFe_CertDig" id="NFe_CertDig" maxlength="45"
+                        <input type="text" class="form-control text-center" name="NFe_CertDig" id="NFe_CertDig" maxlength="45"
                         value="{{isset($empresa->NFe_CertDig) ? $empresa->NFe_CertDig : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1234,9 +1229,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-3">
+                      <div class="form-group col-lg-4">
                         <label for="NFe_WebServ">Estado onde o WS esta implantado</label>
-                        <select class="form-control input-border-bottom" id="NFe_WebServ" name="NFe_WebServ">
+                        <select class="form-control text-center" id="NFe_WebServ" name="NFe_WebServ">
                           <option value="{{isset($empresa->NFe_WebServ) ? $empresa->NFe_WebServ : '' }} ">{{ $empresa->NFe_WebServ}}</option>
                           <option value="AC">Acre</option>
                           <option value="AL">Alagoas</option>
@@ -1267,9 +1262,9 @@
                           <option value="TO">Tocantins</option>
                         </select>
                       </div>
-                      <div class="form-group col-lg-3">
+                      <div class="form-group col-lg-4">
                         <label for="NFe_Ambiente">Ambiente de Trabalho</label>
-                        <select class="form-control input-border-bottom"  id="NFe_Ambiente" name="NFe_Ambiente">
+                        <select class="form-control text-center"  id="NFe_Ambiente" name="NFe_Ambiente">
                           <option value="{{isset($empresa->NFe_Ambiente) ? $empresa->NFe_Ambiente : '' }} ">{{ $empresa->NFe_Ambiente}}</option>
                           <option value="2">Produção</option>
                           <option value="1">Homologação</option>
@@ -1283,9 +1278,9 @@
                       </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-lg-5">
+                      <div class="form-group col-lg-8">
                         <label for="NFe_DirXML">Diretorio dos Schemas e onde serão salvos os XML das NFes</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFe_DirXML" id="NFe_DirXML" maxlength="150"
+                        <input type="text" class="form-control text-center" name="NFe_DirXML" id="NFe_DirXML" maxlength="150"
                         value="{{isset($empresa->NFe_DirXML) ? $empresa->NFe_DirXML : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1294,9 +1289,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-2">
                         <label for="NFe_FormaEmiss">Forma de Emissao da NFe</label>
-                        <select class="form-control input-border-bottom" id="NFe_FormaEmiss" name="NFe_FormaEmiss">
+                        <select class="form-control text-center" id="NFe_FormaEmiss" name="NFe_FormaEmiss">
                           <option value="{{isset($empresa->NFe_FormaEmiss) ? $empresa->NFe_FormaEmiss : '' }} ">{{ $empresa->NFe_FormaEmiss}}</option>
                           <option value="Normal">Normal</option>
                           <option value="Conting">Contingência</option>
@@ -1310,7 +1305,7 @@
                       </div>
                       <div class="form-group col-lg-2">
                         <label for="NFe_Serie">Serie da Nota </label>
-                        <select class="form-control input-border-bottom" id="NFe_Serie" name="NFe_Serie">
+                        <select class="form-control text-center" id="NFe_Serie" name="NFe_Serie">
                           <option value="{{isset($empresa->NFe_Serie) ? $empresa->NFe_Serie : '' }} ">{{ $empresa->NFe_Serie}}</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -1319,9 +1314,9 @@
                       </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-lg-3">
+                      <div class="form-group col-lg-4">
                         <label for="NFe_Modelo">Modelo da Nota Eletrônica</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFe_Modelo" id="NFe_Modelo" maxlength="3"
+                        <input type="text" class="form-control text-center" name="NFe_Modelo" id="NFe_Modelo" maxlength="3"
                         value="{{isset($empresa->NFe_Modelo) ? $empresa->NFe_Modelo : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1332,7 +1327,7 @@
                       </div>
                       <div class="form-group col-lg-4">
                         <label for="NFe_Versao">Versão dos Schemas para emissão da Nota</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFe_Versao" id="NFe_Versao" maxlength="4"
+                        <input type="text" class="form-control text-center" name="NFe_Versao" id="NFe_Versao" maxlength="4"
                         value="{{isset($empresa->NFe_Versao) ? $empresa->NFe_Versao : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1341,9 +1336,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-3">
+                      <div class="form-group col-lg-4">
                         <label for="NFe_Orient">Orientaçao de Impressao da nota </label>
-                        <select class="form-control input-border-bottom" id="NFe_Orient" name="NFe_Orient">
+                        <select class="form-control text-center" id="NFe_Orient" name="NFe_Orient">
                           <option value="{{isset($empresa->NFe_Orient) ? $empresa->NFe_Orient : '' }} ">{{ $empresa->NFe_Orient}}</option>
                           <option value="R">Retrato</option>
                           <option value="P">Paisagem</option>
@@ -1358,9 +1353,9 @@
                           </label>
                         </div>
                       </div>
-                      <div class="form-group col-lg-6">
+                      <div class="form-group col-lg-8">
                         <label for="NFe_Obs">Observação a ser impressa no rodapé da NFe</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFe_Obs" id="NFe_Obs"
+                        <input type="text" class="form-control text-center" name="NFe_Obs" id="NFe_Obs"
                         value="{{isset($empresa->NFe_Obs) ? $empresa->NFe_Obs : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1373,24 +1368,24 @@
                     <div class="form-row">
                       <div class="form-group col-lg-3">
                         <label for="NFCe_Ambiente">Ambiente de trabalho NFCe </label>
-                        <select class="form-control input-border-bottom" id="NFCe_Ambiente" name="NFCe_Ambiente">
+                        <select class="form-control text-center" id="NFCe_Ambiente" name="NFCe_Ambiente">
                           <option value="{{isset($empresa->NFCe_Ambiente) ? $empresa->NFCe_Ambiente : '' }} ">{{ $empresa->NFCe_Ambiente}}</option>
                           <option value="2">Produção</option>
                           <option value="1">Homologação</option> 
                         </select>
                       </div>
-                      <div class="form-group col-lg-2">
+                      <div class="form-group col-lg-3">
                         <label for="NFCe_Serie">Serie da NFCe</label>
-                        <select class="form-control input-border-bottom" id="NFCe_Serie" name="NFCe_Serie">
+                        <select class="form-control text-center" id="NFCe_Serie" name="NFCe_Serie">
                           <option value="{{isset($empresa->NFCe_Serie) ? $empresa->NFCe_Serie : '' }} ">{{ $empresa->NFCe_Serie}}</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
                         </select>
                       </div>
-                      <div class="form-group col-lg-2">
+                      <div class="form-group col-lg-3">
                         <label for="NFCe_Modelo">Modelo da NFCe</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFCe_Modelo" id="NFCe_Modelo" maxlength="3"
+                        <input type="text" class="form-control text-center" name="NFCe_Modelo" id="NFCe_Modelo" maxlength="3"
                         value="{{isset($empresa->NFCe_Modelo) ? $empresa->NFCe_Modelo : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1399,9 +1394,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-4">
+                      <div class="form-group col-lg-3">
                         <label for="NFCe_Versao">Versão dos Schemas da NFCe</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFCe_Versao" id="NFCe_Versao" maxlength="4"
+                        <input type="text" class="form-control text-center" name="NFCe_Versao" id="NFCe_Versao" maxlength="4"
                         value="{{isset($empresa->NFCe_Versao) ? $empresa->NFCe_Versao : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1412,9 +1407,9 @@
                       </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group col-lg-3">
+                      <div class="form-group col-lg-4">
                         <label for="NFCe_idToken">Código de Identificação do Token</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFCe_idToken" id="NFCe_idToken" maxlength="11"
+                        <input type="text" class="form-control text-center" name="NFCe_idToken" id="NFCe_idToken" maxlength="11"
                         value="{{isset($empresa->NFCe_idToken) ? $empresa->NFCe_idToken : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1423,9 +1418,9 @@
                           Tudo certo!
                         </div>
                       </div>
-                      <div class="form-group col-lg-3">
+                      <div class="form-group col-lg-8">
                         <label for="NFCe_CSC">Numero CSC a ser gerado</label>
-                        <input type="text" class="form-control input-border-bottom" name="NFCe_CSC" id="NFCe_CSC" maxlength="45"
+                        <input type="text" class="form-control text-center" name="NFCe_CSC" id="NFCe_CSC" maxlength="45"
                         value="{{isset($empresa->NFCe_CSC) ? $empresa->NFCe_CSC : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1443,7 +1438,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-3">
                         <label for="Ctb_Email">Email do contador(envio XML)</label>
-                        <input type="email" class="form-control input-border-bottom" name="Ctb_Email" id="Ctb_Email" maxlength="150"
+                        <input type="email" class="form-control text-center" name="Ctb_Email" id="Ctb_Email" maxlength="150"
                         value="{{isset($empresa->Ctb_Email) ? $empresa->Ctb_Email : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1454,7 +1449,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Ctb_ContNome">Nome do Contador</label>
-                        <input type="text" class="form-control input-border-bottom" name="Ctb_ContNome" id="Ctb_ContNome" maxlength="60" min="3"
+                        <input type="text" class="form-control text-center" name="Ctb_ContNome" id="Ctb_ContNome" maxlength="60" min="3"
                         value="{{isset($empresa->Ctb_ContNome) ? $empresa->Ctb_ContNome : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1465,7 +1460,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Ctb_ContCRC">CRC do contador</label>
-                        <input type="text" class="form-control input-border-bottom" name="Ctb_ContCRC" id="Ctb_ContCRC" maxlength="25"
+                        <input type="text" class="form-control text-center" name="Ctb_ContCRC" id="Ctb_ContCRC" maxlength="25"
                         value="{{isset($empresa->Ctb_ContCRC) ? $empresa->Ctb_ContCRC : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1476,7 +1471,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Ctb_ContINSS">ISS do Contador</label>
-                        <input type="text" class="form-control input-border-bottom" name="Ctb_ContINSS" id="Ctb_ContINSS" maxlength="25"
+                        <input type="text" class="form-control text-center" name="Ctb_ContINSS" id="Ctb_ContINSS" maxlength="25"
                         value="{{isset($empresa->Ctb_ContINSS) ? $empresa->Ctb_ContINSS : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1489,7 +1484,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-3">
                         <label for="Ctb_contCPF">CPF do Contador</label>
-                        <input type="text" class="form-control input-border-bottom" name="Ctb_contCPF" id="Ctb_contCPF" maxlength="14"
+                        <input type="text" class="form-control text-center" name="Ctb_contCPF" id="Ctb_contCPF" maxlength="14"
                         value="{{isset($empresa->Ctb_contCPF) ? $empresa->Ctb_contCPF : '' }} " onblur="validarCPF(this)">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1500,7 +1495,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Ctb_ContFone">Telefone do Contador</label>
-                        <input type="text" class="form-control input-border-bottom" name="Ctb_ContFone" id="Ctb_ContFone"
+                        <input type="text" class="form-control text-center" name="Ctb_ContFone" id="Ctb_ContFone"
                         value="{{isset($empresa->Ctb_ContFone) ? $empresa->Ctb_ContFone : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1511,7 +1506,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Ctb_RegLocal">Local de Registro do Contador</label>
-                        <input type="text" class="form-control input-border-bottom" name="Ctb_RegLocal" id="Ctb_RegLocal" maxlength="100"
+                        <input type="text" class="form-control text-center" name="Ctb_RegLocal" id="Ctb_RegLocal" maxlength="100"
                         value="{{isset($empresa->Ctb_RegLocal) ? $empresa->Ctb_RegLocal : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1522,7 +1517,7 @@
                       </div>
                       <div class="form-group col-lg-3">
                         <label for="Ctb_RegNumero">Número de Registro do Contador</label>
-                        <input type="text" class="form-control input-border-bottom" name="Ctb_RegNumero" id="Ctb_RegNumero" maxlength="50"
+                        <input type="text" class="form-control text-center" name="Ctb_RegNumero" id="Ctb_RegNumero" maxlength="50"
                         value="{{isset($empresa->Ctb_RegNumero) ? $empresa->Ctb_RegNumero : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1535,7 +1530,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-4">
                         <label for="Ctb_RegData">Data de Registro do Contador</label>
-                        <input type="text" class="form-control input-border-bottom" name="Ctb_RegData" id="Ctb_RegData"
+                        <input type="text" class="form-control text-center" name="Ctb_RegData" id="Ctb_RegData"
                         value="{{isset($empresa->Ctb_RegData) ? $empresa->Ctb_RegData : '' }} ">
                         <div class="invalid-feedback">
                           Por favor, Campo Obrigatório!
@@ -1560,7 +1555,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-12">
                         <label for="Vend_DescAdicOrca">Descrição Adicional impressa no rodapé dos Orçamentos</label>
-                        <input type="text" class="form-control input-border-bottom" name="Vend_DescAdicOrca" id="Vend_DescAdicOrca" maxlength="150"
+                        <input type="text" class="form-control text-center" name="Vend_DescAdicOrca" id="Vend_DescAdicOrca" maxlength="150"
                         value="{{isset($empresa->Vend_DescAdicOrca) ? $empresa->Vend_DescAdicOrca : '' }} ">
                       </div>
                       <div class="invalid-feedback">
@@ -1573,7 +1568,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-12">
                         <label for="Vend_DescAdicPed">Descricao Adicional impressa no rodapé dos Pedidos</label>
-                        <input type="text" class="form-control input-border-bottom" name="Vend_DescAdicPed" id="Vend_DescAdicPed" maxlength="150"
+                        <input type="text" class="form-control text-center" name="Vend_DescAdicPed" id="Vend_DescAdicPed" maxlength="150"
                         value="{{isset($empresa->Vend_DescAdicPed) ? $empresa->Vend_DescAdicPed : '' }} ">
                       </div>
                       <div class="invalid-feedback">
@@ -1586,7 +1581,7 @@
                     <div class="form-row">
                       <div class="form-group col-lg-12">
                         <label for="Vend_DescAdicOS">Descricao Adicional impressa no rodapé da OS</label>
-                        <input type="text" class="form-control input-border-bottom" name="Vend_DescAdicOS" id="Vend_DescAdicOS" maxlength="150"
+                        <input type="text" class="form-control text-center" name="Vend_DescAdicOS" id="Vend_DescAdicOS" maxlength="150"
                         value="{{isset($empresa->Vend_DescAdicOS) ? $empresa->Vend_DescAdicOS : '' }} ">
                       </div>
                       <div class="invalid-feedback">
@@ -1601,23 +1596,24 @@
                 <!-- Dados Adicionais-->
                 <div role="tabpanel" class="tab-pane fade" id="adic">
                   <div class="container mt-2">
-                    <div class="form-row">
-                      <div class="form-group col-lg-7">
+                   
+                      <div class="form-group col-lg-6">
                         <div class="form-check-inline">
                           <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" id="Fin_ComiFrac" name="Fin_ComiFrac" value="1"  <?php if($empresa->Fin_ComiFrac == '1'){ echo "checked"; } ?>>Utilizar pagamento de comissão fracionada aos vendedores?
                           </label>
                         </div>
                       </div>
-                      <div class="form-group col-lg-5">
+
+                      <div class="form-group col-lg-6">
                         <div class="form-check-inline">
                           <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" id="Fin_ContrComi" name="Fin_ContrComi" value="1"  <?php if($empresa->Fin_ContrComi == '1'){ echo "checked"; } ?>>Controlar Comissões?
                           </label>
                         </div>
                       </div>
-                      <div class="form-row">
-                        <div class="form-group col-lg-7">
+                     
+                        <div class="form-group col-lg-6">
                           <div class="form-check-inline">
                             <label class="form-check-label">
                               <input type="checkbox" class="form-check-input" id="Vend_BxEstOSOrc" name="Vend_BxEstOSOrc" value="1" <?php if($empresa->Vend_BxEstOSOrc == '1'){ echo "checked"; } ?>> Baixar Estoque em OS com Situacao EM ORCAMENTO?
@@ -1625,15 +1621,14 @@
                           </div>
                         </div>
                         
-                        <div class="form-group col-lg-5">
+                        <div class="form-group col-lg-6">
                           <div class="form-check-inline">
                             <label class="form-check-label">
                               <input type="checkbox" class="form-check-input" id="Vend_PedSimp" name="Vend_PedSimp" value="1" <?php if($empresa->Vend_PedSimp == '1'){ echo "checked"; } ?>>Tela simplificada para emissao de pedidos?
                             </label>
                           </div>
                         </div>
-                      </div>
-                      <div class="form-row">
+                     
                         <div class="form-group col-lg-7">
                           <div class="form-check-inline">
                             <label class="form-check-label">
@@ -1649,8 +1644,7 @@
                             </label>
                           </div>
                         </div>
-                      </div>
-                      <div class="form-row">
+                      
                         <div class="form-group col-lg-7">
                           <div class="form-check-inline">
                             <label class="form-check-label">
@@ -1666,8 +1660,8 @@
                             </label>
                           </div>
                         </div>
-                      </div>
-                      <div class="form-row">
+                     
+                     
                         <div class="form-group col-lg-7">
                           <div class="form-check-inline">
                             <label class="form-check-label">
@@ -1683,8 +1677,7 @@
                             </label>
                           </div>
                         </div>
-                      </div>
-                      <div class="form-row">
+                    
                         <div class="form-group col-lg-7">
                           <div class="form-check-inline">
                             <label class="form-check-label">
@@ -1700,8 +1693,7 @@
                             </label>
                           </div>
                         </div>
-                      </div>
-                      <div class="form-row">
+                     
                         <div class="form-group col-lg-6">
                           <div class="form-check-inline">
                             <label class="form-check-label">
@@ -1716,8 +1708,7 @@
                             </label>
                           </div>
                         </div>
-                      </div>
-                      <div class="form-row">
+                     
                         <div class="form-group col-lg-7">
                           <div class="form-check-inline">
                             <label class="form-check-label">
@@ -1733,8 +1724,7 @@
                             </label>
                           </div>
                         </div>
-                      </div>
-                      <div class="form-row">
+                     
                         <div class="form-group col-lg-7">
                           <div class="form-check-inline">
                             <label class="form-check-label">
@@ -1749,12 +1739,11 @@
                             </label>
                           </div>
                         </div>
-                      </div>
-                      <hr>
+
                       <div class="form-row">
                         <div class="form-group col-lg-6">
                           <label for="Vend_DiasLocacao">Dias padrão para Lançamento de Locações </label>
-                          <input type="text" class="form-control input-border-bottom" name="Vend_DiasLocacao" id="Vend_DiasLocacao" maxlength="5"
+                          <input type="text" class="form-control text-center" name="Vend_DiasLocacao" id="Vend_DiasLocacao" maxlength="5"
                           value="{{isset($empresa->Vend_DiasLocacao) ? $empresa->Vend_DiasLocacao : '' }} ">
                           <div class="invalid-feedback">
                             Por favor, Campo Obrigatório!
@@ -1765,7 +1754,7 @@
                         </div>
                         <div class="form-group col-lg-6">
                           <label for="Vend_ProgPtos">Valor base para computação de pontos no prog de fidelidade </label>
-                          <input type="text" class="form-control input-border-bottom" name="Vend_ProgPtos" 
+                          <input type="text" class="form-control text-center" name="Vend_ProgPtos" 
                           onblur="valor_base()"id="Vend_ProgPtos" maxlength="10"
                           value="{{isset($empresa->Vend_ProgPtos) ? $empresa->Vend_ProgPtos : '' }} ">
                         </div>
@@ -1780,7 +1769,7 @@
                       <div class="form-row">
                         <div class="form-group col-lg-4">
                           <label for="Vend_TranspPadrao">Transportadora padrão</label>
-                          <select class="form-control input-border-bottom" id="Vend_TranspPadrao" name="Vend_TranspPadrao">
+                          <select class="form-control text-center" id="Vend_TranspPadrao" name="Vend_TranspPadrao">
                             @foreach($transportadora as $transportadora)
                             @can("view_transp",$transportadora)
                             <option value="{{$transportadora->Codigo}}" {{ $empresa->Vend_TranspPadrao == $transportadora->Codigo ? "selected" : "Selecione" }} >{{$transportadora->Razao_Social}}</option>
@@ -1796,7 +1785,7 @@
                         </div>
                         <div class="form-group col-lg-4">
                           <label for="Vend_VlrHora">Valor da hora de trabalho </label>
-                          <input type="text" class="form-control input-border-bottom" name="Vend_VlrHora" 
+                          <input type="text" class="form-control text-center" name="Vend_VlrHora" 
                           onblur="val_hora()"id="Vend_VlrHora" maxlength="10"
                           value="{{isset($empresa->Vend_VlrHora) ? $empresa->Vend_VlrHora : '' }} ">
                         </div>
@@ -1808,7 +1797,7 @@
                         </div>
                         <div class="form-group col-lg-4">
                           <label for="Vend_VlrMinimo">Valor mínimo de hora de trabalho </label>
-                          <input type="text" class="form-control input-border-bottom" name="Vend_VlrMinimo" 
+                          <input type="text" class="form-control text-center" name="Vend_VlrMinimo" 
                           onblur="min_hora()"id="Vend_VlrMinimo" maxlength="10"
                           value="{{isset($empresa->Vend_VlrMinimo) ? $empresa->Vend_VlrMinimo : '' }} ">
                         </div>

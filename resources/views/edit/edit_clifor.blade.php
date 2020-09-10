@@ -54,8 +54,8 @@
                     @endif
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <label for="Nome_Fantasia">Nome Fantasia:</label>
-                            <input type="text" class="form-control input-border-bottom" name="Nome_Fantasia"
+                            <label for="Nome_Fantasia">Nome Fantasia</label>
+                            <input type="text" class="form-control text-center" name="Nome_Fantasia"
                                 id="Nome_Fantasia" placeholder="Nome Fantasia ou Apelido" minlength="4" maxlength="60"
                                 value="{{ isset($clifor->Nome_Fantasia) ? $clifor->Nome_Fantasia : '' }}">
                             <div class="invalid-feedback">
@@ -66,8 +66,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <label for="Razao_Social">Razão Social:</label>
-                            <input type="text" class="form-control input-border-bottom" name="Razao_Social"
+                            <label for="Razao_Social">Razão Social</label>
+                            <input type="text" class="form-control text-center" name="Razao_Social"
                                 id="Razao_Social" placeholder="Razão Social" minlength="4" maxlength="60" 
                                 value="{{ isset($clifor->Razao_Social) ? $clifor->Razao_Social : '' }}">
                             <div class="invalid-feedback">
@@ -77,9 +77,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <label for="Fis_Jur">Tipo de Pessoa:</label>
-                            <select onchange="verifica(this.value)" class="form-control input-border-bottom"
+                        <div class="form-group col-lg-3">
+                            <label for="Fis_Jur">Tipo de Pessoa</label>
+                            <select onchange="verifica(this.value)" class="form-control text-center"
                                 id="Fis_Jur" name="Fis_Jur">
                                 <option
                                     value="{{ isset($clifor->Fis_Jur) ? $clifor->Fis_Jur : '' }} ">
@@ -96,8 +96,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <label for="Data_Nascimento">Data de Nascimento:</label>
-                            <input type="text" class="form-control input-border-bottom" name="Data_Nascimento"
+                            <label for="Data_Nascimento">Data de Nascimento</label>
+                            <input type="text" class="form-control text-center" name="Data_Nascimento"
                                 id="Data_Nascimento"
                                 value="{{ isset($clifor->Data_Nascimento) ? $clifor->Data_Nascimento : '' }}">
                             <div class="invalid-feedback">
@@ -117,11 +117,10 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
-                        
+                    <div class="form-row"> 
                         <div class="form-group col-lg-2">
-                            <label for="Estado_Civil">Estado Civil:</label>
-                            <select class="form-control input-border-bottom" id="Estado_Civil"
+                            <label for="Estado_Civil">Estado Civil</label>
+                            <select class="form-control text-center" id="Estado_Civil"
                                 name="Estado_Civil">
                                 <option
                                     value="{{ isset($clifor->Estado_Civil) ? $clifor->Estado_Civil : '' }} ">
@@ -148,8 +147,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <label for="Sexo">Sexo:</label>
-                            <select class="form-control input-border-bottom" id="Sexo" name="Sexo">
+                            <label for="Sexo">Sexo</label>
+                            <select class="form-control text-center" id="Sexo" name="Sexo">
                                 <option
                                     value="{{ isset($clifor->Sexo) ? $clifor->Sexo : '' }} ">
                                     {{ $clifor->Sexo=="M"?"Masculino":"Feminino" }}
@@ -164,9 +163,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <label for="Telefone">Telefone:</label>
-                            <input type="text" class="form-control input-border-bottom" name="Telefone" id="Telefone"
+                        <div class="form-group col-lg-3">
+                            <label for="Telefone">Telefone</label>
+                            <input type="text" class="form-control text-center" name="Telefone" id="Telefone"
                                 placeholder="00-0000-0000"
                                 value="{{ isset($clifor->Telefone) ? $clifor->Telefone : '' }}">
                             <div class="invalid-feedback">
@@ -177,8 +176,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <label for="">Celular:</label>
-                            <input type="text" class="form-control input-border-bottom" name="Celular" id="Celular"
+                            <label for="">Celular</label>
+                            <input type="text" class="form-control text-center" name="Celular" id="Celular"
                                 placeholder="00-00000-0000"
                                 value="{{ isset($clifor->Celular) ? $clifor->Celular : '' }}">
                         </div>
@@ -188,9 +187,9 @@
                         <div class="valid-feedback">
                             Tudo certo!
                         </div>
-                        <div class="form-group col-lg-2">
-                            <label for="Comercial">Número Comercial ou Fax:</label>
-                            <input type="text" class="form-control input-border-bottom" name="Comercial" id="Comercial"
+                        <div class="form-group col-lg-3">
+                            <label for="Comercial">Número Comercial ou Fax</label>
+                            <input type="text" class="form-control text-center" name="Comercial" id="Comercial"
                                 placeholder="00-00000-0000"
                                 value="{{ isset($clifor->Comercial) ? $clifor->Comercial : '' }}">
                             <div class="invalid-feedback">
@@ -201,12 +200,12 @@
                             </div>
                         </div>
                     </div>
-                    </div>
+                  
 
                 <div class="form-row">
                     <div class="form-group col-lg-2">
-                        <label for="CPF">CPF:</label>
-                        <input type="text" class="form-control input-border-bottom" name="CPF" id="CPF" maxlength="14"
+                        <label for="CPF">CPF</label>
+                        <input type="text" class="form-control itext-center" name="CPF" id="CPF" maxlength="14"
                             minlength="11" placeholder="Somente os números"
                             value="{{ isset($clifor->CPF) ? $clifor->CPF : '' }}"
                             onblur="validarCPF(this)">
@@ -218,8 +217,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-2">
-                        <label for="RG">RG:</label>
-                        <input type="text" class="form-control input-border-bottom" name="RG" id="RG" maxlength="14"
+                        <label for="RG">RG</label>
+                        <input type="text" class="form-control text-center" name="RG" id="RG" maxlength="14"
                             min="8" placeholder="Somente os números"
                             value="{{ isset($clifor->RG) ? $clifor->RG : '' }}">
                         <div class="invalid-feedback">
@@ -231,9 +230,9 @@
                     </div>
 
                     <div class="form-group col-lg-2">
-                        <label for="CNPJ">CNPJ:</label>
-                        <input type="text" class="form-control input-border-bottom" name="CNPJ" id="CNPJ"
-                            placeholder="Somente os números" maxlength="18"
+                        <label for="CNPJ">CNPJ</label>
+                        <input type="text" class="form-control text-center" name="CNPJ" id="CNPJ"
+                            placeholder="Somente números" maxlength="18"
                             value="{{ isset($clifor->CNPJ) ? $clifor->CNPJ : '' }}"
                             onblur="validarCNPJ(this)">
                         <div class="invalid-feedback">
@@ -244,8 +243,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-2">
-                        <label for="IM">Incrição Municipal:</label>
-                        <input type="text" class="form-control input-border-bottom" name="IM" id="IM" minlength="7"
+                        <label for="IM">Incrição Municipal</label>
+                        <input type="text" class="form-control text-center" name="IM" id="IM" minlength="7"
                             maxlength="10"
                             value="{{ isset($clifor->IM) ? $clifor->IM : '' }}">
                         <div class="invalid-feedback">
@@ -256,8 +255,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-2">
-                        <label for="IE">Incrição Estadual:</label>
-                        <input type="text" class="form-control input-border-bottom" name="IE" id="IE" minlength="9"
+                        <label for="IE">Incrição Estadual</label>
+                        <input type="text" class="form-control text-center" name="IE" id="IE" minlength="9"
                             maxlength="13"
                             value="{{ isset($clifor->IE) ? $clifor->IE : '' }}">
                         <div class="invalid-feedback">
@@ -268,8 +267,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-2">
-                        <label for="IEST">Ins. Est. do Subst Tributario:</label>
-                        <input type="text" class="form-control input-border-bottom" name="IEST" id="IEST" minlength="9"
+                        <label for="IEST">Ins. E. do Sub. Tributário</label>
+                        <input type="text" class="form-control text-center" name="IEST" id="IEST" minlength="9"
                             maxlength="14"
                             value="{{ isset($clifor->IEST) ? $clifor->IEST : '' }}">
                         <div class="invalid-feedback">
@@ -281,9 +280,9 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-lg-4">
-                        <label for="Email">Email:</label>
-                        <input type="email" class="form-control input-border-bottom" name="Email" id="Email"
+                    <div class="form-group col-lg-3">
+                        <label for="Email">Email</label>
+                        <input type="email" class="form-control text-center" name="Email" id="Email"
                             placeholder="algo@algo.com"
                             value="{{ isset($clifor->Email) ? $clifor->Email : '' }}">
                         <div class="invalid-feedback">
@@ -293,9 +292,9 @@
                             Tudo certo!
                         </div>
                     </div>
-                    <div class="form-group col-lg-4">
+                    <div class="form-group col-lg-3">
                         <label for="Site">Web Site:</label>
-                        <input type="text" class="form-control input-border-bottom" name="Site" id="Site"
+                        <input type="text" class="form-control text-center" name="Site" id="Site"
                             placeholder="www.algo.com"
                             value="{{ isset($clifor->Site) ? $clifor->Site : '' }}">
                         <div class="invalid-feedback">
@@ -306,8 +305,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-2">
-                        <label for="Tip">Tipo:</label>
-                        <select class="form-control input-border-bottom" id="Tip" name="Tip">
+                        <label for="Tip">Tipo</label>
+                        <select class="form-control text-center" id="Tip" name="Tip">
                             <option
                                 value="{{ isset($clifor->Tip) ? $clifor->Tip : '' }} ">
                                 @if($clifor->Tip=="C")
@@ -330,8 +329,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-2">
-                        <label for="Class_ABC">Curva ABC:</label>
-                        <select class="form-control input-border-bottom" id="Class_ABC" name="Class_ABC">
+                        <label for="Class_ABC">Curva ABC</label>
+                        <select class="form-control text-center" id="Class_ABC" name="Class_ABC">
                             <option
                                 value="{{ isset($clifor->Class_ABC) ? $clifor->Class_ABC : '' }} ">
                                 {{ $clifor->Class_ABC }}</option>
@@ -346,11 +345,9 @@
                             Tudo certo!
                         </div>
                     </div>
-                </div>
-                <div class="form-row">
                     <div class="form-group col-lg-2">
                         <label for="Cli_Atacado">Atacadista?</label>
-                        <select class="form-control input-border-bottom" id="Cli_Atacado" name="Cli_Atacado">
+                        <select class="form-control text-center" id="Cli_Atacado" name="Cli_Atacado">
                             <option
                                 value="{{ isset($clifor->Cli_Atacado) ? $clifor->Cli_Atacado : '' }} ">
                                 {{ $clifor->Cli_Atacado==1?"Sim":"Não" }}
@@ -365,12 +362,14 @@
                             Tudo certo!
                         </div>
                     </div>
+                </div>
+                <div class="form-row">
                     <div class="form-group col-lg-2">
-                        <label for="Perfil">Perfil do Cliente:</label>
-                        <select class="form-control input-border-bottom" id="Perfil" name="Perfil">
+                        <label for="Perfil">Perfil do Cliente</label>
+                        <select class="form-control text-center" id="Perfil" name="Perfil">
                             <option
                                 value="{{ isset($clifor->Perfil) ? $clifor->Perfil : '' }} ">
-                                {{ $clifor->Perfil==1?"Sim":"Não" }}
+                                {{ $clifor->Perfil}}
                             </option>
                             <option value="Consumidor">Consumidor</option>
                             <option value="Revenda">Revenda</option>
@@ -383,9 +382,9 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-2">
-                        <label for="Profissao">Profissão:</label>
-                        <input type="text" class="form-control input-border-bottom" name="Profissao" id="Profissao"
-                            placeholder="Profissão do Cliente" maxlength="25" minlength="4"
+                        <label for="Profissao">Profissão</label>
+                        <input type="text" class="form-control text-center" name="Profissao" id="Profissao"
+                            placeholder="Profissão" maxlength="25" minlength="4"
                             value="{{ isset($clifor->Profissao) ? $clifor->Profissao : '' }}">
                         <div class="invalid-feedback">
                             Por favor, Campo Obrigatório!
@@ -395,10 +394,10 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-2">
-                        <label for="Data_Cadastro">Data de Cadastro:</label>
-                        <input type="text" class="form-control input-border-bottom date" name="Data_Cadastro"
+                        <label for="Data_Cadastro">Data de Cadastro</label>
+                        <input type="text" class="form-control text-center" name="Data_Cadastro"
                             id="Data_Cadastro" required
-                            value="{{ isset($clifor->Data_Cadastro) ? $clifor->Data_Cadastro : '' }}">
+                            value="{{ isset($clifor->Data_Cadastro) ? $clifor->Data_Cadastro : '' }}" readonly>
                         <div class="invalid-feedback">
                             Por favor, Campo Obrigatório!
                         </div>
@@ -416,10 +415,10 @@
 
                     </div>
                     <div class="form-group col-lg-2">
-                        <label for="SitFinanc">Situação Financeira:</label>
-                        <select class="form-control input-border-bottom" id="SitFinanc" name="SitFinanc">
+                        <label for="SitFinanc">Situação Financeira</label>
+                        <select class="form-control text-center" id="SitFinanc" name="SitFinanc">
                             <option
-                                value="{{ isset($clifor->Perfil) ? $clifor->SitFinanc : '' }} ">
+                                value="{{ isset($clifor->SitFinanc) ? $clifor->SitFinanc : '' }} ">
                                 {{ $clifor->SitFinanc=="L"?"Livre":"Bloqueado" }}
                             </option>
                             <option value="L">Livre</option>
@@ -433,8 +432,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-2">
-                        <label for="LimiCred">Limite de Crédito:</label>
-                        <input type="text" class="form-control input-border-bottom" name="LimiCred" id="LimiCred"
+                        <label for="LimiCred">Limite de Crédito</label>
+                        <input type="text" class="form-control text-center" name="LimiCred" id="LimiCred"
                             placeholder="" onblur="lim_cred()"
                             value="{{ isset($clifor->LimiCred) ? $clifor->LimiCred : '' }}">
                         <div class="invalid-feedback">
@@ -444,27 +443,12 @@
                             Tudo certo!
                         </div>
                     </div>
-                </div>
-
-                <div class="form-row">
                     <div class="form-group col-lg-2">
-                        <label for="PercDescAcresc">Descontos ou Acréscimos:</label>
-                        <input type="text" class="form-control input-border-bottom" name="PercDescAcresc"
-                            id="PercDescAcresc" placeholder="" maxlength="3" onblur="desc_ac()"
-                            value="{{ isset($clifor->PercDescAcresc) ? $clifor->PercDescAcresc : '' }}">
-                        <div class="invalid-feedback">
-                            Por favor, Campo Obrigatório!
-                        </div>
-                        <div class="valid-feedback">
-                            Tudo certo!
-                        </div>
-                    </div>
-                    <div class="form-group col-lg-2">
-                        <label for="Vendedor">Vendedor:</label>
-                        <select class="form-control input-border-bottom" id="Vendedor" name="Vendedor">
+                        <label for="Vendedor">Vendedor</label>
+                        <select class="form-control text-center" id="Vendedor" name="Vendedor">
                         @foreach($user as $u)
                                 @if( $u->user_id == Auth::user()->id )
-                                    <option value="{{ $u->id }}" {{ $clifor->Vendedor == $u->id ? "selected" : "" }}>{{ $u->Nome }}</option>
+                                    <option value="{{ $u->Codigo }}" {{ $clifor->Vendedor == $u->Codigo ? "selected" : "" }}>{{ $u->Nome }}</option>
                                  @endif
                              @endforeach
                           
@@ -476,11 +460,33 @@
                             Tudo certo!
                         </div>
                     </div>
+                </div>
+
+                <div class="form-row">
                     <div class="form-group col-lg-2">
-                        <label for="Local_UltMov">Local do Últ Mov:</label>
-                        <select class="form-control input-border-bottom" id="Local_UltMov" name="Local_UltMov">
+                        <label for="PercDescAcresc">Desconto/Acréscimo</label>
+                        <input type="text" class="form-control text-center" name="PercDescAcresc"
+                            id="PercDescAcresc" placeholder="" maxlength="3" onblur="desc_ac()"
+                            value="{{ isset($clifor->PercDescAcresc) ? $clifor->PercDescAcresc : '' }}">
+                        <div class="invalid-feedback">
+                            Por favor, Campo Obrigatório!
+                        </div>
+                        <div class="valid-feedback">
+                            Tudo certo!
+                        </div>
+                    </div>
+                   
+                    <div class="form-group col-lg-2">
+                        <label for="Local_UltMov">Local do Últ Mov</label>
+                        <select class="form-control text-center" id="Local_UltMov" name="Local_UltMov">
                             <option value="{{ isset($clifor->Local_UltMov) ? $clifor->Local_UltMov : '' }} ">
-                            {{ $clifor->Local_UltMov == 'PED'? 'Pedido': $clifor->Local_UltMov }}
+                            @if($clifor->Local_UltMov == 'PED')
+                                Pedido
+                            @elseif($clifor->Local_UltMov == 'OS')
+                                 OS
+                            @else
+                                 NF
+                            @endif
                             </option>
                             <option value="PED">Pedido</option>
                             <option value="OS">OS</option>
@@ -493,9 +499,9 @@
                             Tudo certo!
                         </div>
                     </div>
-                    <div class="form-group col-lg-2">
-                        <label for="Data_UltMov">Data do  Últ Mov:</label>
-                        <input type="date" class="form-control input-border-bottom" name="Data_UltMov" id="Data_UltMov"
+                    <div class="form-group col-lg-3">
+                        <label for="Data_UltMov">Data do  Últ Mov</label>
+                        <input type="date" class="form-control text-center" name="Data_UltMov" id="Data_UltMov"
                             value="{{ isset($clifor->Data_UltMov) ? $clifor->Data_UltMov : '' }}">
                         <div class="invalid-feedback">
                             Por favor, Campo Obrigatório!
@@ -504,9 +510,9 @@
                             Tudo certo!
                         </div>
                     </div>
-                    <div class="form-group col-lg-2">
-                        <label for="Empresa">Empresa:</label>
-                        <select class="form-control input-border-bottom" id="Empresa" name="Empresa">
+                    <div class="form-group col-lg-3">
+                        <label for="Empresa">Empresa</label>
+                        <select class="form-control text-center" id="Empresa" name="Empresa">
                             @foreach($empresa as $empresa)
                             @can('view_empresa', $empresa)
                                 <option value="{{ $empresa->Codigo }}" {{ $clifor->Empresa == $empresa->Codigo ? "selected" : "" }}> {{ $empresa->Nome_Fantasia }}</option>
@@ -521,8 +527,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-2">
-                        <label for="Ativo">Situação do Cadastro:</label>
-                        <select class="form-control input-border-bottom" id="Ativo" name="Ativo">
+                        <label for="Ativo">Situação do Cadastro</label>
+                        <select class="form-control text-center" id="Ativo" name="Ativo">
                             <option
                                 value="{{ isset($clifor->Ativo) ? $clifor->Ativo : '' }} ">
                                 {{ $clifor->Ativo==1?"Ativo":"Inativo" }}
@@ -540,8 +546,8 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-lg-6">
-                        <label for="Observacoes">Observções sobre o Cliente:</label>
-                        <textarea type="text" class="form-control input-border-bottom " name="Observacoes"
+                        <label for="Observacoes">Observções sobre o Cliente</label>
+                        <textarea type="text" class="form-control text-center" name="Observacoes"
                             id="Observacoes"
                             >{{ $clifor->Observacoes }}</textarea>
                         <div class="invalid-feedback">
@@ -552,8 +558,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-6">
-                        <label for="Aviso">Aviso ao Cliente/Fornecedor:</label>
-                        <textarea type="text" class="form-control input-border-bottom " name="Aviso"
+                        <label for="Aviso">Aviso ao Cliente/Fornecedor</label>
+                        <textarea type="text" class="form-control text-center" name="Aviso"
                             id="Aviso"
                             value="">{{ $clifor->Aviso }}</textarea>
                         <div class="invalid-feedback">

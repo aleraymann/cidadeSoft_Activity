@@ -112,9 +112,9 @@
                     <div class="form-row">
                         <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Nome">Nome</b>
-                            <input type="text" class="form-control input-border-bottom" name="Nome" id="Nome"
+                            <input type="text" class="form-control text-center" name="Nome" id="Nome"
                                 value="{{ isset($funcionario->Nome) ? $funcionario->Nome : '' }}"
-                                placeholder="Nome do Funcionário" required minlength="3" maxlength="45">
+                                placeholder="Nome do Funcionário" required minlength="3" maxlength="45" readonly>
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
                             </div>
@@ -123,8 +123,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="RG">RG:</b>
-                            <input type="text" class="form-control input-border-bottom" name="RG" id="RG" minlength="8"
+                            <b class="ls-label-text" for="RG">RG</b>
+                            <input type="text" class="form-control text-center" name="RG" id="RG" minlength="8"
                                 maxlength="13"
                                 value="{{ isset($funcionario->RG) ? $funcionario->RG : '' }}">
                             <div class="invalid-feedback" placeholder="Somente os números">
@@ -135,12 +135,12 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="CPF">CPF:</b>
-                            <input type="text" class="form-control input-border-bottom" name="CPF" id="CPF"
+                            <b class="ls-label-text" for="CPF">CPF</b>
+                            <input type="text" class="form-control text-center" name="CPF" id="CPF"
                                 minlength="11" maxlength="13"
                                 value="{{ isset($funcionario->CPF) ? $funcionario->CPF : '' }}"
                                 onblur="validarCPF(this)">
-                            <div class="invalid-feedback" placeholder="Somente os números">
+                            <div class="invalid-feedback" placeholder="Somente números">
                                 Por favor, Campo Obrigatório!
                             </div>
                             <div class="valid-feedback">
@@ -149,60 +149,60 @@
                         </div>
                         <div class="form-group col-lg-2">
                             <b class="ls-label-text" for="CEP">CEP</b>
-                            <input type="text" class="form-control input-border-bottom" name="CEP" id="CEP"
+                            <input type="text" class="form-control text-center" name="CEP" id="CEP"
                                 placeholder="Somente os números"
                                 value="{{ isset($funcionario->CEP) ? $funcionario->CEP : '' }}">
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Cidade">Cidade:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cidade" id="Cidade"
-                                placeholder="Cidade"
+                            <b class="ls-label-text" for="Cidade">Cidade</b>
+                            <input type="text" class="form-control text-center" name="Cidade" id="Cidade"
+                                readonly
                                 value="{{ isset($funcionario->Cidade) ? $funcionario->Cidade : '' }}">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Endereco">Endereço:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Endereco" id="Endereco"
+                            <b class="ls-label-text" for="Endereco">Endereço</b>
+                            <input type="text" class="form-control text-center" name="Endereco" id="Endereco"
                                 placeholder="Rua, Travessa, Av."
                                 value="{{ isset($funcionario->Endereco) ? $funcionario->Endereco : '' }}">
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Bairro">Bairro:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Bairro" id="Bairro"
+                            <b class="ls-label-text" for="Bairro">Bairro</b>
+                            <input type="text" class="form-control text-center" name="Bairro" id="Bairro"
                                 placeholder="Bairro"
                                 value="{{ isset($funcionario->Bairro) ? $funcionario->Bairro : '' }}">
                         </div>
                         <div class="form-group col-lg-1">
-                            <b class="ls-label-text" for="Estado">Estado:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Estado" id="Estado"
-                                maxlength="2" minlength="2" placeholder="Sigla"
+                            <b class="ls-label-text" for="Estado">Estado</b>
+                            <input type="text" class="form-control text-center" name="Estado" id="Estado"
+                                maxlength="2" minlength="2" readonly
                                 value="{{ isset($funcionario->Estado) ? $funcionario->Estado : '' }}">
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Telefone">Telefone:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Telefone" id="Telefone"
+                            <b class="ls-label-text" for="Telefone">Telefone</b>
+                            <input type="text" class="form-control text-center" name="Telefone" id="Telefone"
                                 placeholder="00-0000-0000"
                                 value="{{ isset($funcionario->Telefone) ? $funcionario->Telefone : '' }}">
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Celular">Celular:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Celular" id="Celular"
+                            <b class="ls-label-text" for="Celular">Celular</b>
+                            <input type="text" class="form-control text-center" name="Celular" id="Celular"
                                 placeholder="00-00000-0000"
                                 value="{{ isset($funcionario->Celular) ? $funcionario->Celular : '' }}">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Email">Email:</b>
-                            <input type="email" class="form-control input-border-bottom" name="Email" id="Email"
-                                placeholder="algo@algo.com"
+                            <b class="ls-label-text" for="Email">Email</b>
+                            <input type="email" class="form-control text-center" name="Email" id="Email"
+                               readonly
                                 value="{{ isset($funcionario->Email) ? $funcionario->Email : '' }}">
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Usuario">Usuário:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Usuario" id="Usuario"
-                                minlength="4" maxlength="15" required placeholder="Mínimo 4 caracteres"
+                            <b class="ls-label-text" for="Usuario">Usuário</b>
+                            <input type="text" class="form-control text-center" name="Usuario" id="Usuario"
+                                minlength="4" maxlength="15" required readonly
                                 value="{{ isset($funcionario->Usuario) ? $funcionario->Usuario : '' }}">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -212,9 +212,9 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Senha">Senha:</b>
-                            <input type="password" class="form-control input-border-bottom" name="Senha" id="Senha"
-                                minlength="4" maxlength="15" required placeholder="Mímino 4 caracteres"
+                            <b class="ls-label-text" for="Senha">Senha</b>
+                            <input type="password" class="form-control text-center" name="Senha" id="Senha"
+                                minlength="4" maxlength="15" required readonly
                                 value="{{ isset($funcionario->Senha) ? $funcionario->Senha : '' }}">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -223,11 +223,27 @@
                                 Tudo certo!
                             </div>
                         </div>
+                        <div class="form-group col-lg-3">
+                        <b class="ls-label-text" for="Empresa">Empresa</b>
+                        <select class="form-control text-center" id="Empresa" name="Empresa">
+                            @foreach($empresa as $empresa)
+                            @can('view_empresa', $empresa)
+                                <option value="{{ $empresa->Codigo }}" {{ $funcionario->Empresa == $empresa->Codigo ? "selected" : "" }}> {{ $empresa->Nome_Fantasia }}</option>
+                            @endcan
+                            @endforeach
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor, Campo Obrigatório!
+                        </div>
+                        <div class="valid-feedback">
+                            Tudo certo!
+                        </div>
+                    </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="ComiVend">Comissão de Venda:</b>
-                            <input type="text" class="form-control input-border-bottom" name="ComiVend" 
+                            <b class="ls-label-text" for="ComiVend">Comissão de Venda</b>
+                            <input type="text" class="form-control text-center" name="ComiVend" 
                             onblur="com_vend()"id="ComiVend"
                                 minlength="3" required placeholder="0.00"
                                 value="{{ isset($funcionario->ComiVend) ? $funcionario->ComiVend : '' }}">
@@ -240,7 +256,7 @@
                         </div>
                         <div class="form-group col-lg-2">
                             <b class="ls-label-text" for="ComiServ">Comissão de Seriços:</b>
-                            <input type="text" class="form-control input-border-bottom" name="ComiServ" 
+                            <input type="text" class="form-control text-center" name="ComiServ" 
                             onblur="com_serv()"id="ComiServ"
                                 minlength="3" required placeholder="0.00"
                                 value="{{ isset($funcionario->ComiServ) ? $funcionario->ComiServ : '' }}">
@@ -252,8 +268,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="LimDescPV">Limite desc à vista:</b>
-                            <input type="text" class="form-control input-border-bottom" name="LimDescPV" 
+                            <b class="ls-label-text" for="LimDescPV">Limite desc à vista</b>
+                            <input type="text" class="form-control text-center" name="LimDescPV" 
                             onblur="lim_vista()"id="LimDescPV"
                                 minlength="3" required placeholder="0.00"
                                 value="{{ isset($funcionario->LimDescPV) ? $funcionario->LimDescPV : '' }}">
@@ -265,8 +281,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="LimDescPP">Limite desc à Prazo:</b>
-                            <input type="text" class="form-control input-border-bottom" name="LimDescPP" 
+                            <b class="ls-label-text" for="LimDescPP">Limite desc à Prazo</b>
+                            <input type="text" class="form-control text-center" name="LimDescPP" 
                             onblur="lim_prazo()"id="LimDescPP"
                                 minlength="3" required placeholder="0.00"
                                 value="{{ isset($funcionario->LimDescPP) ? $funcionario->LimDescPP : '' }}">
@@ -278,8 +294,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="idmsgs">Num de Ident. para abrir chamados:</b>
-                            <input type="text" class="form-control input-border-bottom" name="idmsgs" id="idmsgs"
+                            <b class="ls-label-text" for="idmsgs">Num de Ident. para abrir chamados</b>
+                            <input type="text" class="form-control text-center" name="idmsgs" id="idmsgs"
                                 required
                                 value="{{ isset($funcionario->idmsgs) ? $funcionario->idmsgs : '' }}">
                             <div class="invalid-feedback">
@@ -289,6 +305,7 @@
                                 Tudo certo!
                             </div>
                         </div>
+                        
                     </div>
 
                     <div class="form-row">

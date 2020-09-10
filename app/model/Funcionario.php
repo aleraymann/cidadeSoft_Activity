@@ -10,6 +10,7 @@ class Funcionario extends Model
     use LogsActivity;
 
   protected static $logAttributes = [
+    "Codigo",
     "Nome",
     "CPF",
     "RG",
@@ -27,7 +28,8 @@ class Funcionario extends Model
     "ComiServ",
     "LimDescPV",
     "LimDescPP",
-    "idmsgs"
+    "idmsgs",
+    "Empresa"
   ];
   protected static $logName = 'Funcionário';
   protected static $logOnlyDirty = true;
@@ -47,6 +49,7 @@ class Funcionario extends Model
     public $timestamps = false;
     protected $primaryKey = 'Codigo';
     protected $fillable = Array(
+        "Codigo",
         "user_id",
         "Nome",
         "CPF",
@@ -65,7 +68,8 @@ class Funcionario extends Model
         "ComiServ",
         "LimDescPV",
         "LimDescPP",
-        "idmsgs"
+        "idmsgs",
+        "Empresa"
     );
     //funcionario-empresa
     public function cod_empresa()

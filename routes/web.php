@@ -180,6 +180,7 @@ Route::group(["prefix" => "Funcionario",'middleware' => 'auth'], function () {
     Route::get("/vizualizar/{id}", "FuncionarioController@view");
     Route::post("/busca", "FuncionarioController@busca");
     Route::post("/busca2", "FuncionarioController@busca2");
+    Route::post("/pesquisa", "FuncionarioController@pesquisaAjax");
 });
 
 //crud empresa
