@@ -21,8 +21,8 @@
                         enctype="multipart/form-data">
 
                         <div class=" form-row">
-                            <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Foto">Foto Atual:</b><br>
+                            <div class="form-group col-lg-2">
+                                <b class="ls-label-text" for="Foto">Foto Atual</b><br>
                                 @if($equipamento->Foto != null)
                                     <img src="{{ url("storage/equipamentos/{$equipamento->Foto }") }}"
                                         style="max-width:100px; height:100px">
@@ -44,9 +44,9 @@
                             </div>
                             <input type="hidden" name='LogoBanco' value='{{ $equipamento->Foto }}'>
                        
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_CliFor">Cliente/Fornecedor:</b>
-                            <select class="form-control input-border-bottom" name="Cod_CliFor" required>
+                        <div class="form-group col-lg-4">
+                            <b class="ls-label-text" for="Cod_CliFor">Cliente/Fornecedor</b>
+                            <select class="form-control text-center" name="Cod_CliFor" required>
                                 <option value="">Selecione</option>
                                 @foreach($clifor as $clifor)
                                     @can('view_clifor', $clifor)
@@ -65,8 +65,8 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Nro_Serie">Num de Serie ou Chassis:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Nro_Serie" id="Nro_Serie"
+                        <b class="ls-label-text" for="Nro_Serie">Num de Serie ou Chassis</b>
+                        <input type="text" class="form-control text-center" name="Nro_Serie" id="Nro_Serie"
                             placeholder="" required minlength="4" maxlength="45" value="{{ isset($equipamento->Nro_Serie) ? $equipamento->Nro_Serie : '' }} ">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -76,8 +76,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Placa">Placa:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Placa" id="Placa"
+                        <b class="ls-label-text" for="Placa">Placa</b>
+                        <input type="text" class="form-control text-center" name="Placa" id="Placa"
                             placeholder="" minlength="" maxlength=""  value="{{ isset($equipamento->Placa) ? $equipamento->Placa : '' }} ">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -87,8 +87,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-6">
-                        <b class="ls-label-text" for="Equipamento">Descrição do Equipamento:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Equipamento" id="Equipamento"
+                        <b class="ls-label-text" for="Equipamento">Descrição do Equipamento</b>
+                        <input type="text" class="form-control text-center" name="Equipamento" id="Equipamento"
                             placeholder="" required minlength="" maxlength=""  value="{{ isset($equipamento->Equipamento) ? $equipamento->Equipamento : '' }} ">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -100,8 +100,8 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Marca">Marca:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Marca" id="Marca"
+                        <b class="ls-label-text" for="Marca">Marca</b>
+                        <input type="text" class="form-control text-center" name="Marca" id="Marca"
                             placeholder="" minlength="" maxlength=""  value="{{ isset($equipamento->Marca) ? $equipamento->Marca : '' }} ">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -111,8 +111,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Modelo">Modelo:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Modelo" id="Modelo"
+                        <b class="ls-label-text" for="Modelo">Modelo</b>
+                        <input type="text" class="form-control text-center" name="Modelo" id="Modelo"
                             placeholder="" minlength="" maxlength=""  value="{{ isset($equipamento->Modelo) ? $equipamento->Modelo : '' }} ">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -122,8 +122,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Nro_Frota">Num do Equip na Frota:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Nro_Frota" id="Nro_Frota"
+                        <b class="ls-label-text" for="Nro_Frota">Num do Equip na Frota</b>
+                        <input type="text" class="form-control text-center" name="Nro_Frota" id="Nro_Frota"
                             placeholder="" minlength="" maxlength=""  value="{{ isset($equipamento->Nro_Frota) ? $equipamento->Nro_Frota : '' }} ">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -133,8 +133,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Fabricacao">Ano de Fabricação:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Fabricacao" id="Fabricacao"
+                        <b class="ls-label-text" for="Fabricacao">Ano de Fabricação</b>
+                        <input type="text" class="form-control text-center" name="Fabricacao" id="Fabricacao"
                             placeholder="" minlength="" maxlength=""  value="{{ isset($equipamento->Fabricacao) ? $equipamento->Fabricacao : '' }} ">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -146,8 +146,8 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Combustivel">Combustível:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Combustivel" id="Combustivel"
+                        <b class="ls-label-text" for="Combustivel">Combustível</b>
+                        <input type="text" class="form-control text-center" name="Combustivel" id="Combustivel"
                             placeholder="" minlength="" maxlength=""  value="{{ isset($equipamento->Combustivel) ? $equipamento->Combustivel : '' }} ">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -157,8 +157,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-5">
-                        <b class="ls-label-text" for="Acessorios">Acesssórios:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Acessorios" id="Acessorios"
+                        <b class="ls-label-text" for="Acessorios">Acesssórios</b>
+                        <input type="text" class="form-control text-center" name="Acessorios" id="Acessorios"
                             placeholder="" minlength="" maxlength=""  value="{{ isset($equipamento->Acessorios) ? $equipamento->Acessorios : '' }} ">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -168,8 +168,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-4">
-                        <b class="ls-label-text" for="Estado">Estado de Conservação:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Estado" id="Estado"
+                        <b class="ls-label-text" for="Estado">Estado de Conservação</b>
+                        <input type="text" class="form-control text-center" name="Estado" id="Estado"
                             placeholder="" minlength="" maxlength=""  value="{{ isset($equipamento->Estado) ? $equipamento->Estado : '' }} ">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!

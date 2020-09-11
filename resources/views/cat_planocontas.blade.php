@@ -28,17 +28,18 @@
                         data-target="#myModalCat">
                         <i class='fas fa-plus'></i> Categorias
                     </button>
-                    @include('modals.modal_catplanocontas')
+                  
                 @endcan
                 @can('insere_subcat_planocontas')
                     <button type="button" class="btn btn-success btn-rounded float-right" data-toggle="modal"
                         data-target="#myModal">
                         <i class='fas fa-plus'></i> SubCategorias
                     </button>
-                    @include('modals.modal_subcat_planocontas')
+                   
                 @endcan
                 </h4>
-
+                @include('modals.modal_catplanocontas')
+                @include('modals.modal_subcat_planocontas')
                
             </div>
             <div class="form-row col-lg-12">

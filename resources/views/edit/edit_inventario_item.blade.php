@@ -42,8 +42,8 @@
           </div>
                     <div class=" form-row">
                                 <div class="form-group col-lg-1" hidden>
-                                    <b class="ls-label-text" for="Cod_Invent">Cod Invent:</b>
-                                    <input type="text" class="form-control input-border-bottom" name="Cod_Invent"
+                                    <b class="ls-label-text" for="Cod_Invent">Cod Invent</b>
+                                    <input type="text" class="form-controltext-center" name="Cod_Invent"
                                         id="Cod_Invent" required value="{{ $inventario_item->Cod_Invent }}" readonly>
                                     <div class="invalid-feedback">
                                         Por favor, Mínimo 2 caracteres!
@@ -53,8 +53,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-lg-4">
-                                    <b class="ls-label-text" for="Cod_Ref">Codigo de Referência:</b>
-                                    <input type="text" class="form-control input-border-bottom" name="Cod_Ref"
+                                    <b class="ls-label-text" for="Cod_Ref">Codigo de Referência</b>
+                                    <input type="text" class="form-control text-center" name="Cod_Ref"
                                         id="Cod_Ref" maxlength="25" minlength="3" required  value="{{ $inventario_item->Cod_Ref }}">
                                     <div class="invalid-feedback">
                                         Por favor, Campo Obrigatório!
@@ -64,8 +64,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-lg-4">
-                                    <b class="ls-label-text" for="Cod_Item">Item:</b>
-                                    <select class="form-control input-border-bottom" id="Cod_Item" name="Cod_Item">
+                                    <b class="ls-label-text" for="Cod_Item">Item</b>
+                                    <select class="form-control text-center" id="Cod_Item" name="Cod_Item">
                                         <option value="0">Selecione</option>
                                     </select>
                                     <div class="invalid-feedback">
@@ -76,8 +76,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-lg-4">
-                                    <b class="ls-label-text" for="Cod_Barras">Codigo de Barras:</b>
-                                    <input type="text" class="form-control input-border-bottom" name="Cod_Barras"
+                                    <b class="ls-label-text" for="Cod_Barras">Codigo de Barras</b>
+                                    <input type="text" class="form-control text-center" name="Cod_Barras"
                                         id="Cod_Barras" maxlength="13" minlength="3" required  value="{{ $inventario_item->Cod_Barras }}">
                                     <div class="invalid-feedback">
                                         Por favor, Campo Obrigatório!
@@ -88,9 +88,9 @@
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-lg-5">
-                                    <b class="ls-label-text" for="Qtd_EstoqueF">Qtd Contábil no Momento da Contagem:</b>
-                                    <input type="text" class="form-control input-border-bottom" name="Qtd_EstoqueF"
+                                <div class="form-group col-lg-6">
+                                    <b class="ls-label-text" for="Qtd_EstoqueF">Qtd Contábil no Momento da Contagem</b>
+                                    <input type="text" class="form-control text-center" name="Qtd_EstoqueF"
                                         id="Qtd_EstoqueF" maxlength="10" minlength="5" required onblur="qtd_EstoqueF()" value="{{ $inventario_item->Qtd_EstoqueF }}">
                                     <div class="invalid-feedback">
                                         Por favor, Campo Obrigatório!
@@ -99,9 +99,9 @@
                                         Tudo certo!
                                     </div>
                                 </div>
-                                <div class="form-group col-lg-5">
-                                    <b class="ls-label-text" for="Qtd_EstoqueL">Qtd Livre no Momento da Contagem:</b>
-                                    <input type="text" class="form-control input-border-bottom" name="Qtd_EstoqueL"
+                                <div class="form-group col-lg-6">
+                                    <b class="ls-label-text" for="Qtd_EstoqueL">Qtd Livre no Momento da Contagem</b>
+                                    <input type="text" class="form-control text-center" name="Qtd_EstoqueL"
                                         id="Qtd_EstoqueL" maxlength="10" minlength="5" required onblur="qtd_EstoqueL()"  value="{{ $inventario_item->Qtd_EstoqueL }}">
                                     <div class="invalid-feedback">
                                         Por favor, Campo Obrigatório!
@@ -112,9 +112,9 @@
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-lg-5">
-                                    <b class="ls-label-text" for="Qtd_Contagem">Qtd contada no Inventario:</b>
-                                    <input type="text" class="form-control input-border-bottom" name="Qtd_Contagem"
+                                <div class="form-group col-lg-6">
+                                    <b class="ls-label-text" for="Qtd_Contagem">Qtd contada no Inventario</b>
+                                    <input type="text" class="form-control text-center" name="Qtd_Contagem"
                                         id="Qtd_Contagem" maxlength="10" minlength="5" required onblur="qtd_Contagem()"  value="{{ $inventario_item->Qtd_Contagem }}">
                                     <div class="invalid-feedback">
                                         Por favor, Campo Obrigatório!
@@ -123,9 +123,9 @@
                                         Tudo certo!
                                     </div>
                                 </div>
-                                <div class="form-group col-lg-5">
-                                    <b class="ls-label-text" for="Divergencia">Total da Divergência na Contagem:</b>
-                                    <input type="text" class="form-control input-border-bottom" name="Divergencia"
+                                <div class="form-group col-lg-6">
+                                    <b class="ls-label-text" for="Divergencia">Total da Divergência na Contagem</b>
+                                    <input type="text" class="form-control text-center" name="Divergencia"
                                         id="Divergencia" maxlength="10" minlength="5" required onblur="divergencia()"  value="{{ $inventario_item->Divergencia }}">
                                     <div class="invalid-feedback">
                                         Por favor, Campo Obrigatório!

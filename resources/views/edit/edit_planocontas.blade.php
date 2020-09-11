@@ -41,8 +41,8 @@
           </div>
                 <div class=" form-row">
                                 <div class="form-group col-lg-4">
-                                    <b class="ls-label-text" for="Conta">Num de Classificação:</b>
-                                    <input type="text" class="form-control input-border-bottom" name="Conta" id="Conta"
+                                    <b class="ls-label-text" for="Conta">Num de Classificação</b>
+                                    <input type="text" class="form-control text-center" name="Conta" id="Conta"
                                         placeholder="" required minlength="" maxlength="15"  value="{{$planocontas->Conta}} ">
                                     <div class="invalid-feedback">
                                         Campo Obrigatório!!
@@ -52,8 +52,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-lg-4">
-                                    <b class="ls-label-text" for="Tipo_Custo">Tipo de Custo:</b>
-                                    <select class="form-control input-border-bottom" id="Tipo_Custo" name="Tipo_Custo">
+                                    <b class="ls-label-text" for="Tipo_Custo">Tipo de Custo</b>
+                                    <select class="form-control text-center" id="Tipo_Custo" name="Tipo_Custo">
                                     <option value="{{ isset($planocontas->Tipo_Custo) ? $planocontas->Tipo_Custo : '' }} ">
                                     @if($planocontas->Tipo_Custo == "CV")
                                         Custo Variável
@@ -72,8 +72,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-lg-4">
-                                    <b class="ls-label-text" for="CD">Crédito/Débito:</b>
-                                    <select class="form-control input-border-bottom" id="CD" name="CD">
+                                    <b class="ls-label-text" for="CD">Crédito/Débito</b>
+                                    <select class="form-control text-center" id="CD" name="CD">
                                     <option value="{{ isset($planocontas->CD) ? $planocontas->CD : '' }} ">
                                     @if($planocontas->Tipo_Custo == "C")
                                         Crédito
@@ -96,7 +96,7 @@
                             <div class="form-row">
                                 <div class="form-group col-lg-6">
                                     <b class="ls-label-text" for="CodPai">Categoria:</b>
-                                    <select class="form-control input-border-bottom" required id="CodPai" name="CodPai"
+                                    <select class="form-control text-center" required id="CodPai" name="CodPai"
                                         onchange="defineSub()">
                                         <option value="">Selecione</option>
                                         @foreach($cat_planocontas as $c)
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="form-group col-lg-6">
                                     <b class="ls-label-text" for="Descricao">Sub-Categoria:</b>
-                                    <select class="form-control input-border-bottom" required id="Descricao"
+                                    <select class="form-control text-center" required id="Descricao"
                                         name="Descricao">
                                         <option value="{{ $planocontas->Descricao }}">{{ $planocontas->Descricao }}</option>
                                     </select>

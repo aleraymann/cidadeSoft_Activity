@@ -40,8 +40,8 @@
 
                     <div class="form-row">
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="NCM">NCM:</b>
-                            <input type="text" class="form-control input-border-bottom" name="NCM" id="NCM"
+                            <b class="ls-label-text" for="NCM">NCM</b>
+                            <input type="text" class="form-control text-center" name="NCM" id="NCM"
                                 placeholder="" required minlength="" maxlength="10"
                                 value="{{ isset($ncm->NCM) ? $ncm->NCM : '' }} ">
                             <div class="invalid-feedback">
@@ -52,8 +52,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Descricao">Descrição:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao"
+                            <b class="ls-label-text" for="Descricao">Descrição</b>
+                            <input type="text" class="form-control text-center" name="Descricao" id="Descricao"
                                 placeholder="" required minlength="4" maxlength="60"
                                 value="{{ isset($ncm->Descricao) ? $ncm->Descricao : '' }} ">
                             <div class="invalid-feedback">
@@ -64,8 +64,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="AliqIBPT">Aliquota IBPT:</b>
-                            <input type="text" class="form-control input-border-bottom" name="AliqIBPT" id="AliqIBPT"
+                            <b class="ls-label-text" for="AliqIBPT">Aliquota IBPT</b>
+                            <input type="text" class="form-control text-center" name="AliqIBPT" id="AliqIBPT"
                                 maxlength="3" minlength="1" onblur="aliqIBPT()"
                                 value="{{ isset($ncm->AliqIBPT) ? $ncm->AliqIBPT : '' }}"
                                 required>
@@ -77,8 +77,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="AliqImp">Aliquota Importado:</b>
-                            <input type="text" class="form-control input-border-bottom" name="AliqImp" id="AliqImp"
+                            <b class="ls-label-text" for="AliqImp">Aliquota Importado</b>
+                            <input type="text" class="form-control text-center" name="AliqImp" id="AliqImp"
                                 maxlength="3" minlength="1" onblur="aliqImp()"
                                 value="{{ isset($ncm->AliqImp) ? $ncm->AliqImp : '' }}"
                                 required>
@@ -90,8 +90,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="AliqEst">Aliquota Estadual:</b>
-                            <input type="text" class="form-control input-border-bottom" name="AliqEst" id="AliqEst"
+                            <b class="ls-label-text" for="AliqEst">Aliquota Estadual</b>
+                            <input type="text" class="form-control text-center" name="AliqEst" id="AliqEst"
                                 maxlength="3" minlength="1" onblur="aliqEst()"
                                 value="{{ isset($ncm->AliqEst) ? $ncm->AliqEst : '' }}">
                             <div class="invalid-feedback">
@@ -104,9 +104,9 @@
                     </div>
                     <div class="form-row">
                         
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="AliqMun">Aliquota Municipal:</b>
-                            <input type="text" class="form-control input-border-bottom" name="AliqMun" id="AliqMun"
+                        <div class="form-group col-lg-2">
+                            <b class="ls-label-text" for="AliqMun">Aliquota Municipal</b>
+                            <input type="text" class="form-control text-center" name="AliqMun" id="AliqMun"
                                 maxlength="3" minlength="1"  onblur="aliqMun()"
                                 value="{{ isset($ncm->AliqMun) ? $ncm->AliqMun : '' }}">
                             <div class="invalid-feedback">
@@ -117,8 +117,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Ex">Ex:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Ex" id="Ex" placeholder=""
+                            <b class="ls-label-text" for="Ex">Ex</b>
+                            <input type="text" class="form-control text-center" name="Ex" id="Ex" placeholder=""
                                 required minlength="" maxlength="5"
                                 value="{{ isset($ncm->Ex) ? $ncm->Ex : '' }}">
                             <div class="invalid-feedback">
@@ -129,8 +129,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Tipo">Tipo:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Tipo" id="Tipo"
+                            <b class="ls-label-text" for="Tipo">Tipo</b>
+                            <input type="text" class="form-control text-center" name="Tipo" id="Tipo"
                                 placeholder="" required minlength="" maxlength="2"
                                 value="{{ isset($ncm->Tipo) ? $ncm->Tipo : '' }}">
                             <div class="invalid-feedback">
@@ -140,9 +140,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="VigenciaIni">Início da Vigência:</b>
-                            <input type="text" class="form-control input-border-bottom" name="VigenciaIni"
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="VigenciaIni">Início da Vigência</b>
+                            <input type="text" class="form-control text-center" name="VigenciaIni"
                                 id="VigenciaIni"
                                 value="{{ isset($ncm->VigenciaIni) ? $ncm->VigenciaIni : '' }}">
                             <div class="invalid-feedback">
@@ -159,9 +159,9 @@
             });
         </script>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="VigenciaFim">Fim da Vigência:</b>
-                            <input type="text" class="form-control input-border-bottom" name="VigenciaFim"
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="VigenciaFim">Fim da Vigência</b>
+                            <input type="text" class="form-control text-center" name="VigenciaFim"
                                 id="VigenciaFim"
                                 value="{{ isset($ncm->VigenciaFim) ? $ncm->VigenciaFim : '' }}">
                             <div class="invalid-feedback">
@@ -182,8 +182,8 @@
                     <div class="form-row">
                         
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Versao">Versão da Tabela IBPT:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Versao" id="Versao"
+                            <b class="ls-label-text" for="Versao">Versão da Tabela IBPT</b>
+                            <input type="text" class="form-control text-center" name="Versao" id="Versao"
                                 placeholder="" required minlength="2" maxlength="6"
                                 value="{{ isset($ncm->Versao) ? $ncm->Versao : '' }}">
                             <div class="invalid-feedback">
@@ -194,8 +194,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Chave">Chave IBPT:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Chave" id="Chave"
+                            <b class="ls-label-text" for="Chave">Chave IBPT</b>
+                            <input type="text" class="form-control text-center" name="Chave" id="Chave"
                                 placeholder="" required minlength="2" maxlength="6"
                                 value="{{ isset($ncm->Chave) ? $ncm->Chave : '' }}">
                             <div class="invalid-feedback">

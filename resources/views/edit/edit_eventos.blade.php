@@ -25,9 +25,9 @@
                                 enctype="multipart/form-data">
                     @endif
                     <div class=" form-row">
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="cor">Cor de destaque:</b>
-                            <input type="color" class="form-control input-border-bottom" name="cor" id="cor"
+                        <div class="form-group col-lg-3 ">
+                            <b class="ls-label-text" for="cor">Cor de destaque</b>
+                            <input type="color" class="form-control text-center mt-3" name="cor" id="cor"
                             value="{{ isset($events->cor) ? $events->cor : '' }}">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -37,7 +37,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-4">
-                         <select class="form-control input-border-bottom" id="cod_usuario" name="cod_usuario" required>
+                        <b class="ls-label-text" for="evento">Usuário</b>
+                         <select class="form-control text-center" id="cod_usuario" name="cod_usuario" required>
                          @if( $events->cod_usuario == Auth::user()->id )
                              <option value="{{ Auth::user()->id }}"{{ $events->cod_usuario == Auth::user()->id  ? "selected" : "" }}>{{Auth::user()->name}}</option>
                              @endif
@@ -56,8 +57,8 @@
                          </div>
                      </div>
                      <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="evento">Titulo do evento:</b>
-                            <input type="text" class="form-control input-border-bottom" name="evento" id="evento" required
+                            <b class="ls-label-text" for="evento">Titulo do Evento</b>
+                            <input type="text" class="form-control text-center" name="evento" id="evento" required
                                 minlength="3" maxlength="20" value="{{ isset($events->evento) ? $events->evento : '' }}">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -68,9 +69,9 @@
                         </div>
                     </div>
                     <div class="form-row">
-                    <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="descricao">Descrção:</b>
-                            <input type="text" class="form-control input-border-bottom" name="descricao" id="descricao" required
+                    <div class="form-group col-lg-5">
+                            <b class="ls-label-text" for="descricao">Descrção</b>
+                            <input type="text" class="form-control text-center" name="descricao" id="descricao" required
                                 minlength="3" maxlength="20" value="{{ isset($events->descricao) ? $events->descricao : '' }}">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -80,8 +81,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="data_inicio">Data de Início:</b>
-                            <input type="date" class="form-control input-border-bottom" name="data_inicio" id="data_inicio"
+                            <b class="ls-label-text" for="data_inicio">Data de Início</b>
+                            <input type="date" class="form-control text-center" name="data_inicio" id="data_inicio"
                                 required  value="{{$events->data_inicio}}">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -91,8 +92,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="data_fim">Data de Fim:</b>
-                            <input type="date" class="form-control input-border-bottom" name="data_fim" id="data_fim"
+                            <b class="ls-label-text" for="data_fim">Data de Fim</b>
+                            <input type="date" class="form-control text-center" name="data_fim" id="data_fim"
                                 required value="{{ isset($events->data_fim) ? $events->data_fim : '' }}">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!

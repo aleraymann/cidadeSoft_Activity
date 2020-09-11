@@ -43,8 +43,8 @@
             </div>
                     <div class="form-row">
                     <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Cod_CliFor">Cli/For:</b>
-                                <select class="form-control input-border-bottom" name="Cod_CliFor" id="Cod_CliFor"
+                                <b class="ls-label-text" for="Cod_CliFor">Cli/For</b>
+                                <select class="form-control text-center" name="Cod_CliFor" id="Cod_CliFor"
                                     required>
                                     <option value="">Selecione</option>
                                     @foreach($clifor as $clifor)
@@ -62,8 +62,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Venda">Venda:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Venda" id="Venda" 
+                            <b class="ls-label-text" for="Venda">Venda</b>
+                            <input type="text" class="form-control text-center" name="Venda" id="Venda" 
                             maxlength="10"  required  value="{{ isset($fidelidade->Venda) ? $fidelidade->Venda : '' }} ">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -73,8 +73,8 @@
                             </div>
                         </div>
                             <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Valor">Valor:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Valor" id="Valor" minlength="3" 
+                            <b class="ls-label-text" for="Valor">Valor</b>
+                            <input type="text" class="form-control text-center" name="Valor" id="Valor" minlength="3" 
                             maxlength="10"value="{{ isset($fidelidade->Valor) ? $fidelidade->Valor : '' }} " required onblur="valor()">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -84,8 +84,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Pontos">Pontos:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Pontos" id="Pontos" 
+                            <b class="ls-label-text" for="Pontos">Pontos</b>
+                            <input type="text" class="form-control text-center" name="Pontos" id="Pontos" 
                             maxlength="5"  required value="{{ isset($fidelidade->Pedidos) ? $fidelidade->Pedidos : '' }} ">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -95,8 +95,8 @@
                             </div>
                         </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Data">Data:</b>
-                        <input type="date" class="form-control input-border-bottom" name="Data" id="Data" 
+                        <b class="ls-label-text" for="Data">Data</b>
+                        <input type="date" class="form-control text-center" name="Data" id="Data" 
                             required minlength="" maxlength="10"  value="{{ $fidelidade->Data }}">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!!
@@ -108,8 +108,8 @@
                     </div>
                     <div class="form-row">
                     <div class="form-group col-lg-12">
-                            <b class="ls-label-text" for="Pedidos">Pedidos:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Pedidos" id="Pedidos" 
+                            <b class="ls-label-text" for="Pedidos">Pedidos</b>
+                            <input type="text" class="form-control text-center" name="Pedidos" id="Pedidos" 
                             maxlength="80"  required value="{{ isset($fidelidade->Pedidos) ? $fidelidade->Pedidos : '' }} ">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!

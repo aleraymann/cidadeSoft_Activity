@@ -21,8 +21,8 @@
                                 enctype="multipart/form-data">
                     <div class=" form-row">
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Responsavel">Cod do Responsável:</b>
-                            <input type="text" class="form-control input-border-bottom text-center" name="Responsavel" id="Responsavel"
+                            <b class="ls-label-text" for="Responsavel">Cod do Responsável</b>
+                            <input type="text" class="form-control text-center" name="Responsavel" id="Responsavel"
                                 value="{{ isset($inventario->Responsavel) ? $inventario->Responsavel : 'Auth::user()->id' }}" readonly >
                             <div class="invalid-feedback">
                                 Campo Obrigatório, Mínimo 4 caracteres!!
@@ -32,13 +32,13 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Data">Data:</b>
-                            <input type="text" class="form-control  input-border-bottom" name="Data" id="Data"
+                            <b class="ls-label-text" for="Data">Data</b>
+                            <input type="text" class="form-control  text-center" name="Data" id="Data"
                                 value="{{ isset($inventario->Data) ? $inventario->Data : '' }} " readonly>
                         </div>
                         <div class="form-group col-lg-7">
-                            <b class="ls-label-text" for="Descricao">Descrição:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Descricao"
+                            <b class="ls-label-text" for="Descricao">Descrição</b>
+                            <input type="text" class="form-control text-center" name="Descricao"
                                 id="Descricao" minlength="3" required
                                 value="{{ isset($inventario->Descricao) ? $inventario->Descricao : '' }} ">
                             <div class="invalid-feedback">

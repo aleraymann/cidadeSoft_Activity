@@ -34,8 +34,8 @@
           </div>
           <div class=" form-row">
                             <div class="form-group col-lg-1" hidden>
-                                <b class="ls-label-text" for="Cod_Ajuste">Cod Ajuste:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Cod_Ajuste"
+                                <b class="ls-label-text" for="Cod_Ajuste">Cod Ajuste</b>
+                                <input type="text" class="form-control text-center" name="Cod_Ajuste"
                                     id="Cod_Ajuste" required value="{{ $ajuste_item->Cod_Ajuste }}" readonly>
                                 <div class="invalid-feedback">
                                     Por favor, Mínimo 2 caracteres!
@@ -45,8 +45,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-4">
-                                <b class="ls-label-text" for="Cod_Ref">Codigo de Referência:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Cod_Ref" id="Cod_Ref"
+                                <b class="ls-label-text" for="Cod_Ref">Codigo de Referência</b>
+                                <input type="text" class="form-control text-center" name="Cod_Ref" id="Cod_Ref"
                                     maxlength="25" minlength="3" required value="{{ $ajuste_item->Cod_Ref }}">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -56,8 +56,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-4">
-                                <b class="ls-label-text" for="Cod_Item">Item:</b>
-                                <select class="form-control input-border-bottom" id="Cod_Item" name="Cod_Item">
+                                <b class="ls-label-text" for="Cod_Item">Item</b>
+                                <select class="form-control text-center" id="Cod_Item" name="Cod_Item">
                                     <option value="0">Selecione</option>
                                 </select>
                                 <div class="invalid-feedback">
@@ -68,8 +68,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-4">
-                                <b class="ls-label-text" for="Qtd">Quantidade de ajuste:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Qtd" id="Qtd"
+                                <b class="ls-label-text" for="Qtd">Quantidade de ajuste</b>
+                                <input type="text" class="form-control text-center" name="Qtd" id="Qtd"
                                     maxlength="10" minlength="5" required onblur="qtd()" value="{{ $ajuste_item->Qtd }}">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -81,8 +81,8 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Preco">Preço Unitário:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Preco" id="Preco"
+                                <b class="ls-label-text" for="Preco">Preço Unitário</b>
+                                <input type="text" class="form-control text-center" name="Preco" id="Preco"
                                     maxlength="10" minlength="5" required onblur="preco()" value="{{ $ajuste_item->Preco }}">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -92,8 +92,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Total">Valor Total:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Total" id="Total"
+                                <b class="ls-label-text" for="Total">Valor Total</b>
+                                <input type="text" class="form-control text-center" name="Total" id="Total"
                                     maxlength="10" minlength="5" required onblur="total()"value="{{ $ajuste_item->Total }}">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!

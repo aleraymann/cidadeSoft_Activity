@@ -26,8 +26,8 @@
                     @endif
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="CEST">CEST:</b>
-                            <input type="text" class="form-control input-border-bottom" name="CEST" id="CEST"
+                            <b class="ls-label-text" for="CEST">CEST</b>
+                            <input type="text" class="form-control text-center" name="CEST" id="CEST"
                                 minlength="3" maxlength="10"
                                 value="{{ isset($cest->CEST) ? $cest->CEST : '' }} ">
                             <div class="invalid-feedback">
@@ -37,9 +37,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="NCM">NCM:</b>
-                            <select class="form-control input-border-bottom" required id="NCM" name="NCM">
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="NCM">NCM</b>
+                            <select class="form-control text-center" required id="NCM" name="NCM">
                                 @foreach($ncm as $ncm)
                                 @can('view_ncm', $ncm)
                                     <option value="{{ $ncm->NCM }}"
@@ -56,8 +56,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-6">
-                            <b class="ls-label-text" for="Descricao	">Descrição:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao"
+                            <b class="ls-label-text" for="Descricao	">Descrição</b>
+                            <input type="text" class="form-control text-center" name="Descricao" id="Descricao"
                                 placeholder="" minlength="5" maxlength="45"
                                 value="{{ isset($cest->Descricao) ? $cest->Descricao : '' }} ">
                             <div class="invalid-feedback">

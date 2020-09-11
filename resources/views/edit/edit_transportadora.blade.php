@@ -43,8 +43,8 @@
 
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Razao_Social">Razão Social:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Razao_Social"
+                            <b class="ls-label-text" for="Razao_Social">Razão Social</b>
+                            <input type="text" class="form-control text-center" name="Razao_Social"
                                 id="Razao_Social" placeholder="Razão Social" required minlength="4" maxlength="60"
                                 value="{{ isset($transportadora->Razao_Social) ? $transportadora->Razao_Social : '' }}">
                             <div class="invalid-feedback">
@@ -55,8 +55,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Nome_Fantasia">Nome Fantasia:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Nome_Fantasia"
+                            <b class="ls-label-text" for="Nome_Fantasia">Nome Fantasia</b>
+                            <input type="text" class="form-control text-center" name="Nome_Fantasia"
                                 id="Nome_Fantasia" placeholder="Nome Fantasia ou Apelido" required minlength="4"
                                 maxlength="60"
                                 value="{{ isset($transportadora->Nome_Fantasia) ? $transportadora->Nome_Fantasia : '' }}">
@@ -69,8 +69,8 @@
                         </div>
                        
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="CEP">CEP:</b>
-                            <input type="text" class="form-control input-border-bottom" name="CEP" id="CEP"
+                            <b class="ls-label-text" for="CEP">CEP</b>
+                            <input type="text" class="form-control text-center" name="CEP" id="CEP"
                                 placeholder="000000000" required
                                 value="{{ isset($transportadora->CEP) ? $transportadora->CEP : '' }}">
                             <div class="invalid-feedback">
@@ -81,8 +81,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Endereco">Endereço:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Endereco" id="Endereco"
+                            <b class="ls-label-text" for="Endereco">Endereço</b>
+                            <input type="text" class="form-control text-center" name="Endereco" id="Endereco"
                                 placeholder="Rua, Travessa, Avenida" required
                                 value="{{ isset($transportadora->Endereco) ? $transportadora->Endereco : '' }}">
                             <div class="invalid-feedback">
@@ -96,8 +96,8 @@
                     <div class="form-row">
                         
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Bairro">Bairro:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Bairro" id="Bairro"
+                            <b class="ls-label-text" for="Bairro">Bairro</b>
+                            <input type="text" class="form-control text-center" name="Bairro" id="Bairro"
                                 required
                                 value="{{ isset($transportadora->Bairro) ? $transportadora->Bairro : '' }}">
                             <div class="invalid-feedback">
@@ -108,9 +108,9 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Cidade">Cidade:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cidade" id="Cidade"
-                                required
+                            <b class="ls-label-text" for="Cidade">Cidade</b>
+                            <input type="text" class="form-control text-center" name="Cidade" id="Cidade"
+                                required readonly
                                 value="{{ isset($transportadora->Cidade) ? $transportadora->Cidade : '' }}">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -120,9 +120,9 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-1">
-                            <b class="ls-label-text" for="Estado">Estado:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Estado" id="Estado"
-                                minlength="2" maxlength="2" placeholder="Sigla" required
+                            <b class="ls-label-text" for="Estado">Estado</b>
+                            <input type="text" class="form-control text-center" name="Estado" id="Estado"
+                                minlength="2" maxlength="2" placeholder="Sigla" required readonly
                                 value="{{ isset($transportadora->Estado) ? $transportadora->Estado : '' }}">
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -132,8 +132,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Fis_Jur">Tipo:</b>
-                            <select onchange="verifica(this.value)" class="form-control input-border-bottom" id="Fis_Jur" name="Fis_Jur" required>
+                            <b class="ls-label-text" for="Fis_Jur">Tipo</b>
+                            <select onchange="verifica(this.value)" class="form-control text-center" id="Fis_Jur" name="Fis_Jur" required>
                                 <option value="J">Jurídica</option>
                                 <option value="F">Física</option>
                             </select>
@@ -144,9 +144,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Email">Email:</b>
-                            <input type="email" class="form-control input-border-bottom" name="Email" id="Email"
+                        <div class="form-group col-lg-5">
+                            <b class="ls-label-text" for="Email">Email</b>
+                            <input type="email" class="form-control text-center" name="Email" id="Email"
                                 placeholder="algo@algo.com" required
                                 value="{{ isset($transportadora->Email) ? $transportadora->Email : '' }}">
                             <div class="invalid-feedback">
@@ -160,8 +160,8 @@
                     <div class="form-row">
                        
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Telefone">Telefone:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Telefone" id="Telefone"
+                            <b class="ls-label-text" for="Telefone">Telefone</b>
+                            <input type="text" class="form-control text-center" name="Telefone" id="Telefone"
                                 required
                                 value="{{ isset($transportadora->Telefone) ? $transportadora->Telefone : '' }}">
                             <div class="invalid-feedback">
@@ -174,7 +174,7 @@
 
                         <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Celular">Telefone Celular:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Celular" id="Celular"
+                            <input type="text" class="form-control text-center" name="Celular" id="Celular"
                                 required
                                 value="{{ isset($transportadora->Celular) ? $transportadora->Celular : '' }}">
                             <div class="invalid-feedback">
@@ -186,8 +186,8 @@
                         </div>
 
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Comercial">Telefone Comercial:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Comercial" id="Comercial"
+                            <b class="ls-label-text" for="Comercial">Telefone Comercial</b>
+                            <input type="text" class="form-control text-center" name="Comercial" id="Comercial"
                                 required
                                 value="{{ isset($transportadora->Comercial) ? $transportadora->Comercial : '' }}">
                             <div class="invalid-feedback">
@@ -197,9 +197,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="IE">Inscrição Estadual:</b>
-                            <input type="text" class="form-control input-border-bottom" name="IE" id="IE" minlength="9"
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="IE">Inscrição Estadual</b>
+                            <input type="text" class="form-control text-center" name="IE" id="IE" minlength="9"
                                 maxlength="13" required
                                 value="{{ isset($transportadora->IE) ? $transportadora->IE : '' }}">
                             <div class="invalid-feedback">
@@ -213,8 +213,8 @@
 
                     <div class="form-row">
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="CPF">CPF:</b>
-                            <input type="text" class="form-control input-border-bottom" name="CPF" id="CPF"
+                            <b class="ls-label-text" for="CPF">CPF</b>
+                            <input type="text" class="form-control text-center" name="CPF" id="CPF"
                                 maxlength="14"  onblur="validarCPF(this)"
                                 value="{{ isset($transportadora->CPF) ? $transportadora->CPF : '' }}">
                             <div class="invalid-feedback">
@@ -225,8 +225,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="RG">RG:</b>
-                            <input type="text" class="form-control input-border-bottom" name="RG" id="RG" placeholder=""
+                            <b class="ls-label-text" for="RG">RG</b>
+                            <input type="text" class="form-control text-center" name="RG" id="RG" placeholder=""
                                  minlength="4" maxlength="60" 
                                 value="{{ isset($transportadora->RG) ? $transportadora->RG : '' }}">
                             <div class="invalid-feedback">
@@ -236,9 +236,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="CNPJ">CNPJ:</b>
-                            <input type="text" class="form-control input-border-bottom" name="CNPJ" id="CNPJ"
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="CNPJ">CNPJ</b>
+                            <input type="text" class="form-control text-center" name="CNPJ" id="CNPJ"
                                 onblur="validarCNPJ(this)" required
                                 value="{{ isset($transportadora->CNPJ) ? $transportadora->CNPJ : '' }}">
                             <div class="invalid-feedback">
@@ -249,8 +249,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="FretePor">Tipo de Frete:</b>
-                            <select class="form-control input-border-bottom" id="FretePor" name="FretePor" required>
+                            <b class="ls-label-text" for="FretePor">Tipo de Frete</b>
+                            <select class="form-control text-center" id="FretePor" name="FretePor" required>
                                 <option
                                     value="{{ isset($transportadora->FretePor) ? $transportadora->FretePor : '' }} ">
                                     @if($transportadora->FretePor=="K")
@@ -270,8 +270,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Empresa">Empresa:</b>
-                            <select class="form-control input-border-bottom" id="Empresa" name="Empresa" required>
+                            <b class="ls-label-text" for="Empresa">Empresa</b>
+                            <select class="form-control text-center" id="Empresa" name="Empresa" required>
                                 @foreach($empresa as $empresa)
                                 @can("view_empresa",$empresa)
                                     <option value="{{ $empresa->Codigo }}"
@@ -290,9 +290,9 @@
                             </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Tipo_Frete">Tipo de Frete:</b>
-                            <select class="form-control input-border-bottom" id="Tipo_Frete" name="Tipo_Frete" required>
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="Tipo_Frete">Tipo de Frete</b>
+                            <select class="form-control text-center" id="Tipo_Frete" name="Tipo_Frete" required>
                                 <option
                                     value="{{ isset($transportadora->Tipo_Frete) ? $transportadora->Tipo_Frete : '' }} ">
                                     {{ $transportadora->Tipo_Frete }}</option>
@@ -306,9 +306,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2 ml-2">
-                            <b class="ls-label-text" for="FreteM">Frete por M:</b>
-                            <input type="text" class="form-control input-border-bottom" name="FreteM"
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="FreteM">Frete por M</b>
+                            <input type="text" class="form-control text-center" name="FreteM"
                             onblur="fretem()" id="FreteM"
                                 maxlength="10" minlength="1" value="0.00" required
                                 value="{{ isset($transportadora->FreteM) ? $transportadora->FreteM : '' }}">
@@ -319,9 +319,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-3  ml-2">
-                            <b class="ls-label-text" for="FreteM2">Frete por M<sup>2</sup> :</b>
-                            <input type="text" class="form-control input-border-bottom" name="FreteM2" 
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="FreteM2">Frete por M<sup>2</sup></b>
+                            <input type="text" class="form-control text-center" name="FreteM2" 
                             onblur="fretem2()"id="FreteM2"
                                 maxlength="10" minlength="1" value="0.00" required
                                 value="{{ isset($transportadora->FreteM2) ? $transportadora->FreteM2 : '' }}">
@@ -333,8 +333,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="FreteM3">Frete por M<sup>3</sup> :</b>
-                            <input type="text" class="form-control input-border-bottom" name="FreteM3"
+                            <b class="ls-label-text" for="FreteM3">Frete por M<sup>3</sup></b>
+                            <input type="text" class="form-control text-center" name="FreteM3"
                             onblur="fretem3()" id="FreteM3"
                                 maxlength="10" minlength="1" value="0.00" required
                                 value="{{ isset($transportadora->FreteM3) ? $transportadora->FreteM3 : '' }}">

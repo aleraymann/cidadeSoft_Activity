@@ -38,16 +38,17 @@
 @else
                             {{ Auth::user()->adm }}
 @endif" >
-            </div> <div class="form-group col-lg-12" hidden>
-                            <b class="ls-label-text" for="Responsavel">Responsável:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Responsavel" id="Responsavel"
+           
+          </div>
+          <div class="form-row">
+          </div> <div class="form-group col-lg-2" >
+                            <b class="ls-label-text" for="Responsavel">Responsável</b>
+                            <input type="text" class="form-control text-center" name="Responsavel" id="Responsavel"
                                 readonly value="{{ Auth::user()->id }}">
             </div>
-          </div>
-          <div class=" form-row">
-                            <div class="form-group col-lg-12">
-                                <b class="ls-label-text" for="Codigo_Barras">Agrupado de Codigo de barras:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Codigo_Barras"
+                            <div class="form-group col-lg-10">
+                                <b class="ls-label-text" for="Codigo_Barras">Agrupado de Codigo de Barras</b>
+                                <input type="text" class="form-control text-center" name="Codigo_Barras"
                                     id="Codigo_Barras" maxlength="13" required value="{{ isset($inventario_contagem->Codigo_Barras) ? $inventario_contagem->Codigo_Barras : '' }} ">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!

@@ -25,7 +25,7 @@
                             @else
                             {{ Auth::user()->adm }}
                             @endif" >
-            </div>
+                </div>
           </div>
                 <div class="form-row">
                     <div class="form-group col-lg-12">
