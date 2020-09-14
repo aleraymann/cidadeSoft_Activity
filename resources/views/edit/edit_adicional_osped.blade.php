@@ -42,9 +42,9 @@
                                 enctype="multipart/form-data">
                     @endif
                     <div class="form-row">
-                        <div class="form-group col-lg-2">
+                        <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Cod_item">Cód Item</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cod_item" id="Cod_item"
+                            <input type="text" class="form-control text-center" name="Cod_item" id="Cod_item"
                                 placeholder="" required minlength="" maxlength="11"
                                 value="{{ isset($adicional_osped->Cod_item) ? $adicional_osped->Cod_item : '' }}">
                             <div class="invalid-feedback">
@@ -55,8 +55,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_Ref">Cód de Refêrencia do Item:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cod_Ref" id="Cod_Ref"
+                            <b class="ls-label-text" for="Cod_Ref">Cód de Refêrencia do Item</b>
+                            <input type="text" class="form-control text-center" name="Cod_Ref" id="Cod_Ref"
                                 minlength="5" maxlength="25" required
                                 value="{{ isset($adicional_osped->Cod_Ref) ? $adicional_osped->Cod_Ref : '' }}">
                             <div class="invalid-feedback">
@@ -67,8 +67,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Descricao">Descrição:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao"
+                            <b class="ls-label-text" for="Descricao">Descrição</b>
+                            <input type="text" class="form-control text-center" name="Descricao" id="Descricao"
                                 minlength="5" maxlength="40" required
                                 value="{{ isset($adicional_osped->Descricao) ? $adicional_osped->Descricao : '' }}">
                             <div class="invalid-feedback">
@@ -80,7 +80,7 @@
                         </div>
                         <div class="form-group col-lg-2">
                             <b class="ls-label-text" for="Valor">Valor</b>
-                            <input type="text" class="form-control input-border-bottom" name="Valor" id="Valor"
+                            <input type="text" class="form-control text-center" name="Valor" id="Valor"
                             onblur=" valor()" required
                                 value="{{ isset($adicional_osped->Valor) ? $adicional_osped->Valor : '' }}">
                             <div class="invalid-feedback">
@@ -94,8 +94,8 @@
                     <div class="form-row">
                         
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Qtd_Alterar">Quantidade a Alterar:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Qtd_Alterar"
+                            <b class="ls-label-text" for="Qtd_Alterar">Quantidade a Alterar</b>
+                            <input type="text" class="form-control text-center" name="Qtd_Alterar"
                                 id="Qtd_Alterar"
                                 value="{{ isset($adicional_osped->Qtd_Alterar) ? $adicional_osped->Qtd_Alterar : '' }}"
                                 required>
@@ -107,8 +107,8 @@
                             Tudo certo!
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_Item_Dev ">Cod Item de Devoluçao:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cod_Item_Dev"
+                            <b class="ls-label-text" for="Cod_Item_Dev ">Cod Item de Devoluçao</b>
+                            <input type="text" class="form-control text-center" name="Cod_Item_Dev"
                                 id="Cod_Item_Dev"
                                 value="{{ isset($adicional_osped->Cod_Item_Dev) ? $adicional_osped->Cod_Item_Dev : '' }}"
                                 required>
@@ -120,8 +120,8 @@
                             Tudo certo!
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_Ref_Dev">Cod Ref Item de Devoluçao:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cod_Ref_Dev"
+                            <b class="ls-label-text" for="Cod_Ref_Dev">Cod Ref Item de Devoluçao</b>
+                            <input type="text" class="form-control text-center" name="Cod_Ref_Dev"
                                 id="Cod_Ref_Dev"
                                 value="{{ isset($adicional_osped->Cod_Ref_Dev) ? $adicional_osped->Cod_Ref_Dev : '' }}"
                                 required>
@@ -133,8 +133,8 @@
                             Tudo certo!
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Qtd_Dev">Quantidade a Devolver:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Qtd_Dev" id="Qtd_Dev"
+                            <b class="ls-label-text" for="Qtd_Dev">Quantidade a Devolver</b>
+                            <input type="text" class="form-control text-center" name="Qtd_Dev" id="Qtd_Dev"
                                 value="{{ isset($adicional_osped->Qtd_Dev) ? $adicional_osped->Qtd_Dev : '' }}"
                                 required>
                         </div>

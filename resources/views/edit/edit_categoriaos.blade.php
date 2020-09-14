@@ -24,9 +24,9 @@
                                 enctype="multipart/form-data">
                     @endif
                     <div class="form-row">
-                        <div class="form-group col-lg-6">
+                        <div class="form-group col-lg-12">
                             <b class="ls-label-text" for="Descricao">Descrição</b>
-                            <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao"
+                            <input type="text" class="form-control text-center" name="Descricao" id="Descricao"
                                 value="{{ isset($categoriaos->Descricao) ? $categoriaos->Descricao : '' }}"
                                 placeholder="Nome do Funcionário" required minlength="3" maxlength="45">
                             <div class="invalid-feedback">

@@ -7,7 +7,7 @@ use App\model\AjusteEstoque;
 use App\model\AjusteItem;
 use App\model\CliFor;
 use App\model\Empresa;
-use App\User;
+use App\model\Funcionario;
 use Gate;
 
 class AjusteEstoqueController extends Controller
@@ -17,7 +17,7 @@ class AjusteEstoqueController extends Controller
         $ajuste_estoque = $ajuste_estoque->all();
         $ajuste_estoque = AjusteEstoque::paginate(20);
         $clifor = CliFor::all();
-        $funcionario = User::all();
+        $funcionario = Funcionario::all();
         $empresa = Empresa::all();
         $criterio = "";
         return view("ajuste_estoque", compact("ajuste_estoque","empresa","funcionario","clifor","criterio")); 
@@ -66,7 +66,7 @@ class AjusteEstoqueController extends Controller
             return redirect()->back();
         }
         $clifor = CliFor::all();
-        $funcionario = User::all();
+        $funcionario = Funcionario::all();
         $empresa = Empresa::all();
         return view("edit.edit_ajuste_estoque", compact("ajuste_estoque","id","clifor","funcionario","empresa"));
     }
@@ -85,7 +85,7 @@ class AjusteEstoqueController extends Controller
         $data_inicio  = $request->data_inicio;
         $data_fim  = $request->data_fim;
         $clifor = CliFor::all();
-        $funcionario = User::all();
+        $funcionario = Funcionario::all();
         $empresa = Empresa::all();
         $criterio = "Data de: ".date('d-m-Y', strtotime($request->data_inicio))." até ". date('d-m-Y', strtotime($request->data_fim));
         $ajuste_estoque = AjusteEstoque::whereBetween( 'Data' , [$request->data_inicio , $request->data_fim] )->paginate(10);
@@ -95,7 +95,7 @@ class AjusteEstoqueController extends Controller
     public function busca2( Request $request){
         $criterio  = $request->criterio;
         $clifor = CliFor::all();
-        $funcionario = User::all();
+        $funcionario = Funcionario::all();
         $empresa = Empresa::all();
         $ajuste_estoque = AjusteEstoque::where( 'Codigo' , 'LIKE', '%'. $request->criterio .'%' )->paginate(10);
         return view("ajuste_estoque", compact("ajuste_estoque","clifor","funcionario","empresa","criterio")); 
@@ -104,7 +104,7 @@ class AjusteEstoqueController extends Controller
     public function busca3( Request $request){
         $criterio  = $request->criterio;
         $clifor = CliFor::all();
-        $funcionario = User::all();
+        $funcionario = Funcionario::all();
         $empresa = Empresa::all();
         $ajuste_estoque = AjusteEstoque::where( 'Situacao' , 'LIKE', '%'. $request->criterio .'%')->paginate(10);
         return view("ajuste_estoque", compact("ajuste_estoque","clifor","funcionario","empresa","criterio")); 
@@ -112,7 +112,7 @@ class AjusteEstoqueController extends Controller
     public function busca4( Request $request){
         $criterio  = $request->criterio;
         $clifor = CliFor::all();
-        $funcionario = User::all();
+        $funcionario = Funcionario::all();
         $empresa = Empresa::all();
         if( $request->criterio == "S"){
             $criterio  = "Saída";

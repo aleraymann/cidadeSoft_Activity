@@ -35,7 +35,7 @@
                     <div class="form-row">
                         <div class="form-group col-lg-2">
                             <b class="ls-label-text" for="Condicao	">Condição</b>
-                            <input type="text" class="form-control input-border-bottom" name="Condicao" id="Condicao"
+                            <input type="text" class="form-control text-center" name="Condicao" id="Condicao"
                                 placeholder="1x, 30/60, 15 D.D." required minlength="2" maxlength="45"
                                 value="{{ isset($cond_pag->Condicao) ? $cond_pag->Condicao : '' }} ">
                             <div class="invalid-feedback">
@@ -46,8 +46,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Tab_Preco">Tabela de Preço:</b>
-                            <select class="form-control input-border-bottom" id="Tab_Preco" name="Tab_Preco">
+                            <b class="ls-label-text" for="Tab_Preco">Tabela de Preço</b>
+                            <select class="form-control text-center" id="Tab_Preco" name="Tab_Preco">
                                 <option
                                     value="{{ isset($cond_pag->Tab_Preco) ? $cond_pag->Tab_Preco : '' }} ">
                                     {{ $cond_pag->Tab_Preco }}</option>
@@ -62,8 +62,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="ParcDias">Dias entre parcelas:</b>
-                            <input type="text" class="form-control input-border-bottom" name="ParcDias" id="ParcDias"
+                            <b class="ls-label-text" for="ParcDias">Dias entre parcelas</b>
+                            <input type="text" class="form-control text-center" name="ParcDias" id="ParcDias"
                                 required
                                 value="{{ isset($cond_pag->ParcDias) ? $cond_pag->ParcDias : '' }} ">
                             <div class="invalid-feedback">
@@ -73,14 +73,14 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-4">
+                        <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="ParcForma">Forma de Pag no Recebimento</b>
-                            <input type="text" class="form-control input-border-bottom" name="ParcForma" id="ParcForma" required
+                            <input type="text" class="form-control text-center" name="ParcForma" id="ParcForma" required
                             value="{{ isset($cond_pag->ParcForma) ? $cond_pag->ParcForma : '' }} ">
                         </div>
-                        <div class="form-group col-lg-2">
+                        <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="ParcJuros">Juro a ser aplicado:</b>
-                            <input type="text" class="form-control input-border-bottom" name="ParcJuros" id="ParcJuros"
+                            <input type="text" class="form-control text-center" name="ParcJuros" id="ParcJuros"
                                 minlength="3" onblur="parcJuros()"
                                 value="{{ isset($cond_pag->ParcJuros) ? $cond_pag->ParcJuros : '' }} ">
                             <div class="invalid-feedback">

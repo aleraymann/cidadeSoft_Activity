@@ -32,8 +32,8 @@
             <div class="form-row">
              
               <div class="form-group col-lg-2">
-                <b class="ls-label-text" for="Data">Data da Remessa:</b>
-                <input type="text" class="form-control input-border-bottom" name="Data" id="Data" 
+                <b class="ls-label-text" for="Data">Data</b>
+                <input type="text" class="form-control text-center" name="Data" id="Data" 
                 value="{{isset($boleto_remessa->Data) ? $boleto_remessa->Data : '' }}"  required readonly>
                 <div class="invalid-feedback">
                   Por favor, Campo Obrigatório!
@@ -43,8 +43,8 @@
                 </div>
               </div>
               <div class="form-group col-lg-2">
-                <b class="ls-label-text" for="Hora">Hora da Remessa:</b>
-                <input type="text" class="form-control input-border-bottom" name="Hora" id="Hora" 
+                <b class="ls-label-text" for="Hora">Hora</b>
+                <input type="text" class="form-control text-center" name="Hora" id="Hora" 
                 value="{{isset($boleto_remessa->Hora) ? $boleto_remessa->Hora : '' }}" readonly required >
                 <div class="invalid-feedback">
                   Por favor, Campo Obrigatório!
@@ -55,7 +55,7 @@
               </div>
               <div class="form-group col-lg-2">
                 <b class="ls-label-text" for="Numero_Rem">Num da Remessa</b>
-                <input type="text" class="form-control input-border-bottom" name="Numero_Rem" id="Numero_Rem"
+                <input type="text" class="form-control text-center" name="Numero_Rem" id="Numero_Rem"
                 value="{{isset($boleto_remessa->Numero_Rem) ? $boleto_remessa->Numero_Rem : '' }}" readonly required >
                 <div class="invalid-feedback">
                   Por favor, Campo Obrigatório!
@@ -66,7 +66,7 @@
               </div>
               <div class="form-group col-lg-3">
                 <b class="ls-label-text" for="Cod_Conv">Convênio da Cobrança</b>
-                <select class="form-control input-border-bottom"  name="Cod_Conv">
+                <select class="form-control text-center"  name="Cod_Conv">
               @foreach($convenio as $convenio)
               @can("view_convenio",$convenio)
               <option value="{{$convenio->Codigo}}" {{ $boleto_remessa->Cod_Conv == $convenio->Codigo ? "selected" : "" }} >{{ $convenio->Convenio}}</option>
@@ -81,8 +81,8 @@
                   </div>
               </div>
               <div class="form-group col-lg-3">
-                <b class="ls-label-text" for="Arquivo">Caminho do Arquivo:</b>
-                <input type="text" class="form-control input-border-bottom" name="Arquivo" id="Arquivo" required
+                <b class="ls-label-text" for="Arquivo">Caminho do Arquivo</b>
+                <input type="text" class="form-control text-center" name="Arquivo" id="Arquivo" required
                 value="{{isset($boleto_remessa->Arquivo) ? $boleto_remessa->Arquivo : '' }}">
               </div>
               <div class="invalid-feedback">

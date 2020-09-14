@@ -99,11 +99,11 @@
                                     <select class="form-control text-center" id="Cod_Fun" name="Cod_Fun"
                                         required>
                                         @foreach($funcionario as $u)
-                                            @if(auth()->user()->id == $u->adm)
-                                                <option value="{{ $u->id }}"
+                                           @can('view_funcionario', $u)
+                                                <option value="{{ $u->Codigo }}"
                                                     {{ $ajuste_estoque->Cod_Fun == $u->id ? "selected" : "" }}>
-                                                    {{ $u->name }}</option>
-                                            @endif
+                                                    {{ $u->Nome }}</option>
+                                            @endcan
                                         @endforeach
                                     </select>
                                     <div class="invalid-feedback">

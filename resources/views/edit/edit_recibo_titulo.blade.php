@@ -41,9 +41,9 @@
             </div>
           </div>
           <div class=" form-row">
-                            <div class="form-group col-lg-4">
+                            <div class="form-group col-lg-6">
                                 <b class="ls-label-text" for="Cod_Rec">Recibo:</b>
-                                <select class="form-control input-border-bottom" name="Cod_Rec" id="Cod_Rec">
+                                <select class="form-control text-center" name="Cod_Rec" id="Cod_Rec">
                                     @foreach($recibo as $recibo)
                                         @can('view_recibo', $recibo)
                                         <option value="{{ $recibo->Codigo }}" {{ $recibo_tit->Cod_Rec == $recibo->Codigo ? "selected" : "" }}>
@@ -58,9 +58,9 @@
                                     Tudo certo!
                                 </div>
                             </div>
-                            <div class="form-group col-lg-4">
+                            <div class="form-group col-lg-6">
                                 <b class="ls-label-text" for="Cod_Tit">Título:</b>
-                                <select class="form-control input-border-bottom" name="Cod_Tit" id="Cod_Tit">
+                                <select class="form-control text-center" name="Cod_Tit" id="Cod_Tit">
                                     <option value="">Selecione</option>
                                     @foreach($titulo as $titulo)
                                         @can('view_boletoTit', $titulo)

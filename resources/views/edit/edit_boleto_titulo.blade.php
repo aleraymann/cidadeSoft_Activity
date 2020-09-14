@@ -43,14 +43,14 @@
                     @endif
                     <div class="form-row">
 
-                        <div class="form-group col-lg-2">
-                        <label class="form-check-label">
+                        <div class="form-group col-lg-3 mt-4">
+                        <label class="form-check-label ml-4">
                             <input type="checkbox" class="form-check-input" id="Sel" name="Sel" value="1" <?php if($boleto_titulo->Sel == '1'){ echo "checked"; } ?>> Baixa/Envio ao Banco
                         </label>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_Conta">Conta:</b>
-                            <select class="form-control input-border-bottom" id="Cod_Conta" name="Cod_Conta">
+                            <b class="ls-label-text" for="Cod_Conta">Conta</b>
+                            <select class="form-control text-center" id="Cod_Conta" name="Cod_Conta">
                                 <option value="0">Selecione</option>
                                 @foreach($conta as $conta)
                                 @can('view_conta', $conta)
@@ -69,8 +69,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Data_Doc">Data do Documento:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Data_Doc" id="Data_Doc"
+                            <b class="ls-label-text" for="Data_Doc">Data do Documento</b>
+                            <input type="text" class="form-control text-center" name="Data_Doc" id="Data_Doc"
                                 value="{{ isset($boleto_titulo->Data_Doc) ? $boleto_titulo->Data_Doc : '' }}"
                                 required readonly>
                             <div class="invalid-feedback">
@@ -82,7 +82,7 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Vencimento">Data de Vencimento</b>
-                            <input type="date" class="form-control input-border-bottom" name="Vencimento"
+                            <input type="date" class="form-control text-center" name="Vencimento"
                                 id="Vencimento" required
                                 value="{{$boleto_titulo->Vencimento}}">
                             <div class="invalid-feedback">
@@ -95,8 +95,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Nro_Doc">Num do Doc no Banco:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Nro_Doc" id="Nro_Doc"
+                            <b class="ls-label-text" for="Nro_Doc">Num do Doc no Banco</b>
+                            <input type="text" class="form-control text-center" name="Nro_Doc" id="Nro_Doc"
                                 required maxlength="14" min="10"
                                 value="{{ isset($boleto_titulo->Nro_Doc) ? $boleto_titulo->Nro_Doc : '' }}">
                             <div class="invalid-feedback">
@@ -107,8 +107,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Nosso_Num">Num do Titulo no Sistema:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Nosso_Num" id="Nosso_Num"
+                            <b class="ls-label-text" for="Nosso_Num">Num do Titulo no Sistema</b>
+                            <input type="text" class="form-control text-center" name="Nosso_Num" id="Nosso_Num"
                                 required maxlength="20" min="10"
                                 value="{{ isset($boleto_titulo->Nosso_Num) ? $boleto_titulo->Nosso_Num : '' }}">
                             <div class="invalid-feedback">
@@ -119,8 +119,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Valor">Valor:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Valor" id="Valor" required
+                            <b class="ls-label-text" for="Valor">Valor</b>
+                            <input type="text" class="form-control text-center" name="Valor" id="Valor" required
                                 maxlength="10" min="3" onblur="valor()"
                                 value="{{ isset($boleto_titulo->Valor) ? $boleto_titulo->Valor : '' }}">
                             <div class="invalid-feedback">
@@ -131,8 +131,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Msg_1">Mensagem a ser impressa 1:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Msg_1" id="Msg_1" required
+                            <b class="ls-label-text" for="Msg_1">Mensagem a ser impressa 1</b>
+                            <input type="text" class="form-control text-center" name="Msg_1" id="Msg_1" required
                                 maxlength="45" min="5"
                                 value="{{ isset($boleto_titulo->Msg_1) ? $boleto_titulo->Msg_1 : '' }}">
                             <div class="invalid-feedback">
@@ -145,8 +145,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Msg_2">Mensagem a ser impressa 2:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Msg_2" id="Msg_2" required
+                            <b class="ls-label-text" for="Msg_2">Mensagem a ser impressa 2</b>
+                            <input type="text" class="form-control text-center" name="Msg_2" id="Msg_2" required
                                 maxlength="45" min="5"
                                 value="{{ isset($boleto_titulo->Msg_2) ? $boleto_titulo->Msg_2 : '' }}">
                             <div class="invalid-feedback">
@@ -157,8 +157,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Msg_3">Mensagem a ser impressa 3:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Msg_3" id="Msg_3" required
+                            <b class="ls-label-text" for="Msg_3">Mensagem a ser impressa 3</b>
+                            <input type="text" class="form-control text-center" name="Msg_3" id="Msg_3" required
                                 maxlength="45" min="5"
                                 value="{{ isset($boleto_titulo->Msg_3) ? $boleto_titulo->Msg_3 : '' }}">
                             <div class="invalid-feedback">
@@ -169,8 +169,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Inst_1">Instruçao para cobrança 1:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Inst_1" id="Inst_1"
+                            <b class="ls-label-text" for="Inst_1">Instrução para cobrança 1</b>
+                            <input type="text" class="form-control text-center" name="Inst_1" id="Inst_1"
                                 required maxlength="5" min="1"
                                 value="{{ isset($boleto_titulo->Inst_1) ? $boleto_titulo->Inst_1 : '' }}">
                             <div class="invalid-feedback">
@@ -181,8 +181,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Inst_2">Instruçao para cobrança 2:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Inst_2" id="Inst_2"
+                            <b class="ls-label-text" for="Inst_2">Instrução para cobrança 2</b>
+                            <input type="text" class="form-control text-center" name="Inst_2" id="Inst_2"
                                 required maxlength="5" min="1"
                                 value="{{ isset($boleto_titulo->Inst_2) ? $boleto_titulo->Inst_2 : '' }}">
                             <div class="invalid-feedback">
@@ -195,8 +195,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Multa">Percentual de Multa:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Multa" id="Multa" required
+                            <b class="ls-label-text" for="Multa">Percentual de Multa</b>
+                            <input type="text" class="form-control text-center" name="Multa" id="Multa" required
                                 maxlength="3" min="3" onblur="multa()"
                                 value="{{ isset($boleto_titulo->Multa) ? $boleto_titulo->Multa : '' }}">
                             <div class="invalid-feedback">
@@ -207,8 +207,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Taxa_Juros">Percentual de Juros:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Taxa_Juros"
+                            <b class="ls-label-text" for="Taxa_Juros">Percentual de Juros</b>
+                            <input type="text" class="form-control text-center" name="Taxa_Juros"
                                 id="Taxa_Juros" required maxlength="3" min="3" onblur="taxa_Juros()"
                                 value="{{ isset($boleto_titulo->Taxa_Juros) ? $boleto_titulo->Taxa_Juros : '' }}">
                             <div class="invalid-feedback">
@@ -219,8 +219,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Acrescimo">Valor do Acrescimo:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Acrescimo" id="Acrescimo"
+                            <b class="ls-label-text" for="Acrescimo">Valor do Acrescimo</b>
+                            <input type="text" class="form-control text-center" name="Acrescimo" id="Acrescimo"
                                 required maxlength="10" min="3" onblur="acrescimo()"
                                 value="{{ isset($boleto_titulo->Acrescimo) ? $boleto_titulo->Acrescimo : '' }}">
                             <div class="invalid-feedback">
@@ -231,8 +231,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Desconto">Valor do Desconto:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Desconto" id="Desconto"
+                            <b class="ls-label-text" for="Desconto">Valor do Desconto</b>
+                            <input type="text" class="form-control text-center" name="Desconto" id="Desconto"
                                 required maxlength="10" min="3" onblur="desconto()"
                                 value="{{ isset($boleto_titulo->Desconto) ? $boleto_titulo->Desconto : '' }}">
                             <div class="invalid-feedback">
@@ -245,8 +245,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_CliFor">Cliente/Fornecedor:</b>
-                            <select class="form-control input-border-bottom" id="Cod_CliFor" name="Cod_CliFor">
+                            <b class="ls-label-text" for="Cod_CliFor">Cliente/Fornecedor</b>
+                            <select class="form-control text-center" id="Cod_CliFor" name="Cod_CliFor">
                                 <option value="0">Selecione</option>
                                 @foreach($clifor as $clifor)
                                 @can('view_clifor', $clifor)
@@ -264,8 +264,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_NF">Nota Fical:</b>
-                            <select class="form-control input-border-bottom" id="Cod_NF" name="Cod_NF">
+                            <b class="ls-label-text" for="Cod_NF">Nota Fical</b>
+                            <select class="form-control text-center" id="Cod_NF" name="Cod_NF">
                                 <option value="0">Selecione</option>
                             </select>
                             <div class="invalid-feedback">
@@ -276,8 +276,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_CtaRec">Código Contas a Receber:</b>
-                            <select class="form-control input-border-bottom" id="Cod_CtaRec" name="Cod_CtaRec">
+                            <b class="ls-label-text" for="Cod_CtaRec">Código Contas a Receber</b>
+                            <select class="form-control text-center" id="Cod_CtaRec" name="Cod_CtaRec">
                             @foreach($ctas_receber as $c)
                                     @can('view_ctas_receber', $c)
                                     <option value="{{ $c->Codigo }}" {{ $boleto_titulo->Cod_CtaRec == $c->Codigo ? "selected" : "" }}>
@@ -295,7 +295,7 @@
                         </div>
                         <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Data_Bai">Data de Baixa</b>
-                            <input type="date" class="form-control input-border-bottom" name="Data_Bai" id="Data_Bai"
+                            <input type="date" class="form-control text-center" name="Data_Bai" id="Data_Bai"
                                 required
                                 value="{{$boleto_titulo->Data_Bai}}">
                             <div class="invalid-feedback">
@@ -307,9 +307,9 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-lg-2">
+                        <div class="form-group col-lg-3">
                             <b class="ls-label-text" for="Data_Liq">Data de Liquidação</b>
-                            <input type="date" class="form-control input-border-bottom" name="Data_Liq" id="Data_Liq"
+                            <input type="date" class="form-control text-center" name="Data_Liq" id="Data_Liq"
                                 required
                                 value="{{$boleto_titulo->Data_Liq}}">
                             <div class="invalid-feedback">
@@ -321,7 +321,7 @@
                         </div>
                         <div class="form-group col-lg-2">
                             <b class="ls-label-text" for="Situacao">Situação do Título</b>
-                            <select class="form-control input-border-bottom" id="Situacao" name="Situacao">
+                            <select class="form-control text-center" id="Situacao" name="Situacao">
                                 <option
                                     value="{{ isset($boleto_titulo->Situacao) ? $boleto_titulo->Situacao : '' }} ">
                                     @if( $boleto_titulo->Situacao =="C" )
@@ -347,8 +347,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Cod_Rem">Num da Remessa:</b>
-                            <select class="form-control input-border-bottom" id="Cod_Rem" name="Cod_Rem">
+                            <b class="ls-label-text" for="Cod_Rem">Num da Remessa</b>
+                            <select class="form-control text-center" id="Cod_Rem" name="Cod_Rem">
                                 <option value="0">Selecione</option>
                                 @foreach($boleto_remessa as $boleto_remessa)
                                     @can('view_boletoRem', $boleto_remessa)
@@ -366,8 +366,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Transacao">Num da Transação:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Transacao" id="Transacao"
+                            <b class="ls-label-text" for="Transacao">Num da Transação</b>
+                            <input type="text" class="form-control text-center" name="Transacao" id="Transacao"
                                 required maxlength="10" min="1"
                                 value="{{ isset($boleto_titulo->Transacao) ? $boleto_titulo->Transacao : '' }}">
                             <div class="invalid-feedback">
@@ -377,9 +377,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Empresa">Empresa:</b>
-                            <select class="form-control input-border-bottom" id="Empresa" name="Empresa" readonly 
+                        <div class="form-group col-lg-2">
+                            <b class="ls-label-text" for="Empresa">Empresa</b>
+                            <select class="form-control text-center" id="Empresa" name="Empresa" readonly 
                             disabled>
                                 <option value="0">Sem empresa</option>
                                 @foreach($empresa as $empresa)

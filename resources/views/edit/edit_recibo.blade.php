@@ -31,7 +31,7 @@
                                 <div class="form-row">
                         <div class="form-group col-lg-12" hidden>
                             <b class="ls-label-text" for="user_id">User_ID:</b>
-                            <input type="text" class="form-control input-border-bottom" name="user_id" id="user_id"
+                            <input type="text" class="form-control text-center" name="user_id" id="user_id"
                                 readonly value="
 @if(Auth::user()->hasAnyRoles('adm') || Auth::user()->hasAnyRoles('s_adm'))
                             {{ Auth::user()->id }}
@@ -42,8 +42,8 @@
           </div>
                 <div class=" form-row">
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Pag_Rec">Pago/Recebido:</b>
-                                <select class="form-control input-border-bottom" name="Pag_Rec" required>
+                                <b class="ls-label-text" for="Pag_Rec">Pago/Recebido</b>
+                                <select class="form-control text-center" name="Pag_Rec" required>
                                 <option value="{{ isset($recibo->Pag_Rec) ? $recibo->Pag_Rec : '' }} ">
                             {{ $recibo->Pag_Rec == 'P'? 'Pago': 'Recebido' }}
                             </option>
@@ -58,8 +58,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Rec_De">Recebido de:</b>
-                                <select class="form-control input-border-bottom" name="Rec_De" id="Rec_De">
+                                <b class="ls-label-text" for="Rec_De">Recebido de</b>
+                                <select class="form-control text-center" name="Rec_De" id="Rec_De">
                                     <option value="">Selecione</option>
                                     @foreach($clifor as $clifor)
                                         @can('view_clifor', $clifor)
@@ -76,8 +76,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Pag_Para">Pago Para:</b>
-                                <select class="form-control input-border-bottom" name="Pag_Para" id="Pag_Para">
+                                <b class="ls-label-text" for="Pag_Para">Pago Para</b>
+                                <select class="form-control text-center" name="Pag_Para" id="Pag_Para">
                                     <option value="">Selecione</option>
                                     @foreach($clifor1 as $clifor)
                                         @can('view_clifor', $clifor)
@@ -94,8 +94,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Valor">Valor:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Valor" id="Valor"
+                                <b class="ls-label-text" for="Valor">Valor</b>
+                                <input type="text" class="form-control text-center" name="Valor" id="Valor"
                                     minlength="3" maxlength="10" required onblur="valor()" required
                                     value="{{ isset($recibo->Valor) ? $recibo->Valor : '' }} ">
                                 <div class="invalid-feedback">
@@ -109,8 +109,8 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Data">Data:</b>
-                                <input type="date" class="form-control input-border-bottom" name="Data" id="Data"
+                                <b class="ls-label-text" for="Data">Data</b>
+                                <input type="date" class="form-control text-center" name="Data" id="Data"
                                     maxlength="10" required  value="{{$recibo->Data}}">
                                 <div class="invalid-feedback">
                                     Campo Obrigatório, Mínimo 4 caracteres!!
@@ -120,8 +120,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-9">
-                                <b class="ls-label-text" for="Referente">Referente a:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Referente"
+                                <b class="ls-label-text" for="Referente">Referente a</b>
+                                <input type="text" class="form-control text-center" name="Referente"
                                     id="Referente" minlength="3" maxlength="100" required  value="{{ isset($recibo->Referente) ? $recibo->Referente : '' }} ">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -134,8 +134,8 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Ben_Nome">Nome do Beneficiário:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Ben_Nome"
+                                <b class="ls-label-text" for="Ben_Nome">Nome do Beneficiário</b>
+                                <input type="text" class="form-control text-center" name="Ben_Nome"
                                     id="Ben_Nome" minlength="3" maxlength="45" value="{{ isset($recibo->Ben_Nome) ? $recibo->Ben_Nome : '' }} ">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -145,8 +145,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-4">
-                                <b class="ls-label-text" for="Ben_End">Endereço do Beneficiário:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Ben_End" id="Ben_End"
+                                <b class="ls-label-text" for="Ben_End">Endereço do Beneficiário</b>
+                                <input type="text" class="form-control text-center" name="Ben_End" id="Ben_End"
                                     minlength="3" maxlength="45" value="{{ isset($recibo->Ben_End) ? $recibo->Ben_End : '' }} ">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -156,8 +156,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-2">
-                                <b class="ls-label-text" for="Doc">Documento:</b>
-                                <select onchange="verifica(this.value)" class="form-control input-border-bottom"
+                                <b class="ls-label-text" for="Doc">Documento</b>
+                                <select onchange="verifica(this.value)" class="form-control text-center"
                                     id="Doc" name="Doc">
                                     <option value="{{ isset($recibo->Doc) ? $recibo->Doc : '' }} ">
                             {{ $recibo->Doc == '1'? 'CPF': 'CNPJ' }}</option>
@@ -172,23 +172,23 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-3" id="CPF" hidden>
-                                <b class="ls-label-text" for="Ben_CPF_CNPJ">CPF do Beneficiario:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Ben_CPF_CNPJ"
+                                <b class="ls-label-text" for="Ben_CPF_CNPJ">CPF do Beneficiario</b>
+                                <input type="text" class="form-control text-center" name="Ben_CPF_CNPJ"
                                     id="iCPF" minlength="3" maxlength="11" onblur="validarCPF(this)" value="{{ isset($recibo->Ben_CPF_CNPJ) ? $recibo->Ben_CPF_CNPJ : '' }} ">
 
                             </div>
 
                             <div class="form-group col-lg-3" id="CNPJ" hidden >
-                                <b class="ls-label-text" for="Ben_CPF_CNPJ">CNPJ do Beneficiario:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Ben_CPF_CNPJ"
+                                <b class="ls-label-text" for="Ben_CPF_CNPJ">CNPJ do Beneficiario</b>
+                                <input type="text" class="form-control text-center" name="Ben_CPF_CNPJ"
                                     id="iCNPJ" minlength="3" maxlength="14" onblur="validarCNPJ(this)" value="{{ isset($recibo->Ben_CPF_CNPJ) ? $recibo->Ben_CPF_CNPJ : '' }} ">
                             </div>
 
                         </div>
                         <div class="form-row">
                             <div class="form-group col-lg-3">
-                                <b class="ls-label-text" for="Em_Nome">Nome do Emitente:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Em_Nome" id="Em_Nome"
+                                <b class="ls-label-text" for="Em_Nome">Nome do Emitente</b>
+                                <input type="text" class="form-control text-center" name="Em_Nome" id="Em_Nome"
                                     minlength="3" maxlength="45"  value="{{ isset($recibo->Em_Nome) ? $recibo->Em_Nome : '' }} ">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -198,8 +198,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-4">
-                                <b class="ls-label-text" for="Em_End">Endereço do Emitente:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Em_End" id="Em_End"
+                                <b class="ls-label-text" for="Em_End">Endereço do Emitente</b>
+                                <input type="text" class="form-control text-center" name="Em_End" id="Em_End"
                                     minlength="3" maxlength="45"  value="{{ isset($recibo->Em_End) ? $recibo->Em_End : '' }} ">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -209,8 +209,8 @@
                                 </div>
                             </div>
                             <div class="form-group col-lg-2">
-                                <b class="ls-label-text" for="Doc2">Documento:</b>
-                                <select onchange="verifica2(this.value)" class="form-control input-border-bottom"
+                                <b class="ls-label-text" for="Doc2">Documento</b>
+                                <select onchange="verifica2(this.value)" class="form-control text-center"
                                     id="Doc2" name="Doc2">
                                     <option value="{{ isset($recibo->Doc2) ? $recibo->Doc2 : '' }} ">
                             {{ $recibo->Doc2 == '1'? 'CPF': 'CNPJ' }}</option>
@@ -226,23 +226,23 @@
                             </div>
                             <div class="form-group col-lg-3" id="CPF2" hidden>
                             
-                                <b class="ls-label-text" for="Em_CPF_CNPJ">CPF do Emitente:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Em_CPF_CNPJ"
+                                <b class="ls-label-text" for="Em_CPF_CNPJ">CPF do Emitente</b>
+                                <input type="text" class="form-control text-center" name="Em_CPF_CNPJ"
                                     id="iCPF2" minlength="3" maxlength="11" onblur="validarCPF(this)" value="{{ isset($recibo->Em_CPF_CNPJ) ? $recibo->Em_CPF_CNPJ : '' }} " >
                             </div>
                             
 
                             <div class="form-group col-lg-3" id="CNPJ2" hidden>
-                                <b class="ls-label-text" for="Em_CPF_CNPJ">CNPJ do Emitente:</b>
-                                <input type="text" class="form-control input-border-bottom" name="Em_CPF_CNPJ"
+                                <b class="ls-label-text" for="Em_CPF_CNPJ">CNPJ do Emitente</b>
+                                <input type="text" class="form-control text-center" name="Em_CPF_CNPJ"
                                     id="iCNPJ2" minlength="3" maxlength="14" onblur="validarCNPJ(this)"  value="{{ isset($recibo->Em_CPF_CNPJ) ? $recibo->Em_CPF_CNPJ : '' }} " >
                             </div>
 
                         </div>
                         <div class="form-row">
-                            <div class="form-group col-lg-2">
-                                <label for="Transacao">Transação:</label>
-                                <input type="text" class="form-control input-border-bottom" name="Transacao"
+                            <div class="form-group col-lg-3">
+                                <label for="Transacao">Transação</label>
+                                <input type="text" class="form-control text-center" name="Transacao"
                                     id="Transacao" minlength="3" maxlength="11"  value="{{ isset($recibo->Transacao) ? $recibo->Transacao : '' }} ">
                                 <div class="invalid-feedback">
                                     Por favor, Campo Obrigatório!
@@ -253,7 +253,7 @@
                             </div>
                             <div class="form-group col-lg-4">
                                 <label for="Empresa">Empresa:</label>
-                                <select class="form-control input-border-bottom" id="Empresa" name="Empresa">
+                                <select class="form-control text-center" id="Empresa" name="Empresa">
                                     <option value="0">Selecione</option>
 
                                     @foreach($empresa as $empresa)

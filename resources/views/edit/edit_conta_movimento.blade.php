@@ -53,16 +53,16 @@
                 
           </div>
                 <div class="form-row">
-                    <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="data_id">Data do Movimento:</b>
-                        <select class="form-control input-border-bottom" name="data_id" id="data_id" required disabled>
-                                <option value="">Selecione</option>
+                    <div class="form-group col-lg-3" hidden>
+                        <b class="ls-label-text" for="data_id" >Data do Movimento</b>
+                        <select class="form-control text-center" name="data_id" id="data_id" required disabled>
+                              
                                 @foreach($data_movimento as $data)
-                                @can('view_data_movimento', $data)
+                              
                                 <option value="{{ $data->Codigo }}"
                                         {{ $conta_movimento->data_id == $data->Codigo ? "selected" : "" }}>
                                         {{ $data->Data }}</option>
-                                @endcan
+                               
                                 @endforeach
                             </select>
                         <div class="invalid-feedback">
@@ -73,8 +73,8 @@
                         </div>
                     </div>
                     <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Especie">Espécie do Movimento:</b>
-                            <select class="form-control input-border-bottom" name="Especie" id="Especie" required>
+                            <b class="ls-label-text" for="Especie">Espécie do Movimento</b>
+                            <select class="form-control text-center" name="Especie" id="Especie" required>
                             <option value="{{ isset($conta_movimento->Especie) ? $conta_movimento->Especie : '' }} ">
                                     @if($conta_movimento->Especie == 1)
                                             Dinheiro
@@ -98,8 +98,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Documento">Tipo do Movimento:</b>
-                            <select class="form-control input-border-bottom" name="Documento" id="Documento" required>
+                            <b class="ls-label-text" for="Documento">Tipo do Movimento</b>
+                            <select class="form-control text-center" name="Documento" id="Documento" required>
                             <option value="{{ isset($conta_movimento->Documento) ? $conta_movimento->Documento : '' }} ">
                                     @if($conta_movimento->Especie == "NFF")
                                             Nota Fiscal
@@ -118,8 +118,8 @@
                             </div>
                         </div>
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Num_Doc">Número do Documento:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Num_Doc" id="Num_Doc"
+                        <b class="ls-label-text" for="Num_Doc">Número do Documento</b>
+                        <input type="text" class="form-control text-center" name="Num_Doc" id="Num_Doc"
                             maxlength="15" minlength="1" required  value="{{ isset($conta_movimento->Num_Doc) ? $conta_movimento->Num_Doc : '' }} ">
                         <div class="invalid-feedback">
                             Por favor, Campo Obrigatório!
@@ -128,11 +128,22 @@
                             Tudo certo!
                         </div>
                     </div>
+                    <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="Valor">Valor</b>
+                            <input type="text" class="form-control text-center" name="Valor" id="Valor" minlength="3" 
+                            maxlength="10" required onblur="valor()" value="{{ isset($conta_movimento->Valor) ? $conta_movimento->Valor : '' }} ">
+                            <div class="invalid-feedback">
+                                Por favor, Campo Obrigatório!
+                            </div>
+                            <div class="valid-feedback">
+                                Tudo certo!
+                            </div>
+                        </div>
                 </div>
                 <div class="form-row">
-                <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Nome_Clifor">Cliente/Fornecedor:</b>
-                            <select class="form-control input-border-bottom" onchange="pesquisarCodigo()" name="Nome_Clifor" id="Nome_Clifor" required>
+                <div class="form-group col-lg-5">
+                            <b class="ls-label-text" for="Nome_Clifor">Cliente/Fornecedor</b>
+                            <select class="form-control text-center" onchange="pesquisarCodigo()" name="Nome_Clifor" id="Nome_Clifor" required>
                                 <option value="">Selecione</option>
                                 @foreach($clifor as $clifor)
                                    @can('view_clifor', $clifor)
@@ -151,9 +162,9 @@
                         </div>
 
 
-                    <div class="form-group col-lg-2">
-                        <b class="ls-label-text" for="Cod_Clifor">Cod Cli/For:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Cod_Clifor" id="Cod_Clifor"
+                    <div class="form-group col-lg-1">
+                        <b class="ls-label-text" for="Cod_Clifor">Cod</b>
+                        <input type="text" class="form-control text-center" name="Cod_Clifor" id="Cod_Clifor"
                             readonly  value="{{ isset($conta_movimento->Cod_Clifor) ? $conta_movimento->Cod_Clifor : '' }} ">
                         <div class="invalid-feedback">
                             Por favor, Campo Obrigatório!
@@ -162,9 +173,9 @@
                             Tudo certo!
                         </div>
                     </div>
-                    <div class="form-group col-lg-5">
-                        <b class="ls-label-text" for="Historico">Hist. do Movimento:</b>
-                        <input type="text" class="form-control input-border-bottom" name="Historico" id="Historico"
+                    <div class="form-group col-lg-6">
+                        <b class="ls-label-text" for="Historico">Histórico do Movimento</b>
+                        <input type="text" class="form-control text-center" name="Historico" id="Historico"
                             required minlength="3" maxlength="45" value="{{ isset($conta_movimento->Historico) ? $conta_movimento->Historico : '' }} ">
                         <div class="invalid-feedback">
                             Campo Obrigatório, Mínimo 4 caracteres!
@@ -173,22 +184,12 @@
                             Tudo certo!
                         </div>
                     </div>
-                    <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Valor">Valor:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Valor" id="Valor" minlength="3" 
-                            maxlength="10" required onblur="valor()" value="{{ isset($conta_movimento->Valor) ? $conta_movimento->Valor : '' }} ">
-                            <div class="invalid-feedback">
-                                Por favor, Campo Obrigatório!
-                            </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
-                            </div>
-                        </div>
+                   
                 </div>
                 <div class="form-row">
                     <div class="form-group col-lg-3">
-                        <b class="ls-label-text" for="Operador">Operador:</b>
-                        <select class="form-control input-border-bottom" name="Operador" id="Operador" required>
+                        <b class="ls-label-text" for="Operador">Operador</b>
+                        <select class="form-control text-center" name="Operador" id="Operador" required>
                         <option value="{{ isset($conta_movimento->Operador) ? $conta_movimento->Operador : '' }} ">
                                     @if($conta_movimento->Especie == "C")
                                             Crédito
@@ -207,8 +208,8 @@
                             </div>
                     </div>
                     <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_Conta">Conta:</b>
-                            <select class="form-control input-border-bottom" name="Cod_Conta" id="Cod_Conta" required
+                            <b class="ls-label-text" for="Cod_Conta">Conta</b>
+                            <select class="form-control text-center" name="Cod_Conta" id="Cod_Conta" required
                             onchange="defineSub()">
                                 <option value="">Selecione</option>
                                 @foreach($conta as $conta)
@@ -227,8 +228,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_Conta_Saldo">Conta Saldo:</b>
-                            <select class="form-control input-border-bottom" name="Cod_Conta_Saldo"  id="Cod_Conta_Saldo" required>
+                            <b class="ls-label-text" for="Cod_Conta_Saldo">Conta Saldo</b>
+                            <select class="form-control text-center" name="Cod_Conta_Saldo"  id="Cod_Conta_Saldo" required>
                              <option value="{{ $conta_movimento->Cod_Conta_Saldo }}">{{ $conta_movimento->Cod_Conta_Saldo }}</option>
                               
                             </select>
@@ -240,8 +241,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Plano_Ctas">Plano de Contas:</b>
-                            <select class="form-control input-border-bottom" name="Plano_Ctas" required>
+                            <b class="ls-label-text" for="Plano_Ctas">Plano de Contas</b>
+                            <select class="form-control text-center" name="Plano_Ctas" required>
                                 <option value="0">Selecione</option>
                             </select>
                             <div class="invalid-feedback">
@@ -253,9 +254,9 @@
                         </div>
                 </div>
                 <div class="form-row">
-                <div class="form-group col-lg-3">
+                <div class="form-group col-lg-4">
                             <b class="ls-label-text" for="Centro_Custo">Centro de Custo:</b>
-                            <select class="form-control input-border-bottom" name="Centro_Custo" required>
+                            <select class="form-control text-center" name="Centro_Custo" required>
                                 <option value="">Selecione</option>
                                 @foreach($custo as $custo)
                                    @can('view_centroCusto', $custo)
@@ -272,9 +273,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Transacao">Número da Transação:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Transacao" id="Transacao" minlength="2" 
+                        <div class="form-group col-lg-4">
+                            <b class="ls-label-text" for="Transacao">Número da Transação</b>
+                            <input type="text" class="form-control text-center" name="Transacao" id="Transacao" minlength="2" 
                             maxlength="11" value="{{ isset($conta_movimento->Transacao) ? $conta_movimento->Transacao : '' }} " required >
                             <div class="invalid-feedback">
                                 Por favor, Campo Obrigatório!
@@ -283,9 +284,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Empresa">Empresa:</b>
-                            <select class="form-control input-border-bottom" name="Empresa" required>
+                        <div class="form-group col-lg-4">
+                            <b class="ls-label-text" for="Empresa">Empresa</b>
+                            <select class="form-control text-center" name="Empresa" required>
                                 <option value="">Selecione</option>
                                 @foreach($empresa as $empresa)
                                    @can('view_empresa', $empresa)

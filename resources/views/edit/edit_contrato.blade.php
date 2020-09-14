@@ -158,8 +158,8 @@
                         </div>
                         </div> 
                         <div class="form-row">  
-                        <div class="form-group col-lg-6">
-                         <label for="Observacoes">Observções Gerais:</label>
+                        <div class="form-group col-lg-12">
+                        <b class="ls-label-text" for="Valor">Observações Gerais</b>
                          <textarea type="text" class="form-control " name="Observacoes"
                             id="Observacoes"
                             value="">{{ $contrato->Observacoes }}</textarea>

@@ -52,8 +52,8 @@
                     @endif
                     <div class="form-row">
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Descricao	">Descrição da Conta:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Descricao" id="Descricao"
+                            <b class="ls-label-text" for="Descricao	">Descrição da Conta</b>
+                            <input type="text" class="form-control text-center" name="Descricao" id="Descricao"
                                 placeholder="" required minlength="2" maxlength="45"
                                 value="{{ isset($contacadastro->Descricao) ? $contacadastro->Descricao : '' }} ">
                             <div class="invalid-feedback">
@@ -64,8 +64,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Cod_Banco">Número do Banco:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cod_Banco" id="Cod_Banco"
+                            <b class="ls-label-text" for="Cod_Banco">Número do Banco</b>
+                            <input type="text" class="form-control text-center" name="Cod_Banco" id="Cod_Banco"
                                 placeholder="" required minlength="1" maxlength="6"
                                 value="{{ isset($contacadastro->Cod_Banco) ? $contacadastro->Cod_Banco : '' }} ">
                             <div class="invalid-feedback">
@@ -77,7 +77,7 @@
                         </div>
                         <div class="form-group col-lg-2">
                             <b class="ls-label-text" for="Dig_Banco">Dígito do Banco:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Dig_Banco" id="Dig_Banco"
+                            <input type="text" class="form-control text-center" name="Dig_Banco" id="Dig_Banco"
                                 required
                                 value="{{ isset($contacadastro->Dig_Banco) ? $contacadastro->Dig_Banco : '' }} ">
                             <div class="invalid-feedback">
@@ -88,8 +88,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Nome_Banco">Nome do Banco:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Nome_Banco"
+                            <b class="ls-label-text" for="Nome_Banco">Nome do Banco</b>
+                            <input type="text" class="form-control text-center" name="Nome_Banco"
                                 id="Nome_Banco" placeholder="" required minlength="2" maxlength="20"
                                 value="{{ isset($contacadastro->Nome_Banco) ? $contacadastro->Nome_Banco : '' }} ">
                             <div class="invalid-feedback">
@@ -102,8 +102,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Cod_Banco_Cob">Número do Banco Cobrador:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cod_Banco_Cob"
+                            <b class="ls-label-text" for="Cod_Banco_Cob">Número do Banco Cobrador</b>
+                            <input type="text" class="form-control text-center" name="Cod_Banco_Cob"
                                 id="NomCod_Banco_Cobe_Banco" placeholder="" required minlength="2" maxlength="6"
                                 value="{{ isset($contacadastro->Cod_Banco_Cob) ? $contacadastro->Cod_Banco_Cob : '' }} ">
                             <div class="invalid-feedback">
@@ -114,8 +114,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Dig_Banco_Cob">Dídigo do Banco Cobrador:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Dig_Banco_Cob"
+                            <b class="ls-label-text" for="Dig_Banco_Cob">Dígito do Banco Cobrador:</b>
+                            <input type="text" class="form-control text-center" name="Dig_Banco_Cob"
                                 id="Dig_Banco_Cob" required
                                 value="{{ isset($contacadastro->Dig_Banco_Cob) ? $contacadastro->Dig_Banco_Cob : '' }} ">
                             <div class="invalid-feedback">
@@ -126,8 +126,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Praca">Município do Banco:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Praca" id="Praca"
+                            <b class="ls-label-text" for="Praca">Município do Banco</b>
+                            <input type="text" class="form-control text-center" name="Praca" id="Praca"
                                 placeholder="" required minlength="2" maxlength="50"
                                 value="{{ isset($contacadastro->Praca) ? $contacadastro->Praca : '' }} ">
                             <div class="invalid-feedback">
@@ -140,8 +140,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Cod_Age">Agência:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cod_Age" id="Cod_Age"
+                            <b class="ls-label-text" for="Cod_Age">Agência</b>
+                            <input type="text" class="form-control text-center" name="Cod_Age" id="Cod_Age"
                                 placeholder="" required minlength="2" maxlength="6"
                                 value="{{ isset($contacadastro->Cod_Age) ? $contacadastro->Cod_Age : '' }} ">
                             <div class="invalid-feedback">
@@ -152,8 +152,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-1">
-                            <b class="ls-label-text" for="Dig_Age">DV:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Dig_Age" id="Dig_Age"
+                            <b class="ls-label-text" for="Dig_Age">DV</b>
+                            <input type="text" class="form-control text-center" name="Dig_Age" id="Dig_Age"
                                 placeholder="" required minlength="2" maxlength="2"
                                 value="{{ isset($contacadastro->Dig_Age) ? $contacadastro->Dig_Age : '' }} ">
                             <div class="invalid-feedback">
@@ -165,8 +165,8 @@
                         </div>
                         <div class="form-group col-lg-1"></div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="CC">Conta:</b>
-                            <input type="text" class="form-control input-border-bottom" name="CC" id="CC" placeholder=""
+                            <b class="ls-label-text" for="CC">Conta</b>
+                            <input type="text" class="form-control text-center" name="CC" id="CC" placeholder=""
                                 required minlength="2" maxlength="6"
                                 value="{{ isset($contacadastro->CC) ? $contacadastro->CC : '' }} ">
                             <div class="invalid-feedback">
@@ -177,8 +177,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-1">
-                            <b class="ls-label-text" for="Digito">DV:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Digito" id="Digito"
+                            <b class="ls-label-text" for="Digito">DV</b>
+                            <input type="text" class="form-control text-center" name="Digito" id="Digito"
                                 placeholder="" required minlength="2" maxlength="2"
                                 value="{{ isset($contacadastro->Digito) ? $contacadastro->Digito : '' }} ">
                             <div class="invalid-feedback">
@@ -190,8 +190,8 @@
                         </div>
                         <div class="form-group col-lg-1"></div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Tipo_Conta">Tipo de Conta:</b>
-                            <select class="form-control input-border-bottom" id="Tipo_Conta" name="Tipo_Conta">
+                            <b class="ls-label-text" for="Tipo_Conta">Tipo de Conta</b>
+                            <select class="form-control text-center" id="Tipo_Conta" name="Tipo_Conta">
                                 <option
                                     value="{{ isset($contacadastro->Tipo_Conta) ? $contacadastro->Tipo_Conta : '' }} ">
                                     {{ $contacadastro->Tipo_Conta=="C"?"Caixa":"Banco" }}
@@ -207,8 +207,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Tipo_Cobranca">Tipo de Cobrança:</b>
-                            <select class="form-control input-border-bottom" id="Tipo_Cobranca" name="Tipo_Cobranca">
+                            <b class="ls-label-text" for="Tipo_Cobranca">Tipo de Cobrança</b>
+                            <select class="form-control text-center" id="Tipo_Cobranca" name="Tipo_Cobranca">
                                 <option
                                     value="{{ isset($contacadastro->Tipo_Cobranca) ? $contacadastro->Tipo_Cobranca : '' }} ">
                                     {{ $contacadastro->Tipo_Cobranca }}</option>
@@ -228,8 +228,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Cod_Cedente">Código do Cedente:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cod_Cedente"
+                            <b class="ls-label-text" for="Cod_Cedente">Código do Cedente</b>
+                            <input type="text" class="form-control text-center" name="Cod_Cedente"
                                 id="Cod_Cedente" placeholder="" minlength="1" maxlength="15"
                                 value="{{ isset($contacadastro->Cod_Cedente) ? $contacadastro->Cod_Cedente : '' }} ">
                             <div class="invalid-feedback">
@@ -240,8 +240,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Convenio">Num do Convenio da Cobrança:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Convenio" id="Convenio"
+                            <b class="ls-label-text" for="Convenio">Num do Convenio da Cobrança</b>
+                            <input type="text" class="form-control text-center" name="Convenio" id="Convenio"
                                 placeholder="" minlength="1" maxlength="15"
                                 value="{{ isset($contacadastro->Convenio) ? $contacadastro->Convenio : '' }} ">
                             <div class="invalid-feedback">
@@ -252,8 +252,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Carteira">Num do Carteira da Cobrança:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Carteira" id="Carteira"
+                            <b class="ls-label-text" for="Carteira">Num do Carteira da Cobrança</b>
+                            <input type="text" class="form-control text-center" name="Carteira" id="Carteira"
                                 placeholder="" minlength="1" maxlength="2"
                                 value="{{ isset($contacadastro->Carteira) ? $contacadastro->Carteira : '' }} ">
                             <div class="invalid-feedback">
@@ -264,8 +264,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-3">
-                            <b class="ls-label-text" for="Uso_Bco">Cod. de uso do Banco:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Uso_Bco" id="Uso_Bco"
+                            <b class="ls-label-text" for="Uso_Bco">Cod. de uso do Banco</b>
+                            <input type="text" class="form-control text-center" name="Uso_Bco" id="Uso_Bco"
                                 placeholder="" minlength="1" maxlength="4"
                                 value="{{ isset($contacadastro->Uso_Bco) ? $contacadastro->Uso_Bco : '' }} ">
                             <div class="invalid-feedback">
@@ -278,8 +278,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Cod_Moeda">Cod. Moeda:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Cod_Moeda" id="Cod_Moeda"
+                            <b class="ls-label-text" for="Cod_Moeda">Cod. Moeda</b>
+                            <input type="text" class="form-control text-center" name="Cod_Moeda" id="Cod_Moeda"
                                 value="{{ isset($contacadastro->Cod_Moeda) ? $contacadastro->Cod_Moeda : '' }} "
                                 placeholder="" minlength="1" maxlength="4">
                             <div class="invalid-feedback">
@@ -290,8 +290,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Especie">Espec. Moeda:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Especie" id="Especie"
+                            <b class="ls-label-text" for="Especie">Espec. Moeda</b>
+                            <input type="text" class="form-control text-center" name="Especie" id="Especie"
                                 value="{{ isset($contacadastro->Especie) ? $contacadastro->Especie : '' }} "
                                 placeholder="" minlength="1" maxlength="2">
                             <div class="invalid-feedback">
@@ -302,8 +302,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Especie_Doc">Espec. Documento:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Especie_Doc"
+                            <b class="ls-label-text" for="Especie_Doc">Espec. Documento</b>
+                            <input type="text" class="form-control text-center" name="Especie_Doc"
                                 id="Especie_Doc"
                                 value="{{ isset($contacadastro->Especie_Doc) ? $contacadastro->Especie_Doc : '' }} "
                                 placeholder="" minlength="1" maxlength="2">
@@ -314,9 +314,25 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Aceite">Aceite de Cobrança:</b>
-                            <select class="form-control input-border-bottom" id="Aceite" name="Aceite">
+                       
+                        <div class="form-group col-lg-6">
+                            <b class="ls-label-text" for="Local_Pgto">Local de pagamento</b>
+                            <input type="text" class="form-control text-center" name="Local_Pgto"
+                                id="Local_Pgto"
+                                value="{{ isset($contacadastro->Local_Pgto) ? $contacadastro->Local_Pgto : '' }} "
+                                placeholder="" minlength="2" maxlength="60">
+                            <div class="invalid-feedback">
+                                Por favor, Campo Obrigatório!
+                            </div>
+                            <div class="valid-feedback">
+                                Tudo certo!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="Aceite">Aceite de Cobrança</b>
+                            <select class="form-control text-center" id="Aceite" name="Aceite">
                                 <option
                                     value="{{ isset($contacadastro->Aceite) ? $contacadastro->Aceite : '' }} ">
                                     {{ $contacadastro->Aceite=="S"?"Sim":"Não" }}
@@ -331,24 +347,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-4">
-                            <b class="ls-label-text" for="Local_Pgto">Local de pagamento:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Local_Pgto"
-                                id="Local_Pgto"
-                                value="{{ isset($contacadastro->Local_Pgto) ? $contacadastro->Local_Pgto : '' }} "
-                                placeholder="" minlength="2" maxlength="60">
-                            <div class="invalid-feedback">
-                                Por favor, Campo Obrigatório!
-                            </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Dias_Desc">Dias de Desconto :</b>
-                            <input type="text" class="form-control input-border-bottom" name="Dias_Desc" id="Dias_Desc"
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="Dias_Desc">Dias de Desconto</b>
+                            <input type="text" class="form-control text-center" name="Dias_Desc" id="Dias_Desc"
                                 value="{{ isset($contacadastro->Dias_Desc) ? $contacadastro->Dias_Desc : '' }} "
                                 placeholder="" minlength="1" maxlength="2">
                             <div class="invalid-feedback">
@@ -359,8 +360,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Perc_Desc">Perc. de Desconto :</b>
-                            <input type="text" class="form-control input-border-bottom" name="Perc_Desc" id="Perc_Desc"
+                            <b class="ls-label-text" for="Perc_Desc">Perc. de Desconto</b>
+                            <input type="text" class="form-control text-center" name="Perc_Desc" id="Perc_Desc"
                                 value="{{ isset($contacadastro->Perc_Desc) ? $contacadastro->Perc_Desc : '' }} "
                                 placeholder="" minlength="1" maxlength="2">
                             <div class="invalid-feedback">
@@ -371,8 +372,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Perc_Multa">Perc. de Multa :</b>
-                            <input type="text" class="form-control input-border-bottom" name="Perc_Multa"
+                            <b class="ls-label-text" for="Perc_Multa">Perc. de Multa</b>
+                            <input type="text" class="form-control text-center" name="Perc_Multa"
                                 id="Perc_Multa"
                                 value="{{ isset($contacadastro->Perc_Multa) ? $contacadastro->Perc_Multa : '' }} "
                                 placeholder="" minlength="1" maxlength="2">
@@ -384,8 +385,8 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Perc_Juros">Perc. de Juros :</b>
-                            <input type="text" class="form-control input-border-bottom" name="Perc_Juros"
+                            <b class="ls-label-text" for="Perc_Juros">Perc. de Juros</b>
+                            <input type="text" class="form-control text-center" name="Perc_Juros"
                                 id="Perc_Juros"
                                 value="{{ isset($contacadastro->Perc_Juros) ? $contacadastro->Perc_Juros : '' }} "
                                 placeholder="" minlength="1" maxlength="2">
@@ -396,9 +397,12 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Dias_AvisoProt">Dias aviso Protesto :</b>
-                            <input type="text" class="form-control input-border-bottom" name="Dias_AvisoProt"
+                       
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="Dias_AvisoProt">Dias aviso Protesto</b>
+                            <input type="text" class="form-control text-center" name="Dias_AvisoProt"
                                 id="Dias_AvisoProt"
                                 value="{{ isset($contacadastro->Dias_AvisoProt) ? $contacadastro->Dias_AvisoProt : '' }} "
                                 placeholder="" minlength="1" maxlength="2">
@@ -409,9 +413,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Dias_Prot">Dias a enviar Protesto :</b>
-                            <input type="text" class="form-control input-border-bottom" name="Dias_Prot" id="Dias_Prot"
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="Dias_Prot">Dias a enviar Protesto</b>
+                            <input type="text" class="form-control text-center" name="Dias_Prot" id="Dias_Prot"
                                 value="{{ isset($contacadastro->Dias_Prot) ? $contacadastro->Dias_Prot : '' }} "
                                 placeholder="" minlength="1" maxlength="2">
                             <div class="invalid-feedback">
@@ -421,11 +425,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Tx_Emissao">Taxa de Emissão :</b>
-                            <input type="text" class="form-control input-border-bottom" name="Tx_Emissao"
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="Tx_Emissao">Taxa de Emissão</b>
+                            <input type="text" class="form-control text-center" name="Tx_Emissao"
                                 id="Tx_Emissao" onblur="tx_Emissao()"
                                 value="{{ isset($contacadastro->Tx_Emissao) ? $contacadastro->Tx_Emissao : '' }} "
                                 placeholder="" minlength="1" maxlength="3">
@@ -436,9 +438,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Empresa">Empresa:</b>
-                            <select class="form-control input-border-bottom" required id="Empresa" name="Empresa">
+                        <div class="form-group col-lg-3">
+                            <b class="ls-label-text" for="Empresa">Empresa</b>
+                            <select class="form-control text-center" required id="Empresa" name="Empresa">
                                 @foreach($empresa as $empresa)
                                 @can('view_empresa', $empresa)
                                     <option value="{{ $empresa->Codigo }}"

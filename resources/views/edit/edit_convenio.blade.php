@@ -25,9 +25,9 @@
                                 enctype="multipart/form-data">
                     @endif
                     <div class="form-row">
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Convenio">Convênio:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Convenio" id="Convenio"
+                        <div class="form-group col-lg-6">
+                            <b class="ls-label-text" for="Convenio">Convênio</b>
+                            <input type="text" class="form-control text-center" name="Convenio" id="Convenio"
                                 minlength="3"
                                 value="{{ isset($convenio->Convenio) ? $convenio->Convenio : '' }} ">
                             <div class="invalid-feedback">
@@ -37,9 +37,9 @@
                                 Tudo certo!
                             </div>
                         </div>
-                        <div class="form-group col-lg-2">
-                            <b class="ls-label-text" for="Comissao">Comissão:</b>
-                            <input type="text" class="form-control input-border-bottom" name="Comissao" id="Comissao"
+                        <div class="form-group col-lg-6">
+                            <b class="ls-label-text" for="Comissao">Comissão</b>
+                            <input type="text" class="form-control text-center" name="Comissao" id="Comissao"
                                 placeholder="" minlength="5" maxlength="45"  onblur="comissao()"
                                 value="{{ isset($convenio->Comissao) ? $convenio->Comissao : '' }} ">
                             <div class="invalid-feedback">

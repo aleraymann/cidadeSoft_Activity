@@ -74,9 +74,9 @@
                                     name="Cod_Fun" required>
                                     <option value="0">Selecione</option>
                                     @foreach($funcionario as $u)
-                                        @if(auth()->user()->id == $u->adm)
-                                            <option value="{{ $u->id }}">{{ $u->name }}</option>
-                                        @endif
+                                    @can('view_funcionario', $u)
+                                            <option value="{{ $u->Codigo }}">{{ $u->Nome }}</option>
+                                        @endcan
                                     @endforeach
                                 </select>
                                 <div class="invalid-feedback">
